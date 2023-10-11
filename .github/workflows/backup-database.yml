@@ -1,39 +1,31 @@
 name: 'backup-database'
 
 on:
-  pull_request:
-    types:
-      - main  # Run when a new pull request is opened
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      manual_run:
+        description: 'Manually trigger the workflow'
+        required: false
 
 jobs:
-  backup:
+  build:
     runs-on: ubuntu-latest
+    env:
+      supabase_db_url: ${{ secrets.SUPABASE_DB_URL }}
+      
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: supabase/setup-cli@v1
         with:
-          node-version: 14  # Use the desired Node.js version
-
-      - name: Install Supabase CLI
-        run: npm install -g @supabase/cli  # Install the Supabase CLI
-
-      - name: Login to Supabase
-        run: supabase login --api-url https://api.supabase.io --key ${{ secrets.SUPABASE_API_KEY }}
-        env:
-          SUPABASE_API_KEY: ${{ secrets.SUPABASE_API_KEY }}
-
+          version: latest
+      - name: Backup roles
+        run: supabase db dump --db-url "$supabase_db_url" -f roles.sql --role-only
+      - name: Backup schema
+        run: supabase db dump --db-url "$supabase_db_url" -f schema.sql
       - name: Backup data
-        run: supabase backup --db-url ${{ secrets.SUPABASE_DB_URL }} --path /path/to/backup/directory
-        env:
-          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
-
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: supabase-backup
-          path: /path/to/backup/directory
+        run: supabase db dump --db-url "$supabase_db_url" -f data.sql --data-only --use-copy
 
