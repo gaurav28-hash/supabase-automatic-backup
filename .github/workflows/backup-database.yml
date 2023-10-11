@@ -11,21 +11,38 @@ on:
         required: false
 
 jobs:
-  build:
+  backup:
     runs-on: ubuntu-latest
-    env:
-      supabase_db_url: ${{ secrets.SUPABASE_DB_URL }}
-      
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: supabase/setup-cli@v1
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          version: latest
-      - name: Backup roles
-        run: supabase db dump --db-url "$supabase_db_url" -f roles.sql --role-only
-      - name: Backup schema
-        run: supabase db dump --db-url "$supabase_db_url" -f schema.sql
-      - name: Backup data
-        run: supabase db dump --db-url "$supabase_db_url" -f data.sql --data-only --use-copy
+          node-version: '14'
+
+      - name: Install Supabase CLI
+        run: |
+          npm install -g @supabase/cli
+          supabase init
+
+      - name: Backup Roles
+        run: |
+          supabase db dump --role-only -f roles.sql
+
+      - name: Backup Schema
+        run: |
+          supabase db dump -f schema.sql
+
+      - name: Backup Data
+        run: |
+          supabase db dump --data-only --use-copy -f data.sql
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: backup
+          path: roles.sql, schema.sql, data.sql
 
