@@ -3,7 +3,7 @@ name: 'backup-database'
 on:
   pull_request:
     types:
-      - opened  # Run when a new pull request is opened
+      - main  # Run when a new pull request is opened
 
 jobs:
   backup:
