@@ -1,14 +1,8 @@
-name: 'backup-database'
+name: 'backup-supabase-data'
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      manual_run:
-        description: 'Manually trigger the workflow'
-        required: false
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight
 
 jobs:
   backup:
@@ -20,25 +14,22 @@ jobs:
 
       - name: Download and Install Supabase CLI
         run: |
-          # Download the Supabase CLI executable directly from a URL
-          wget https://github.com/supabase/supabase-cli/releases/download/latest/supabase-linux-amd64 -O /usr/local/bin/supabase
+          # Specify the Supabase CLI version you want to install (check the latest release)
+          SUPABASE_CLI_VERSION=vX.Y.Z
+
+          # Download the Supabase CLI executable from GitHub Releases
+          wget https://github.com/supabase/supabase-cli/releases/download/$SUPABASE_CLI_VERSION/supabase-linux-amd64 -O /usr/local/bin/supabase
           chmod +x /usr/local/bin/supabase
         working-directory: /usr/local/bin  # Set the working directory to install the CLI system-wide
 
-      - name: Backup roles
-        run: |
-          supabase db dump --role-only -f roles.sql
-
-      - name: Backup schema
-        run: |
-          supabase db dump -f schema.sql
+      - name: Login to Supabase
+        run: supabase login --api-url https://api.supabase.io --key ${{ secrets.SUPABASE_API_KEY }}
 
       - name: Backup data
-        run: |
-          supabase db dump --data-only --use-copy -f data.sql
+        run: supabase backup --db-url ${{ secrets.SUPABASE_DB_URL }} --path /path/to/backup/directory
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: backup
-          path: roles.sql, schema.sql, data.sql
+          name: supabase-backup
+          path: /path/to/backup/directory
