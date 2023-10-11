@@ -21,7 +21,7 @@ jobs:
       - name: Download and Install Supabase CLI
         run: |
           # Specify the Supabase CLI version you want to install (check the latest release)
-          SUPABASE_CLI_VERSION=v1.2.3
+          SUPABASE_CLI_VERSION=v1.2.4
 
           # Download the Supabase CLI executable from GitHub Releases
           wget https://github.com/supabase/supabase-cli/releases/download/$SUPABASE_CLI_VERSION/supabase-linux-amd64 -O /usr/local/bin/supabase
