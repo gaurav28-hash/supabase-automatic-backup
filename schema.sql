@@ -481,7 +481,9 @@ CREATE TABLE IF NOT EXISTS "public"."_events" (
     "user_id" "uuid" NOT NULL,
     "venue_long" double precision,
     "venue_lat" double precision,
-    "is_reminder_sent" boolean DEFAULT false
+    "is_reminder_sent" boolean DEFAULT false,
+    "status" character varying,
+    "is_early_reminder" boolean DEFAULT false
 );
 
 ALTER TABLE "public"."_events" OWNER TO "postgres";
