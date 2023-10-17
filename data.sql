@@ -138,6 +138,24 @@ c44e57ae-8e6c-47d2-8ae6-d7c9366c829f	default	2022-12-14 11:06:04.092341+00	\N	\N
 
 
 --
+-- Data for Name: Atelier_users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."Atelier_users" ("id", "first_name", "last_name", "email", "gender", "role", "dob", "otp", "status", "created_at", "updated_at") FROM stdin;
+ae0b4d84-856e-4240-8d2c-d45bb817a740	Gaurav	Bhargava	gaurav@piecodes.in	male	administrator	\N	\N	active	2023-10-15 20:15:08+00	2023-10-16 14:31:55.806+00
+\.
+
+
+--
+-- Data for Name: Atelier_sessions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."Atelier_sessions" ("id", "device_id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
+22f0145d-72b4-4961-972f-bbe16ce1b06a	oppof9pro	3c863892-5083-4355-8ffe-9ecb5e8a0abb	2023-10-16 14:31:55.514+00	2023-10-16 14:31:55.514+00	ae0b4d84-856e-4240-8d2c-d45bb817a740
+\.
+
+
+--
 -- Data for Name: IsaDate_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -1610,6 +1628,7 @@ d5667f9f-87d7-4fcb-bce4-bbe9323aa2f4	oppof9pro	d71e56d6-698c-476c-8799-d24df6d8c
 --
 
 COPY "public"."users" ("id", "username", "first_name", "last_name", "email", "gender", "dob", "otp", "status", "working_hours_days", "working_hours_time", "sleeping_hours_days", "sleeping_hours_time", "longitude", "latitude", "fcm_token", "device_info", "created_at", "updated_at") FROM stdin;
+2ddf13c2-fd4a-4fb2-a154-0076f867436f	sourabh03337	Sourabh	Shrivastava	sourabh@piecodes.in	other	\N	\N	active	\N	\N	\N	\N	75.8683	22.7171	\N	\N	2023-10-16 10:37:52.587951+00	2023-10-16 10:37:52.587951+00
 \.
 
 
@@ -1641,7 +1660,7 @@ COPY "public"."chat_messages" ("id", "message", "created_at", "updated_at", "cha
 -- Data for Name: events; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."events" ("id", "title", "venue", "description", "reminder", "is_reminder_sent", "is_solo", "is_important", "start_date", "end_date", "start_time", "end_time", "venue_long", "venue_lat", "created_at", "updated_at", "user_id") FROM stdin;
+COPY "public"."events" ("id", "title", "venue", "description", "reminder", "is_reminder_sent", "is_solo", "is_important", "start_date", "end_date", "start_time", "end_time", "venue_long", "venue_lat", "created_at", "updated_at", "user_id", "is_early_reminder", "status") FROM stdin;
 \.
 
 
@@ -1698,6 +1717,7 @@ COPY "public"."notifications" ("id", "description", "title", "status", "data", "
 --
 
 COPY "public"."sessions" ("id", "device_id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
+9501ca73-46d3-4a8f-bc51-4480b118d2d6	HellMoto	f1a84889-c08f-49a8-b415-af9a445d9b68	2023-10-16 10:38:46.933656+00	2023-10-16 10:38:46.933656+00	2ddf13c2-fd4a-4fb2-a154-0076f867436f
 \.
 
 

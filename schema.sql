@@ -28,6 +28,33 @@ SET default_tablespace = '';
 
 SET default_table_access_method = "heap";
 
+CREATE TABLE IF NOT EXISTS "public"."Atelier_sessions" (
+    "id" "uuid" NOT NULL,
+    "device_id" character varying(255),
+    "access_token" "uuid",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+ALTER TABLE "public"."Atelier_sessions" OWNER TO "postgres";
+
+CREATE TABLE IF NOT EXISTS "public"."Atelier_users" (
+    "id" "uuid" NOT NULL,
+    "first_name" character varying(255),
+    "last_name" character varying(255),
+    "email" character varying(255) NOT NULL,
+    "gender" character varying(255),
+    "role" character varying(255) DEFAULT 'user'::character varying,
+    "dob" timestamp with time zone,
+    "otp" integer,
+    "status" character varying(255) DEFAULT 'active'::character varying,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+ALTER TABLE "public"."Atelier_users" OWNER TO "postgres";
+
 CREATE TABLE IF NOT EXISTS "public"."IsaDate_chat_audiences" (
     "id" "uuid" NOT NULL,
     "role" character varying(255),
@@ -420,7 +447,7 @@ ALTER TABLE "public"."_chat_message_attachments" OWNER TO "postgres";
 CREATE TABLE IF NOT EXISTS "public"."_chat_messages" (
     "id" "uuid" NOT NULL,
     "message" "text",
-    "created_at" timestamp with time zone NOT NULL,
+    "created_at" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updated_at" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "chat_id" "uuid" NOT NULL,
     "user_id" "uuid" NOT NULL
@@ -482,7 +509,7 @@ CREATE TABLE IF NOT EXISTS "public"."_events" (
     "venue_long" double precision,
     "venue_lat" double precision,
     "is_reminder_sent" boolean DEFAULT false,
-    "status" character varying,
+    "status" character varying(255),
     "is_early_reminder" boolean DEFAULT false
 );
 
@@ -530,7 +557,7 @@ CREATE TABLE IF NOT EXISTS "public"."_notifications" (
     "description" "text",
     "title" character varying(255),
     "status" character varying(255) DEFAULT 'unread'::character varying,
-    "created_at" timestamp with time zone NOT NULL,
+    "created_at" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updated_at" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "user_id" "uuid",
     "data" "json"
@@ -662,7 +689,9 @@ CREATE TABLE IF NOT EXISTS "public"."events" (
     "venue_lat" double precision,
     "created_at" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updated_at" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "user_id" "uuid" NOT NULL
+    "user_id" "uuid" NOT NULL,
+    "is_early_reminder" boolean DEFAULT false,
+    "status" character varying(255)
 );
 
 ALTER TABLE "public"."events" OWNER TO "postgres";
@@ -740,6 +769,15 @@ CREATE TABLE IF NOT EXISTS "public"."users" (
 );
 
 ALTER TABLE "public"."users" OWNER TO "postgres";
+
+ALTER TABLE ONLY "public"."Atelier_sessions"
+    ADD CONSTRAINT "Atelier_sessions_pkey" PRIMARY KEY ("id");
+
+ALTER TABLE ONLY "public"."Atelier_users"
+    ADD CONSTRAINT "Atelier_users_email_key" UNIQUE ("email");
+
+ALTER TABLE ONLY "public"."Atelier_users"
+    ADD CONSTRAINT "Atelier_users_pkey" PRIMARY KEY ("id");
 
 ALTER TABLE ONLY "public"."IsaDate_chat_audiences"
     ADD CONSTRAINT "IsaDate_chat_audiences_pkey" PRIMARY KEY ("id");
@@ -917,6 +955,9 @@ ALTER TABLE ONLY "public"."users"
 
 ALTER TABLE ONLY "public"."users"
     ADD CONSTRAINT "users_username_key" UNIQUE ("username");
+
+ALTER TABLE ONLY "public"."Atelier_sessions"
+    ADD CONSTRAINT "Atelier_sessions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."Atelier_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 ALTER TABLE ONLY "public"."IsaDate_chat_audiences"
     ADD CONSTRAINT "IsaDate_chat_audiences_chat_id_fkey" FOREIGN KEY ("chat_id") REFERENCES "public"."IsaDate_chats"("id") ON UPDATE CASCADE ON DELETE CASCADE;
@@ -1141,6 +1182,14 @@ GRANT USAGE ON SCHEMA "public" TO "postgres";
 GRANT USAGE ON SCHEMA "public" TO "anon";
 GRANT USAGE ON SCHEMA "public" TO "authenticated";
 GRANT USAGE ON SCHEMA "public" TO "service_role";
+
+GRANT ALL ON TABLE "public"."Atelier_sessions" TO "anon";
+GRANT ALL ON TABLE "public"."Atelier_sessions" TO "authenticated";
+GRANT ALL ON TABLE "public"."Atelier_sessions" TO "service_role";
+
+GRANT ALL ON TABLE "public"."Atelier_users" TO "anon";
+GRANT ALL ON TABLE "public"."Atelier_users" TO "authenticated";
+GRANT ALL ON TABLE "public"."Atelier_users" TO "service_role";
 
 GRANT ALL ON TABLE "public"."IsaDate_chat_audiences" TO "anon";
 GRANT ALL ON TABLE "public"."IsaDate_chat_audiences" TO "authenticated";
