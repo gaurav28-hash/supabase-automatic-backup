@@ -322,7 +322,9 @@ CREATE TABLE IF NOT EXISTS "public"."PennyWise_subscription_transactions" (
     "price" character varying(255),
     "localized_price" character varying(255),
     "currency" character varying(255),
-    "country_code" character varying(255)
+    "country_code" character varying(255),
+    "transaction_id" character varying(255),
+    "product_id" character varying(255)
 );
 
 ALTER TABLE "public"."PennyWise_subscription_transactions" OWNER TO "postgres";
