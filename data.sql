@@ -1186,6 +1186,8 @@ df42b8d4-5bea-4283-8135-2d3536e16c35	Get together meeting	Raj villas hotel	ETFF	
 56258cab-0098-43a3-83c0-d38c46c88526	meeting	hotel vyas	ETFF	sameday	f	f	2023-10-17	2023-10-17	1300	1900	2023-10-17 13:18:11.528374+00	2023-10-17 13:18:11.528374+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	77.3317288	24.6721739	f	active	f
 79d97bea-87f7-4782-ae3e-a76efb35c913	Music workshop	Hotel ved vyas	ETFF	sameday	t	f	2023-10-20	2023-10-21	1000	1900	2023-10-20 13:26:04.007324+00	2023-10-20 13:26:04.007324+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	77.3317288	24.6721739	t	active	f
 917db5b2-a020-4bab-adf5-301d107cfae4	Music workshopppppppp	Hotel ved vyas	ETFF	sameday	f	f	2023-10-20	2023-10-21	1000	1900	2023-10-20 13:36:18.499917+00	2023-10-20 13:36:18.499917+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	77.3317288	24.6721739	t	active	f
+dde08dfa-f52a-427f-90d1-cc12e5a27775	Music seminar	Hotel ved vyas	ETFF	sameday	t	f	2023-10-25	2023-10-26	1000	1900	2023-10-25 12:25:35.01588+00	2023-10-25 12:25:35.01588+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	77.3317288	24.6721739	t	active	f
+8b04c754-0d06-4935-aa9a-65398feaada4	Music audition	Hotel ved vyas	ETFF	sameday	f	f	2023-10-25	2023-10-26	1000	1900	2023-10-25 12:42:58.781304+00	2023-10-25 12:42:58.781304+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	77.3317288	24.6721739	t	active	f
 832fdc9d-8639-4020-bc0d-a5caee721a58	Music class	Hotel veda	ETFF	sameday	t	f	2023-10-19	2023-10-20	1270	1900	2023-10-19 11:04:08.780947+00	2023-10-19 11:04:08.780947+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	77.3317288	24.6721739	t	active	t
 \.
 
@@ -1369,6 +1371,8 @@ bbe6e98f-a817-4323-a159-6a5083b001a0	2023-10-17 12:53:05.325436+00	2023-10-17 12
 3a742eeb-3bc1-4c51-8992-9b3e1f273018	2023-10-18 08:52:36.119362+00	2023-10-18 08:52:36.119362+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	06830876-9ed0-48e7-bb3a-107f90c06203	accepted	host
 312dde94-17ac-4c8a-8526-405ca58354b1	2023-10-20 13:36:18.760946+00	2023-10-20 13:36:18.760946+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	917db5b2-a020-4bab-adf5-301d107cfae4	pending	participant
 ccbaa401-6126-43c5-a8f9-c1c39d98c703	2023-10-20 13:36:18.760946+00	2023-10-20 13:36:18.760946+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	917db5b2-a020-4bab-adf5-301d107cfae4	accepted	host
+b9e0ffcd-fd9a-4510-93ad-0c42e3e00923	2023-10-25 12:42:59.063769+00	2023-10-25 12:42:59.063769+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	8b04c754-0d06-4935-aa9a-65398feaada4	pending	participant
+f543370c-6b29-410a-9a8c-c28e3dc7a760	2023-10-25 12:42:59.063769+00	2023-10-25 12:42:59.063769+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	8b04c754-0d06-4935-aa9a-65398feaada4	accepted	host
 480b0595-4cbf-4015-89d4-df0513be318d	2023-10-10 10:54:44.025519+00	2023-10-10 10:54:44.025519+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	df42b8d4-5bea-4283-8135-2d3536e16c35	accepted	host
 2e934a24-3fc6-4ddb-8c7b-2c52ecf63aed	2023-10-10 10:54:44.025519+00	2023-10-10 10:54:44.025519+00	28850701-5473-44c2-99c9-747ad8013ec5	df42b8d4-5bea-4283-8135-2d3536e16c35	accepted	participant
 4c404ad2-a98d-41e5-ad6c-d6ff52c776ae	2023-10-10 10:54:44.025519+00	2023-10-10 10:54:44.025519+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	df42b8d4-5bea-4283-8135-2d3536e16c35	accepted	participant
@@ -1448,6 +1452,12 @@ a583abe2-5bb7-4d6d-ac3c-beff5e48c838	An important event-@Music meeting at Hotel 
 a1a2991d-cadc-488c-82ce-05b06001bb69	Isadate Test sent you an message	Chat message	unread	2023-10-20 14:41:20.972189+00	2023-10-20 14:41:20.972189+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	{"action":"message","message_id":"e3590cdc-ed19-4b12-ad95-fde2a2037085"}
 cc3859ae-7d47-43fa-bff8-c095c855f007	Gaurav Bhargava sent you an message	Chat message	unread	2023-10-20 14:42:18.197108+00	2023-10-20 14:42:18.197108+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	{"action":"message","message_id":"b10f8606-322e-4e4d-80f1-baaf18ae8896"}
 e7888c85-452a-4721-be4c-891eadacca82	Gaurav Bhargava sent you an message	Chat message	unread	2023-10-20 14:42:33.185284+00	2023-10-20 14:42:33.185284+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	{"action":"message","message_id":"4dc0ab19-d95c-4e50-8f62-6aa7a9c2d3c2"}
+ec0baa7f-97f7-4a27-86e4-70de0fa9ebfd	An important event- Music seminar at Hotel ved vyas is happening 25th October	Event reminder	unread	2023-10-25 12:26:45.714391+00	2023-10-25 12:26:45.714391+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	{"action":"reminder","event_id":"dde08dfa-f52a-427f-90d1-cc12e5a27775"}
+63701d4a-e221-40cb-a255-0dc1a6b41d56	An important event- Music seminar at Hotel ved vyas is happening 25th October	Event reminder	unread	2023-10-25 12:29:53.835212+00	2023-10-25 12:29:53.835212+00	11404476-acd0-4da5-9b60-9cfae5bc12c4	{"action":"reminder","event_id":"dde08dfa-f52a-427f-90d1-cc12e5a27775"}
+98d6e45e-d92e-445f-869b-1ce115b15318	Gaurav Bhargava sent you an invitation to a date on @25th October	Event invitation	unread	2023-10-25 12:43:00.596769+00	2023-10-25 12:43:00.596769+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	{"action":"invite","event_id":"8b04c754-0d06-4935-aa9a-65398feaada4"}
+f97a2870-ff46-4c90-992b-110622f3669b	An important event-@Music audition at Hotel ved vyas hosted by @Gaurav Bhargava@ is happening 25th October	Event reminder	unread	2023-10-25 12:47:10.898714+00	2023-10-25 12:47:10.898714+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	{"action":"reminder","event_id":"8b04c754-0d06-4935-aa9a-65398feaada4"}
+8ef93450-d169-49ff-899a-f0f91ab5bdbc	An important event-@Music audition at Hotel ved vyas hosted by @Gaurav Bhargava@ is happening 25th October	Event reminder	unread	2023-10-25 13:23:23.051905+00	2023-10-25 13:23:23.051905+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	{"action":"reminder","event_id":"8b04c754-0d06-4935-aa9a-65398feaada4"}
+f943c18e-8fca-47a2-ab53-968cf51ca754	An important event-@Music audition at Hotel ved vyas hosted by @Gaurav Bhargava@ is happening 25th October	Event reminder	unread	2023-10-25 13:39:34.486676+00	2023-10-25 13:39:34.486676+00	ac57d6c8-4d7c-46cb-bd38-ee6b7edf62a2	{"action":"reminder","event_id":"8b04c754-0d06-4935-aa9a-65398feaada4"}
 \.
 
 
