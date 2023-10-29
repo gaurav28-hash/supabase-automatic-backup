@@ -1510,6 +1510,7 @@ d5667f9f-87d7-4fcb-bce4-bbe9323aa2f4	oppof9pro	d71e56d6-698c-476c-8799-d24df6d8c
 
 COPY "public"."users" ("id", "username", "first_name", "last_name", "email", "gender", "dob", "otp", "status", "working_hours_days", "working_hours_time", "sleeping_hours_days", "sleeping_hours_time", "longitude", "latitude", "fcm_token", "device_info", "created_at", "updated_at") FROM stdin;
 2ddf13c2-fd4a-4fb2-a154-0076f867436f	sourabh03337	Sourabh	Shrivastava	sourabh@piecodes.in	other	\N	\N	active	\N	\N	\N	\N	75.8683	22.7171	\N	\N	2023-10-16 10:37:52.587951+00	2023-10-16 10:37:52.587951+00
+46e7a295-411b-455f-8f1c-bd6f3f958b95	\N	\N	\N	sunny@mailinator.com	other	\N	\N	active	\N	\N	\N	\N	\N	\N	\N	\N	2023-10-28 10:12:41.94525+00	2023-10-28 10:12:41.94525+00
 \.
 
 
@@ -1599,6 +1600,7 @@ COPY "public"."notifications" ("id", "description", "title", "status", "data", "
 
 COPY "public"."sessions" ("id", "device_id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
 9501ca73-46d3-4a8f-bc51-4480b118d2d6	HellMoto	f1a84889-c08f-49a8-b415-af9a445d9b68	2023-10-16 10:38:46.933656+00	2023-10-16 10:38:46.933656+00	2ddf13c2-fd4a-4fb2-a154-0076f867436f
+49103a59-8bae-4bb5-ad8f-18e93b9e1805	8zGf6HgUlV-L1N_xoxsdl	16ba5143-8bb8-4479-97f1-8b24ccc3d428	2023-10-28 10:12:59.464417+00	2023-10-28 10:12:59.464417+00	46e7a295-411b-455f-8f1c-bd6f3f958b95
 \.
 
 
