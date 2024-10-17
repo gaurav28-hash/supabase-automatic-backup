@@ -14,6 +14,12 @@ jobs:
     permissions:
       contents: write
     env:
+      # ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+      # DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+      # PROJECT_ID: ${{secrets.PROJECT_ID}}
+      # PROJECT_ID: ${{secrets.PROJECT_ID}}
+
+
       supabase_db_url: ${{ secrets.SUPABASE_DB_URL }}   # For example: postgresql://postgres:[YOUR-PASSWORD]@db.<ref>.supabase.co:5432/postgres
     steps:
       - uses: actions/checkout@v3
