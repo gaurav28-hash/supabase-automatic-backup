@@ -30,6 +30,7 @@ jobs:
           version: latest
       - name: Backup entire database
         run: supabase db dump --db-url "$supabase_db_url" -f full_database.sql
+        # run: supabase db dump --db-url "$supabase_db_url" -f full_database.sql
       # - name: Backup roles
       #   run: supabase db dump --db-url "$supabase_db_url" -f roles.sql --role-only
       # - name: Backup schema
