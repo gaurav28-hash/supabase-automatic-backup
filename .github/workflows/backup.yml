@@ -28,12 +28,14 @@ jobs:
       - uses: supabase/setup-cli@v1
         with:
           version: latest
-      - name: Backup roles
-        run: supabase db dump --db-url "$supabase_db_url" -f roles.sql --role-only
-      - name: Backup schema
-        run: supabase db dump --db-url "$supabase_db_url" -f schema.sql
-      - name: Backup data
-        run: supabase db dump --db-url "$supabase_db_url" -f data.sql --data-only --use-copy
+      - name: Backup entire database
+        run: supabase db dump --db-url "$supabase_db_url" -f full_database.sql
+      # - name: Backup roles
+      #   run: supabase db dump --db-url "$supabase_db_url" -f roles.sql --role-only
+      # - name: Backup schema
+      #   run: supabase db dump --db-url "$supabase_db_url" -f schema.sql
+      # - name: Backup data
+      #   run: supabase db dump --db-url "$supabase_db_url" -f data.sql --data-only --use-copy
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
