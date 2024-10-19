@@ -3567,6 +3567,7 @@ COPY "public"."friends" ("id", "friend_id", "status", "note", "created_at", "upd
 --
 
 COPY "public"."jahanvi_bios" ("id", "title", "description", "created_at", "updated_at") FROM stdin;
+c8235b75-ef32-4bdd-a2dd-04acaa383595	Guruma	Personalized Astrology Consultations by Jahanvi Experience astrology tailored just for you! Jahanvi offers in-depth personal consultations, combining ancient wisdom with modern insight to provide clear guidance on all aspects of life. Whether you're seeking clarity in relationships, career, or personal growth, Jahanvi's expert astrology readings will illuminate the path forwards.	2024-08-31 14:41:24+00	2024-10-18 14:04:21.161+00
 \.
 
 
@@ -3649,6 +3650,12 @@ COPY "public"."jahanvi_fcm_tokens" ("id", "user_id", "fcm_token", "device_info",
 --
 
 COPY "public"."jahanvi_media" ("id", "original_name", "path", "mime_data", "entity_id", "key", "created_at", "updated_at") FROM stdin;
+2a2ce0f2-c849-474e-ab82-59f7b5d92417	images.jpeg	http://localhost:8080/static/images.61775ad7-d4dc-4748-ab4b-e43d6651dfe4.jpeg	image/jpeg	c8235b75-ef32-4bdd-a2dd-04acaa383595	\N	2024-10-18 13:17:54.444+00	2024-10-18 13:17:54.444+00
+3cab6061-d45b-45d5-a3f3-335e94cc856a	images.jpeg	http://localhost:8080/static/images.a4e715d9-e52c-4b5d-8683-cda98d5cd2b4.jpeg	image/jpeg	c8235b75-ef32-4bdd-a2dd-04acaa383595	banner	2024-10-18 13:26:34.827+00	2024-10-18 13:26:34.827+00
+117873d7-fbab-4138-a12a-c23cc29c8180	target.png	http://localhost:8080/static/target.ef1ac4c5-f79e-4645-9d57-83cb6e9dc983.png	image/png	c8235b75-ef32-4bdd-a2dd-04acaa383595	banner	2024-10-18 13:28:32.183+00	2024-10-18 13:28:32.183+00
+b947cf1a-a132-4b22-adca-8f23d8b54b85	target.png	http://localhost:8080/static/target.cf7f42e8-db47-4438-b062-46bd753a8aa9.png	image/png	c8235b75-ef32-4bdd-a2dd-04acaa383595	images	2024-10-18 13:43:10.937+00	2024-10-18 13:43:10.937+00
+a8d7c731-f0b7-4c8c-b370-4e18195ba6ff	quality-assurance.png	http://localhost:8080/static/quality-assurance.f3e4259f-437b-43c9-8d90-a31989373b84.png	image/png	c8235b75-ef32-4bdd-a2dd-04acaa383595	images	2024-10-18 13:43:48.057+00	2024-10-18 13:43:48.057+00
+18408e65-ca84-4cd2-b80d-297095b50798	register-change.png	http://localhost:8080/static/register-change.ab90da11-e6d1-4280-994e-b02e441a35b5.png	image/png	c8235b75-ef32-4bdd-a2dd-04acaa383595	banner	2024-10-18 13:44:19.13+00	2024-10-18 13:44:19.13+00
 \.
 
 
@@ -3691,8 +3698,8 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 --
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
-6fe6f2c5-1a84-4d00-a732-ac275e6ff5e3	17334028-5e0f-4e8f-83db-93133b3a57bb	2024-10-17 11:06:29.686+00	2024-10-17 11:06:29.686+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
-78de933a-d2ca-461a-9fab-a1739fa59e68	bd66a12a-9f76-4a03-945b-27a34b92bd30	2024-10-17 11:16:26.068+00	2024-10-17 11:16:26.068+00	08156565-e933-4426-9caf-a10ce3a09497
+3f7cd86f-8ba5-4ba3-84a8-685bd0de0e1f	ae59039f-1cd4-4626-9350-67fe34251fa1	2024-10-18 13:11:01.272+00	2024-10-18 13:11:01.272+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+e287c229-128c-4028-b49c-12d418f8e417	5797c565-6025-4032-b6dd-a196f30f92e5	2024-10-18 13:16:32.554+00	2024-10-18 13:16:32.554+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
