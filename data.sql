@@ -3539,6 +3539,129 @@ COPY "public"."chat_message_attachments" ("id", "file_name", "url", "created_at"
 
 
 --
+-- Data for Name: eveno_categories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_categories" ("id", "title", "icon", "description", "color", "status", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_users" ("id", "name", "phone_number1", "phone_number2", "email", "status", "password", "token", "address1", "address2", "city", "province", "postcode", "country", "dob", "created_at", "updated_at") FROM stdin;
+19634d1f-a35f-4e20-a8cd-872d8a1c456d	Krishna Singh	9999999999	\N	krishnapal@piecodes.in	active	f925916e2754e5e03f75dd58a5733251	\N	\N	\N	\N	\N	\N	\N	\N	2024-10-19 09:56:01.394+00	2024-10-19 09:56:23.534+00
+\.
+
+
+--
+-- Data for Name: eveno_event_organisers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_event_organisers" ("id", "name", "phone_number1", "phone_number2", "email", "bio", "insta_link", "fb_link", "youtube_link", "x_link", "created_at", "updated_at", "user_id") FROM stdin;
+56d8b501-51d5-41de-86b6-0587370a5f74	Krishna Singh	9999999999	\N	krishnapal@piecodes.in	\N	\N	\N	\N	\N	2024-10-19 09:56:24.334+00	2024-10-19 09:56:24.334+00	19634d1f-a35f-4e20-a8cd-872d8a1c456d
+\.
+
+
+--
+-- Data for Name: eveno_events; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_events" ("id", "title", "description", "status", "event_date", "start_time", "end_time", "address1", "address2", "city", "province", "postcode", "country", "created_at", "updated_at", "category_id", "organiser_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_orders; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_orders" ("id", "status", "event_name", "event_date", "cancellation_date", "cancellation_reason", "event_start_time", "event_end_time", "event_address", "billing_name", "billing_email", "billing_phone1", "billing_phone2", "billing_address1", "billing_address2", "billing_city", "billing_province", "billing_postcode", "billing_country", "security_code", "order_number", "created_at", "updated_at", "event_id", "user_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_order_line_items; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_order_line_items" ("id", "item_name", "item_sku", "item_id", "price", "quantity", "line_subtotal", "line_total", "discount", "discount_total", "tax", "tax_total", "created_at", "updated_at", "order_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_event_attendances; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_event_attendances" ("id", "status", "quantity", "created_at", "updated_at", "attender_id", "order_id", "order_line_item_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_event_favourites; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_event_favourites" ("id", "event_id", "created_at", "updated_at", "user_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_event_tickets; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_event_tickets" ("id", "label", "description", "regular_price", "sale_price", "available_seats", "created_at", "updated_at", "event_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_fcm_tokens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_fcm_tokens" ("id", "user_id", "fcm_token", "device_info", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_media; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_media" ("id", "original_name", "path", "mime_data", "entity_id", "key", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_payments; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_payments" ("id", "amount", "ref_number", "transaction_id", "billing_info", "payment_date", "payment_mode", "transaction_data", "browser_agent", "status", "created_at", "updated_at", "order_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_reviews_ratings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_reviews_ratings" ("id", "rating", "review", "status", "created_at", "updated_at", "approved_by", "event_id", "user_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_security_tokens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_security_tokens" ("id", "token", "type", "created_at", "updated_at", "user_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: eveno_sessions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."eveno_sessions" ("id", "device_id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
+2ef993b1-eed3-45ab-9ebd-3442964b1a64	\N	074fbfcf-36aa-46ba-b196-8e57a2651854	2024-10-19 10:00:41.675+00	2024-10-19 10:00:41.675+00	19634d1f-a35f-4e20-a8cd-872d8a1c456d
+\.
+
+
+--
 -- Data for Name: event_attendences; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -3699,7 +3822,7 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
 3f7cd86f-8ba5-4ba3-84a8-685bd0de0e1f	ae59039f-1cd4-4626-9350-67fe34251fa1	2024-10-18 13:11:01.272+00	2024-10-18 13:11:01.272+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
-e287c229-128c-4028-b49c-12d418f8e417	5797c565-6025-4032-b6dd-a196f30f92e5	2024-10-18 13:16:32.554+00	2024-10-18 13:16:32.554+00	08156565-e933-4426-9caf-a10ce3a09497
+1e2e67bd-b493-414a-872c-0df22ce9cfaf	ebd811d4-547d-4695-a05e-6f74fd2cb9f3	2024-10-19 05:16:09.951+00	2024-10-19 05:16:09.951+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 

@@ -1872,6 +1872,276 @@ CREATE TABLE IF NOT EXISTS "public"."chats" (
 ALTER TABLE "public"."chats" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."eveno_categories" (
+    "id" "uuid" NOT NULL,
+    "title" character varying(255),
+    "icon" character varying(255),
+    "description" "text",
+    "color" character varying(255),
+    "status" character varying(255) DEFAULT 'active'::character varying,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_categories" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_event_attendances" (
+    "id" "uuid" NOT NULL,
+    "status" character varying(255),
+    "quantity" integer,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "attender_id" "uuid" NOT NULL,
+    "order_id" "uuid" NOT NULL,
+    "order_line_item_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_event_attendances" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_event_favourites" (
+    "id" "uuid" NOT NULL,
+    "event_id" "uuid" NOT NULL,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_event_favourites" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_event_organisers" (
+    "id" "uuid" NOT NULL,
+    "name" "text",
+    "phone_number1" character varying(255),
+    "phone_number2" character varying(255),
+    "email" character varying(255) NOT NULL,
+    "bio" character varying(255),
+    "insta_link" character varying(255),
+    "fb_link" character varying(255),
+    "youtube_link" character varying(255),
+    "x_link" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_event_organisers" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_event_tickets" (
+    "id" "uuid" NOT NULL,
+    "label" character varying(255),
+    "description" character varying(255),
+    "regular_price" double precision,
+    "sale_price" double precision,
+    "available_seats" integer,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "event_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_event_tickets" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_events" (
+    "id" "uuid" NOT NULL,
+    "title" character varying(255),
+    "description" character varying(255),
+    "status" character varying(255),
+    "event_date" "date",
+    "start_time" time without time zone,
+    "end_time" time without time zone,
+    "address1" "text",
+    "address2" "text",
+    "city" character varying(255),
+    "province" character varying(255),
+    "postcode" character varying(255),
+    "country" character varying(2),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "category_id" "uuid" NOT NULL,
+    "organiser_id" "uuid"
+);
+
+
+ALTER TABLE "public"."eveno_events" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_fcm_tokens" (
+    "id" "uuid" NOT NULL,
+    "user_id" "uuid",
+    "fcm_token" character varying(255),
+    "device_info" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_fcm_tokens" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_media" (
+    "id" "uuid" NOT NULL,
+    "original_name" character varying(255),
+    "path" character varying(255),
+    "mime_data" "text",
+    "entity_id" "uuid",
+    "key" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_media" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_order_line_items" (
+    "id" "uuid" NOT NULL,
+    "item_name" character varying(255),
+    "item_sku" character varying(255),
+    "item_id" "uuid",
+    "price" double precision,
+    "quantity" integer,
+    "line_subtotal" double precision,
+    "line_total" double precision,
+    "discount" "jsonb",
+    "discount_total" double precision,
+    "tax" "jsonb",
+    "tax_total" double precision,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "order_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_order_line_items" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_orders" (
+    "id" "uuid" NOT NULL,
+    "status" character varying(255),
+    "event_name" character varying(255),
+    "event_date" "date",
+    "cancellation_date" timestamp with time zone,
+    "cancellation_reason" "text",
+    "event_start_time" time without time zone,
+    "event_end_time" time without time zone,
+    "event_address" character varying(255),
+    "billing_name" character varying(255),
+    "billing_email" character varying(255),
+    "billing_phone1" character varying(255),
+    "billing_phone2" character varying(255),
+    "billing_address1" character varying(255),
+    "billing_address2" character varying(255),
+    "billing_city" character varying(255),
+    "billing_province" character varying(255),
+    "billing_postcode" character varying(255),
+    "billing_country" character varying(255),
+    "security_code" character varying(255),
+    "order_number" integer NOT NULL,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "event_id" "uuid" NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_orders" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_payments" (
+    "id" "uuid" NOT NULL,
+    "amount" double precision,
+    "ref_number" character varying(255),
+    "transaction_id" character varying(255),
+    "billing_info" "jsonb",
+    "payment_date" "date",
+    "payment_mode" character varying(255) NOT NULL,
+    "transaction_data" "jsonb",
+    "browser_agent" "text",
+    "status" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "order_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_payments" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_reviews_ratings" (
+    "id" "uuid" NOT NULL,
+    "rating" double precision,
+    "review" "text",
+    "status" character varying(255) DEFAULT 'published'::character varying,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "approved_by" "uuid" NOT NULL,
+    "event_id" "uuid" NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_reviews_ratings" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_security_tokens" (
+    "id" "uuid" NOT NULL,
+    "token" character varying(255),
+    "type" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_security_tokens" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_sessions" (
+    "id" "uuid" NOT NULL,
+    "device_id" character varying(255),
+    "access_token" "uuid",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "user_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_sessions" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."eveno_users" (
+    "id" "uuid" NOT NULL,
+    "name" "text",
+    "phone_number1" character varying(255),
+    "phone_number2" character varying(255),
+    "email" character varying(255) NOT NULL,
+    "status" character varying(255),
+    "password" character varying(255) NOT NULL,
+    "token" "uuid",
+    "address1" "text",
+    "address2" "text",
+    "city" character varying(255),
+    "province" character varying(255),
+    "postcode" character varying(255),
+    "country" character varying(2),
+    "dob" timestamp with time zone,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."eveno_users" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."event_attendences" (
     "id" "uuid" NOT NULL,
     "note" "text",
@@ -4357,6 +4627,91 @@ ALTER TABLE ONLY "public"."chats"
 
 
 
+ALTER TABLE ONLY "public"."eveno_categories"
+    ADD CONSTRAINT "eveno_categories_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_attendances"
+    ADD CONSTRAINT "eveno_event_attendances_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_favourites"
+    ADD CONSTRAINT "eveno_event_favourites_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_organisers"
+    ADD CONSTRAINT "eveno_event_organisers_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_tickets"
+    ADD CONSTRAINT "eveno_event_tickets_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_events"
+    ADD CONSTRAINT "eveno_events_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_fcm_tokens"
+    ADD CONSTRAINT "eveno_fcm_tokens_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_media"
+    ADD CONSTRAINT "eveno_media_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_order_line_items"
+    ADD CONSTRAINT "eveno_order_line_items_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_orders"
+    ADD CONSTRAINT "eveno_orders_order_number_key" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."eveno_orders"
+    ADD CONSTRAINT "eveno_orders_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_payments"
+    ADD CONSTRAINT "eveno_payments_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_reviews_ratings"
+    ADD CONSTRAINT "eveno_reviews_ratings_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_security_tokens"
+    ADD CONSTRAINT "eveno_security_tokens_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_sessions"
+    ADD CONSTRAINT "eveno_sessions_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."eveno_users"
+    ADD CONSTRAINT "eveno_users_email_key" UNIQUE ("email");
+
+
+
+ALTER TABLE ONLY "public"."eveno_users"
+    ADD CONSTRAINT "eveno_users_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "public"."event_attendences"
     ADD CONSTRAINT "event_attendences_pkey" PRIMARY KEY ("id");
 
@@ -4494,6 +4849,11 @@ ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
 
 ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
     ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key25" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key26" UNIQUE ("enquiry_number");
 
 
 
@@ -4754,6 +5114,11 @@ ALTER TABLE ONLY "public"."jahanvi_orders"
 
 ALTER TABLE ONLY "public"."jahanvi_orders"
     ADD CONSTRAINT "jahanvi_orders_order_number_key45" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key46" UNIQUE ("order_number");
 
 
 
@@ -5589,6 +5954,96 @@ ALTER TABLE ONLY "public"."chat_messages"
 
 ALTER TABLE ONLY "public"."chats"
     ADD CONSTRAINT "chats_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_attendances"
+    ADD CONSTRAINT "eveno_event_attendances_attender_id_fkey" FOREIGN KEY ("attender_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_attendances"
+    ADD CONSTRAINT "eveno_event_attendances_order_id_fkey" FOREIGN KEY ("order_id") REFERENCES "public"."eveno_orders"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_attendances"
+    ADD CONSTRAINT "eveno_event_attendances_order_line_item_id_fkey" FOREIGN KEY ("order_line_item_id") REFERENCES "public"."eveno_order_line_items"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_favourites"
+    ADD CONSTRAINT "eveno_event_favourites_event_id_fkey" FOREIGN KEY ("event_id") REFERENCES "public"."eveno_events"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_favourites"
+    ADD CONSTRAINT "eveno_event_favourites_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_organisers"
+    ADD CONSTRAINT "eveno_event_organisers_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_event_tickets"
+    ADD CONSTRAINT "eveno_event_tickets_event_id_fkey" FOREIGN KEY ("event_id") REFERENCES "public"."eveno_events"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_events"
+    ADD CONSTRAINT "eveno_events_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."eveno_categories"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_events"
+    ADD CONSTRAINT "eveno_events_organiser_id_fkey" FOREIGN KEY ("organiser_id") REFERENCES "public"."eveno_event_organisers"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."eveno_order_line_items"
+    ADD CONSTRAINT "eveno_order_line_items_order_id_fkey" FOREIGN KEY ("order_id") REFERENCES "public"."eveno_orders"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_orders"
+    ADD CONSTRAINT "eveno_orders_event_id_fkey" FOREIGN KEY ("event_id") REFERENCES "public"."eveno_events"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_orders"
+    ADD CONSTRAINT "eveno_orders_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_payments"
+    ADD CONSTRAINT "eveno_payments_order_id_fkey" FOREIGN KEY ("order_id") REFERENCES "public"."eveno_orders"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_reviews_ratings"
+    ADD CONSTRAINT "eveno_reviews_ratings_approved_by_fkey" FOREIGN KEY ("approved_by") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_reviews_ratings"
+    ADD CONSTRAINT "eveno_reviews_ratings_event_id_fkey" FOREIGN KEY ("event_id") REFERENCES "public"."eveno_events"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_reviews_ratings"
+    ADD CONSTRAINT "eveno_reviews_ratings_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_security_tokens"
+    ADD CONSTRAINT "eveno_security_tokens_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."eveno_sessions"
+    ADD CONSTRAINT "eveno_sessions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."eveno_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
@@ -6638,6 +7093,96 @@ GRANT ALL ON TABLE "public"."chat_messages" TO "service_role";
 GRANT ALL ON TABLE "public"."chats" TO "anon";
 GRANT ALL ON TABLE "public"."chats" TO "authenticated";
 GRANT ALL ON TABLE "public"."chats" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_categories" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_categories" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_categories" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_event_attendances" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_event_attendances" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_event_attendances" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_event_favourites" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_event_favourites" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_event_favourites" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_event_organisers" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_event_organisers" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_event_organisers" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_event_tickets" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_event_tickets" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_event_tickets" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_events" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_events" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_events" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_fcm_tokens" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_fcm_tokens" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_fcm_tokens" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_media" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_media" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_media" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_order_line_items" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_order_line_items" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_order_line_items" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_orders" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_orders" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_orders" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_payments" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_payments" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_payments" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_reviews_ratings" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_reviews_ratings" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_reviews_ratings" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_security_tokens" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_security_tokens" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_security_tokens" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_sessions" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_sessions" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_sessions" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."eveno_users" TO "anon";
+GRANT ALL ON TABLE "public"."eveno_users" TO "authenticated";
+GRANT ALL ON TABLE "public"."eveno_users" TO "service_role";
 
 
 
