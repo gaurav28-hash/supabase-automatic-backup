@@ -3693,6 +3693,7 @@ c8235b75-ef32-4bdd-a2dd-04acaa383595	Guruma	Personalized Astrology Consultations
 COPY "public"."jahanvi_users" ("id", "name", "phone_number", "email", "status", "role", "gender", "dob", "tob", "birth_place", "password", "otp", "token", "created_at", "updated_at") FROM stdin;
 1b6a5619-ce5c-4ee2-9957-9868b4a37c34	Gaurav Bhargava	8878398665	gaurav@piecodes.in	active	customer	male	2024-08-24	22:34:00	Guna	ad370dd5aaef6454201036813f8ea5a3	\N	\N	2024-10-17 05:48:31.401+00	2024-10-17 05:48:31.401+00
 08156565-e933-4426-9caf-a10ce3a09497	Mahesh lodha	8770743945	mahesh@piecodes.in	active	admin	male	2024-08-24	22:34:00	Guna	df301340acd7de51b1761a208ebe9235	\N	\N	2024-10-17 05:54:28.066+00	2024-10-17 05:54:28.066+00
+d7e082d8-4cfd-446b-b664-843f64d192d7	Gk	7894567898	gk@mailinator.com	active	manager	male	1998-07-06	11:00:00	Raghogarh	\N	\N	\N	2024-10-30 12:50:55.941+00	2024-10-30 12:50:55.941+00
 \.
 
 
@@ -3701,6 +3702,8 @@ COPY "public"."jahanvi_users" ("id", "name", "phone_number", "email", "status", 
 --
 
 COPY "public"."jahanvi_consultation_fees" ("id", "fees", "type", "created_at", "updated_at", "user_id") FROM stdin;
+1a0512a0-058f-47f5-8633-b3fbad799ac5	550	0	2024-10-30 12:27:17.533+00	2024-10-30 12:27:17.533+00	08156565-e933-4426-9caf-a10ce3a09497
+a2b263a3-509e-4a0e-99f2-7995b7a68217	750	1	2024-10-30 12:27:27.529+00	2024-10-30 12:27:27.529+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
@@ -3709,6 +3712,7 @@ COPY "public"."jahanvi_consultation_fees" ("id", "fees", "type", "created_at", "
 --
 
 COPY "public"."jahanvi_orders" ("id", "total_price", "order_note", "order_number", "full_name", "email", "phone_number", "status", "type", "belongs_to", "payment_status", "created_at", "updated_at", "user_id", "fees_id", "assign_id") FROM stdin;
+f6400715-7d27-4114-80aa-687cb43f79d8	750	Vijaywada	46087	John carter	gaurav@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-10-30 12:28:31.659+00	2024-10-30 12:51:50.652+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	d7e082d8-4cfd-446b-b664-843f64d192d7
 \.
 
 
@@ -3717,6 +3721,7 @@ COPY "public"."jahanvi_orders" ("id", "total_price", "order_note", "order_number
 --
 
 COPY "public"."jahanvi_chats" ("id", "status", "created_at", "updated_at", "user_id", "order_id") FROM stdin;
+27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	active	2024-10-30 12:28:31.927+00	2024-10-30 12:28:31.927+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	f6400715-7d27-4114-80aa-687cb43f79d8
 \.
 
 
@@ -3725,6 +3730,11 @@ COPY "public"."jahanvi_chats" ("id", "status", "created_at", "updated_at", "user
 --
 
 COPY "public"."jahanvi_chat_messages" ("id", "message", "created_at", "updated_at", "chat_id", "user_id") FROM stdin;
+421ca2a6-246b-49cc-8332-660ddd37a5f9	Hello..	2024-10-30 12:30:03.336+00	2024-10-30 12:30:03.336+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
+0772140e-f3bf-483f-a483-43252be399e4	Hello sir..	2024-10-30 12:33:43.032+00	2024-10-30 12:33:43.032+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
+06e6025d-1144-4c47-80df-bbb236b97245	Hello sir..	2024-10-30 12:35:20.773+00	2024-10-30 12:35:20.773+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
+d52ffd24-d908-4f2e-bbb6-d7e139b03c65	Hello sir..	2024-10-30 12:40:54.799+00	2024-10-30 12:40:54.799+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
+606fc1ce-dcbb-4fef-94df-2868ae6fccb3	Hello sir..	2024-10-30 12:43:42.492+00	2024-10-30 12:43:42.492+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
@@ -3739,6 +3749,7 @@ COPY "public"."jahanvi_gems" ("id", "status", "title", "description", "benefits"
 90fff82f-d2e3-496e-8e1c-b91d258b60da	published	Sapphire	Sapphire is one of the most precious and popular gemstones, renowned for its stunning blue hue, although it can be found in other colors such as yellow, pink, and green.	<ul>\r\n  <li>Purity and Clarity: Enhances self-awareness and sincerity.</li>\r\n  <li>Emotional Balance: Calms the mind and soothes emotions.</li>\r\n  <li>Wisdom and Intuition: Boosts personal insight and decision-making.</li>\r\n  <!--\r\n  <li>Harmony and Relationships: Fosters balanced, nurturing connections.</li>\r\n  <li>Health and Well-being: Supports natural healing and overall health.</li>\r\n  -->\r\n</ul>	<ul>\r\n  <li>Wear gem Jewelry: Use necklaces, earrings, or rings for daily calm and balance.</li>\r\n  <li>Place in Living Spaces: Enhance tranquility with gem decor in your home or office.</li>\r\n  <li>In Meditation: Hold or place gem nearby to promote clarity and intuition.</li>\r\n  <!--\r\n  <li>For Emotional Stability: Wear gem during stressful times to maintain inner calm.</li>\r\n  -->\r\n</ul>	2024-08-27 10:35:39+00	2024-08-27 10:35:42+00	08156565-e933-4426-9caf-a10ce3a09497
 98fff82f-d2e3-496e-8e1c-b91d258b60da	published	Diamond	Diamond, the hardest natural substance on Earth, is a symbol of eternal love, strength, and invincibility. With its unmatched brilliance, Diamond has been cherished for centuries as the ultimate gemstone.	<ul>\r\n  <li>Purity and Clarity: Enhances self-awareness and sincerity.</li>\r\n  <li>Emotional Balance: Calms the mind and soothes emotions.</li>\r\n  <li>Wisdom and Intuition: Boosts personal insight and decision-making.</li>\r\n  <!--\r\n  <li>Harmony and Relationships: Fosters balanced, nurturing connections.</li>\r\n  <li>Health and Well-being: Supports natural healing and overall health.</li>\r\n  -->\r\n</ul>	<ul>\r\n  <li>Wear gem Jewelry: Use necklaces, earrings, or rings for daily calm and balance.</li>\r\n  <li>Place in Living Spaces: Enhance tranquility with gem decor in your home or office.</li>\r\n  <li>In Meditation: Hold or place gem nearby to promote clarity and intuition.</li>\r\n  <!--\r\n  <li>For Emotional Stability: Wear gem during stressful times to maintain inner calm.</li>\r\n  -->\r\n</ul>	2024-08-27 10:45:08+00	2024-10-10 20:26:12.323+00	08156565-e933-4426-9caf-a10ce3a09497
 99fff82f-d2e3-896e-1e1c-b91d258b60da	published	Emerald	Emerald is a captivating green gemstone, highly prized throughout history for its rich color and association with renewal, growth, and prosperity.	<ul>\r\n  <li>Purity and Clarity: Enhances self-awareness and sincerity.</li>\r\n  <li>Emotional Balance: Calms the mind and soothes emotions.</li>\r\n  <li>Wisdom and Intuition: Boosts personal insight and decision-making.</li>\r\n  <!--\r\n  <li>Harmony and Relationships: Fosters balanced, nurturing connections.</li>\r\n  <li>Health and Well-being: Supports natural healing and overall health.</li>\r\n  -->\r\n</ul>	<ul>\r\n  <li>Wear gem Jewelry: Use necklaces, earrings, or rings for daily calm and balance.</li>\r\n  <li>Place in Living Spaces: Enhance tranquility with gem decor in your home or office.</li>\r\n  <li>In Meditation: Hold or place gem nearby to promote clarity and intuition.</li>\r\n  <!--\r\n  <li>For Emotional Stability: Wear gem during stressful times to maintain inner calm.</li>\r\n  -->\r\n</ul>	2024-08-27 10:37:57+00	2024-08-27 10:37:59+00	08156565-e933-4426-9caf-a10ce3a09497
+2d678e68-cbc2-40c0-b831-0a09164a8fc9	published	Panna	This is testing Gems for testing create Gems api	This is testing	This is testing using	2024-10-30 12:32:36.991+00	2024-10-30 12:32:36.991+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
@@ -3764,6 +3775,7 @@ COPY "public"."jahanvi_comments" ("id", "comment", "created_at", "updated_at", "
 --
 
 COPY "public"."jahanvi_fcm_tokens" ("id", "user_id", "fcm_token", "device_info", "created_at", "updated_at") FROM stdin;
+2a6268c4-143d-42c1-addc-e82b2e9f4c48	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	e5bHGyviSquigrOSLxAqQp:APA91bHRiwNVI0LHKvOjvTX-ftwLP05JlkLodkleh4WLrWZaiCka2ER4bjCcdm62yWttgXpnV18j2IeBtnnM4VvltF3ferqnToM1uzPPPemRVcwrAi4nVaw	Android - google sdk_gphone64_x86_64, OS: 14, Manufacturer: Google	2024-10-30 07:14:54.439+00	2024-10-30 07:14:54.439+00
 \.
 
 
@@ -3787,6 +3799,14 @@ a8d7c731-f0b7-4c8c-b370-4e18195ba6ff	quality-assurance.png	http://localhost:8080
 --
 
 COPY "public"."jahanvi_notifications" ("id", "description", "data", "title", "status", "created_at", "updated_at", "user_id") FROM stdin;
+7cfd1cdf-b244-4af0-9390-fc6a02c5b095	Your booking with ID-46087 has been successfully created.	{"action":"booking_create","order_id":"f6400715-7d27-4114-80aa-687cb43f79d8"}	Thank You for Your Booking!	unread	2024-10-30 12:28:32.359+00	2024-10-30 12:28:32.359+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+bbd8bd4c-bf65-44c8-a382-3837c88f6555	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":46087}	Chat message	unread	2024-10-30 12:30:04.067+00	2024-10-30 12:30:04.067+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+5b640a1c-3833-40a9-adf8-a9822e6dd208	A new gem Panna has been listed.	{"action":"gem_create","gem_id":"2d678e68-cbc2-40c0-b831-0a09164a8fc9"}	New Gem Listed	unread	2024-10-30 12:32:37.72+00	2024-10-30 12:32:37.72+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+4bfd480b-f003-4261-af90-2fa64c8a4286	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":46087}	Chat message	unread	2024-10-30 12:33:43.741+00	2024-10-30 12:33:43.741+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+b25ebf45-4092-45bf-9e93-aa7a82193796	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":46087}	Chat message	unread	2024-10-30 12:35:21.491+00	2024-10-30 12:35:21.491+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+13d47a9e-7dbf-4094-b152-71d403016107	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":46087}	Chat message	unread	2024-10-30 12:40:55.566+00	2024-10-30 12:40:55.566+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+ab366d5f-d3cb-404f-8af7-310a6275b919	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":"46087"}	Chat message	unread	2024-10-30 12:43:43.241+00	2024-10-30 12:43:43.241+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+9959db79-c793-4d6c-adf1-c355b5798021	Your booking with ID 46087 has been updated.	{"action":"booking_update","order_id":"f6400715-7d27-4114-80aa-687cb43f79d8"}	Booking Update	unread	2024-10-30 12:51:51.354+00	2024-10-30 12:51:51.354+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 \.
 
 
@@ -3821,8 +3841,8 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 --
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
-d2d3f395-7440-4af1-befa-c230ada89fc6	6a2ab69e-59e4-439b-9f98-5d627cd2544d	2024-10-29 11:22:11.005+00	2024-10-29 11:22:11.005+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
-b935ef3b-fc87-4f77-bd60-e5fc2f6c45f3	f42a8fa0-2607-4f56-8cb4-5c28605df311	2024-10-29 14:04:15.28+00	2024-10-29 14:04:15.28+00	08156565-e933-4426-9caf-a10ce3a09497
+11461d54-850b-4367-b63d-27fc4bf3308c	3f70519b-0cca-41a5-a91b-2ff7402e36ed	2024-10-30 12:27:48.675+00	2024-10-30 12:27:48.675+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+90b82476-1729-4396-bb20-76bad3d7af9c	78e28b0a-23c7-4fa5-8d14-a8e15259f106	2024-10-30 12:29:36.822+00	2024-10-30 12:29:36.822+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
