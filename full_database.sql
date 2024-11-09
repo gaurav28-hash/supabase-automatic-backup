@@ -4903,6 +4903,31 @@ ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
 
 
 ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key35" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key36" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key37" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key38" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key39" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
     ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key4" UNIQUE ("enquiry_number");
 
 
@@ -5243,7 +5268,57 @@ ALTER TABLE ONLY "public"."jahanvi_orders"
 
 
 ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key61" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key62" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key63" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key64" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key65" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key66" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key67" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key68" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key69" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
     ADD CONSTRAINT "jahanvi_orders_order_number_key7" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key70" UNIQUE ("order_number");
 
 
 

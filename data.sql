@@ -3848,7 +3848,7 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
 d3fec03d-c456-4d21-a45a-e0f91dd7a6ec	09732771-9ec9-46f6-bd9e-8bb060484852	2024-11-04 13:50:53.194+00	2024-11-04 13:50:53.194+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
-0dec8c7f-7a76-46b9-a57a-fbed954d4010	e6f7b691-3680-437d-9688-409949456273	2024-11-04 13:51:55.647+00	2024-11-04 13:51:55.647+00	08156565-e933-4426-9caf-a10ce3a09497
+8749a1d3-2474-44ca-ac93-a22d5f53a267	87798088-483d-449c-a0c5-557b9b34baae	2024-11-08 05:39:37.139+00	2024-11-08 05:39:37.139+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
