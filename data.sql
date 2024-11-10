@@ -3694,6 +3694,7 @@ COPY "public"."jahanvi_users" ("id", "name", "phone_number", "email", "status", 
 1b6a5619-ce5c-4ee2-9957-9868b4a37c34	Gaurav Bhargava	8878398665	gaurav@piecodes.in	active	customer	male	2024-08-24	22:34:00	Guna	ad370dd5aaef6454201036813f8ea5a3	\N	\N	2024-10-17 05:48:31.401+00	2024-10-17 05:48:31.401+00
 08156565-e933-4426-9caf-a10ce3a09497	Mahesh lodha	8770743945	mahesh@piecodes.in	active	admin	male	2024-08-24	22:34:00	Guna	df301340acd7de51b1761a208ebe9235	\N	\N	2024-10-17 05:54:28.066+00	2024-10-17 05:54:28.066+00
 d7e082d8-4cfd-446b-b664-843f64d192d7	Gk	7894567898	gk@mailinator.com	active	manager	male	1998-07-06	11:00:00	Raghogarh	\N	\N	\N	2024-10-30 12:50:55.941+00	2024-10-30 12:50:55.941+00
+35feda92-ecc5-4d06-9b44-3c1f4d83baa1	Golu Khan	8670000103	golu@piecodes.in	pending	customer	male	2024-08-24	22:34:00	mumbai	9029b25a7391f54af95c08d9eb8571b7	\N	\N	2024-11-09 06:41:44.882+00	2024-11-09 06:41:44.882+00
 \.
 
 
@@ -3713,6 +3714,7 @@ a2b263a3-509e-4a0e-99f2-7995b7a68217	750	1	2024-10-30 12:27:27.529+00	2024-10-30
 
 COPY "public"."jahanvi_orders" ("id", "total_price", "order_note", "order_number", "full_name", "email", "phone_number", "status", "type", "belongs_to", "payment_status", "created_at", "updated_at", "user_id", "fees_id", "assign_id") FROM stdin;
 f6400715-7d27-4114-80aa-687cb43f79d8	750	Vijaywada	46087	John carter	gaurav@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-10-30 12:28:31.659+00	2024-10-30 12:51:50.652+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	d7e082d8-4cfd-446b-b664-843f64d192d7
+2369c915-2cf2-4314-a83c-ca7d7b1eec3c	750	Vijaywada	60690	Golu khan	golu@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-11-09 06:48:44.902+00	2024-11-09 06:48:44.902+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	\N
 \.
 
 
@@ -3722,6 +3724,7 @@ f6400715-7d27-4114-80aa-687cb43f79d8	750	Vijaywada	46087	John carter	gaurav@piec
 
 COPY "public"."jahanvi_chats" ("id", "status", "created_at", "updated_at", "user_id", "order_id") FROM stdin;
 27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	active	2024-10-30 12:28:31.927+00	2024-10-30 12:28:31.927+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	f6400715-7d27-4114-80aa-687cb43f79d8
+104907e3-fcad-4d3e-9449-99d615fe7c64	active	2024-11-09 06:48:45.193+00	2024-11-09 06:48:45.193+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	2369c915-2cf2-4314-a83c-ca7d7b1eec3c
 \.
 
 
@@ -3763,6 +3766,8 @@ COPY "public"."jahanvi_gems" ("id", "status", "title", "description", "benefits"
 
 COPY "public"."jahanvi_gem_enquiries" ("id", "name", "description", "email", "status", "phone_number", "enquiry_number", "created_at", "updated_at", "user_id", "gem_id") FROM stdin;
 98b21c00-9e86-4c80-866a-befdc1ce2859	Gaurav	\N	gaurav@piecodes.in	new	7899879809	5874	2024-10-29 11:51:17.368+00	2024-10-29 11:51:17.368+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	98fff82f-d2e3-496e-8e1c-b91d258b60da
+fd7cfc62-6ed9-43d7-9e4e-5724de72aa5c	Gaurav	\N	gaurav@piecodes.in	new	7899879809	4354	2024-11-09 09:06:11.761+00	2024-11-09 09:06:11.761+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	40fff82f-d2e3-496e-8e1c-b91d258b60da
+a1e820d4-ec32-4fe5-ba77-4bc2d7b35144	Gaurav	\N	gaurav@piecodes.in	new	7899879809	8874	2024-11-09 09:08:19.332+00	2024-11-09 09:08:19.332+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	40fff82f-d2e3-496e-8e1c-b91d258b60da
 \.
 
 
@@ -3813,6 +3818,10 @@ ab366d5f-d3cb-404f-8af7-310a6275b919	Admin sent you a message	{"action":"message
 9959db79-c793-4d6c-adf1-c355b5798021	Your booking with ID 46087 has been updated.	{"action":"booking_update","order_id":"f6400715-7d27-4114-80aa-687cb43f79d8"}	Booking Update	unread	2024-10-30 12:51:51.354+00	2024-10-30 12:51:51.354+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 453e8940-c0c9-44c2-aa46-f3a7a8beedd8	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":"46087"}	Chat message	unread	2024-11-04 13:52:46.725+00	2024-11-04 13:52:46.725+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 e36e9973-7ecf-473c-a29b-c9bf0e07dc22	Admin sent you a message	{"action":"message","chat_id":"27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b","order_number":"46087"}	Chat message	unread	2024-11-04 13:54:30.695+00	2024-11-04 13:54:30.695+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+841eaa58-79e5-497e-a903-e5ee57c8d6b9	Your booking with ID-87655 has been successfully created.	{"action":"booking_create","order_id":"9ec00f55-a440-42bd-a124-891757f25228"}	Thank You for Your Booking!	unread	2024-11-09 06:46:39.005+00	2024-11-09 06:46:39.005+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+876a7a61-fec0-41c9-a6f2-f002d762c8fe	Your booking with ID-60690 has been successfully created.	{"action":"booking_create","order_id":"2369c915-2cf2-4314-a83c-ca7d7b1eec3c"}	Thank You for Your Booking!	unread	2024-11-09 06:48:45.678+00	2024-11-09 06:48:45.678+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+4575ade2-d73d-4ac7-b348-cfe3872f7daf	Thank you for your enquiry. Your gem enquiry with ID-4354 has been received and will be updated shortly.	{"action":"gem_enquiry_create","enquiry_id":"fd7cfc62-6ed9-43d7-9e4e-5724de72aa5c"}	Gem Enquiry	unread	2024-11-09 09:06:12.347+00	2024-11-09 09:06:12.347+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+dd918445-3959-4923-9615-af305ccf0dfb	Thank you for your enquiry. Your gem enquiry with ID-8874 has been received and will be updated shortly.	{"action":"gem_enquiry_create","enquiry_id":"a1e820d4-ec32-4fe5-ba77-4bc2d7b35144"}	Gem Enquiry	unread	2024-11-09 09:08:19.868+00	2024-11-09 09:08:19.868+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 \.
 
 
@@ -3839,6 +3848,7 @@ COPY "public"."jahanvi_quotes" ("id", "name", "description", "created_at", "upda
 COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "updated_at", "user_id") FROM stdin;
 31106704-187a-41d4-8eca-c8c2849304c4	235269	account_verification	2024-10-17 05:48:32.866+00	2024-10-17 05:48:32.866+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 68518f50-8e23-4514-aaab-2b5625c3711d	292609	account_verification	2024-10-17 05:54:29.517+00	2024-10-17 05:54:29.517+00	08156565-e933-4426-9caf-a10ce3a09497
+2fcf9f20-3fbc-4c83-9944-45d5a522ecc5	130310	account_verification	2024-11-09 06:41:46.558+00	2024-11-09 06:41:46.558+00	35feda92-ecc5-4d06-9b44-3c1f4d83baa1
 \.
 
 
@@ -3847,8 +3857,8 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 --
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
-d3fec03d-c456-4d21-a45a-e0f91dd7a6ec	09732771-9ec9-46f6-bd9e-8bb060484852	2024-11-04 13:50:53.194+00	2024-11-04 13:50:53.194+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 8749a1d3-2474-44ca-ac93-a22d5f53a267	87798088-483d-449c-a0c5-557b9b34baae	2024-11-08 05:39:37.139+00	2024-11-08 05:39:37.139+00	08156565-e933-4426-9caf-a10ce3a09497
+3b6659fd-d559-4ca6-8d4f-7546da965f11	0eea4f4a-7545-4bea-bf4c-634a18c0051e	2024-11-09 06:43:30.397+00	2024-11-09 06:43:30.397+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 \.
 
 
