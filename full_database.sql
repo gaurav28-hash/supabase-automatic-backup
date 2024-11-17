@@ -4933,6 +4933,21 @@ ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
 
 
 ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key40" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key41" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key42" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
     ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key5" UNIQUE ("enquiry_number");
 
 
@@ -5319,6 +5334,21 @@ ALTER TABLE ONLY "public"."jahanvi_orders"
 
 ALTER TABLE ONLY "public"."jahanvi_orders"
     ADD CONSTRAINT "jahanvi_orders_order_number_key70" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key71" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key72" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key73" UNIQUE ("order_number");
 
 
 

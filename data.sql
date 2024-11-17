@@ -3742,6 +3742,9 @@ d52ffd24-d908-4f2e-bbb6-d7e139b03c65	Hello sir..	2024-10-30 12:40:54.799+00	2024
 ec2eb61f-a78a-42c5-9068-880fa104487b	Hello sir..	2024-11-04 13:52:46.003+00	2024-11-04 13:52:46.003+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
 2b8e91bc-de69-45c2-bf7b-6e27a9979e42	hey	2024-11-04 13:53:03.29+00	2024-11-04 13:53:03.29+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 8b7eca6a-dc18-4f9d-9af0-be1daa24f70a	Hey..	2024-11-04 13:54:29.951+00	2024-11-04 13:54:29.951+00	27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	08156565-e933-4426-9caf-a10ce3a09497
+c1624136-e16d-4d06-976b-6f6e167906b1	fdgdfgdf	2024-11-16 11:04:31.823+00	2024-11-16 11:04:31.823+00	104907e3-fcad-4d3e-9449-99d615fe7c64	08156565-e933-4426-9caf-a10ce3a09497
+3d67d88b-2a09-44c6-a7b4-138d1325d4e4	fdgdfgdf	2024-11-16 11:13:59.508+00	2024-11-16 11:13:59.508+00	104907e3-fcad-4d3e-9449-99d615fe7c64	08156565-e933-4426-9caf-a10ce3a09497
+af57fd42-2931-4784-82aa-b565d0f16493	helo	2024-11-16 11:15:01.346+00	2024-11-16 11:15:01.346+00	104907e3-fcad-4d3e-9449-99d615fe7c64	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
@@ -3784,7 +3787,7 @@ COPY "public"."jahanvi_comments" ("id", "comment", "created_at", "updated_at", "
 --
 
 COPY "public"."jahanvi_fcm_tokens" ("id", "user_id", "fcm_token", "device_info", "created_at", "updated_at") FROM stdin;
-2a6268c4-143d-42c1-addc-e82b2e9f4c48	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	cVX6jenfRtCq9SUo4o5SKL:APA91bExZ-80RP_khrVpibDFepCEaYZH8H_m9AFZrlua31p_RYqinLQ0Cu0NNKFUEp0gcshphW0GdpO_bWyOgF2CMdJm7BhsB_96qHZHqd0a6ZgU6pEGEVE	Android - google sdk_gphone64_x86_64, OS: 14, Manufacturer: Google	2024-10-30 07:14:54.439+00	2024-11-04 13:50:54.527+00
+2a6268c4-143d-42c1-addc-e82b2e9f4c48	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	cSUfjAtzQpWI6f4ZXLipDd:APA91bHY_3jND-gQrTKwtQRXMXEKdnkuFaksfQOol5_3OruCtlDL9U6n45t90qgvnMJHN__LE8ct6bxObFd_EDRzPw3fXUwdXpYsGQsCNOg6g2Ot8H1rZAM	Android - google sdk_gphone64_arm64, OS: 14, Manufacturer: Google	2024-10-30 07:14:54.439+00	2024-11-16 10:47:26.897+00
 \.
 
 
@@ -3822,6 +3825,9 @@ e36e9973-7ecf-473c-a29b-c9bf0e07dc22	Admin sent you a message	{"action":"message
 876a7a61-fec0-41c9-a6f2-f002d762c8fe	Your booking with ID-60690 has been successfully created.	{"action":"booking_create","order_id":"2369c915-2cf2-4314-a83c-ca7d7b1eec3c"}	Thank You for Your Booking!	unread	2024-11-09 06:48:45.678+00	2024-11-09 06:48:45.678+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 4575ade2-d73d-4ac7-b348-cfe3872f7daf	Thank you for your enquiry. Your gem enquiry with ID-4354 has been received and will be updated shortly.	{"action":"gem_enquiry_create","enquiry_id":"fd7cfc62-6ed9-43d7-9e4e-5724de72aa5c"}	Gem Enquiry	unread	2024-11-09 09:06:12.347+00	2024-11-09 09:06:12.347+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 dd918445-3959-4923-9615-af305ccf0dfb	Thank you for your enquiry. Your gem enquiry with ID-8874 has been received and will be updated shortly.	{"action":"gem_enquiry_create","enquiry_id":"a1e820d4-ec32-4fe5-ba77-4bc2d7b35144"}	Gem Enquiry	unread	2024-11-09 09:08:19.868+00	2024-11-09 09:08:19.868+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+69af1527-304d-4b38-90fc-7adf127785c9	Admin sent you a message	{"action":"message","chat_id":"104907e3-fcad-4d3e-9449-99d615fe7c64","order_number":"60690"}	Chat message	unread	2024-11-16 11:04:32.527+00	2024-11-16 11:04:32.527+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+dd74311d-139f-4a60-86b8-0bb12d8be93d	Admin sent you a message	{"action":"message","chat_id":"104907e3-fcad-4d3e-9449-99d615fe7c64","order_number":"60690"}	Chat message	unread	2024-11-16 11:14:00.24+00	2024-11-16 11:14:00.24+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+494dcb82-22ad-4a15-9bda-84907d1a89c4	Admin sent you a message	{"action":"message","chat_id":"104907e3-fcad-4d3e-9449-99d615fe7c64","order_number":"60690"}	Chat message	unread	2024-11-16 11:15:02.068+00	2024-11-16 11:15:02.068+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 \.
 
 
@@ -3857,8 +3863,8 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 --
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
-8749a1d3-2474-44ca-ac93-a22d5f53a267	87798088-483d-449c-a0c5-557b9b34baae	2024-11-08 05:39:37.139+00	2024-11-08 05:39:37.139+00	08156565-e933-4426-9caf-a10ce3a09497
-3b6659fd-d559-4ca6-8d4f-7546da965f11	0eea4f4a-7545-4bea-bf4c-634a18c0051e	2024-11-09 06:43:30.397+00	2024-11-09 06:43:30.397+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+b5768d37-fe81-46d2-baea-39315af38d84	37a746d2-3ba7-4116-9d84-8339884074f3	2024-11-16 10:47:22.559+00	2024-11-16 10:47:22.559+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+448424fb-98df-4b39-a89e-d8d1830eb705	66a2b23a-7a3c-4a62-ac85-6feb39af19f5	2024-11-16 11:26:01.015+00	2024-11-16 11:26:01.015+00	08156565-e933-4426-9caf-a10ce3a09497
 \.
 
 
