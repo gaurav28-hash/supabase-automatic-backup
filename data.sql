@@ -3933,6 +3933,263 @@ COPY "public"."notifications" ("id", "description", "title", "status", "data", "
 
 
 --
+-- Data for Name: piepos_clients; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_clients" ("id", "store_id", "name", "email", "phone_number1", "phone_number2", "status", "address1", "address2", "city", "province", "postcode", "country", "website", "latitude", "longitude", "gst", "enable_receipt_print", "enable_discount", "enable_tax", "tax_cal_method", "currency", "payment_methods", "created_at", "updated_at") FROM stdin;
+b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	Zorba	gaurav@piecodes.in	\N	\N	active	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	t	f	f	\N	INR	\N	2024-11-20 05:14:04+00	2024-11-20 05:14:07+00
+\.
+
+
+--
+-- Data for Name: piepos_customers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_customers" ("id", "first_name", "last_name", "email", "mobile_number", "company_name", "status", "address1", "address2", "city", "province", "country", "postcode", "created_at", "updated_at", "client_id") FROM stdin;
+5eecb900-a6e3-453b-9f44-20ef82342901	\N	\N	\N	8878398669	\N	\N	\N	\N	\N	\N	\N	\N	2024-11-20 12:22:10.682+00	2024-11-20 12:22:10.682+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa
+\.
+
+
+--
+-- Data for Name: piepos_expense_categories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_expense_categories" ("id", "name", "parent_id", "description", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_expenses; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_expenses" ("id", "title", "expense_date", "reference_number", "amount", "created_by", "description", "created_at", "updated_at", "client_id", "category_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_locations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_locations" ("id", "name", "type", "status", "address", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_users" ("id", "username", "first_name", "last_name", "email", "mobile_number", "status", "password", "role", "address1", "address2", "city", "province", "postcode", "country", "created_at", "updated_at", "client_id") FROM stdin;
+fded8bf8-c10f-44c1-8c94-afeed3608a80	1111	Gaurav	Bhargava	gaurav@piecodes.in	8878398665	active	$2b$10$sqgDUcCekGLFndfWZudH6e2ZF7YiI31rYXL2B1NUDwX6mSgdmyj7W	super_admin	\N	\N	\N	\N	\N	\N	2024-11-20 05:12:14+00	2024-11-20 05:12:17+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa
+\.
+
+
+--
+-- Data for Name: piepos_orders; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_orders" ("id", "order_number", "subtotal", "discount_total", "tax_total", "total", "total_roundoff", "payment_term", "billing", "shipping", "order_note", "status", "payment_status", "created_via", "browser_agent", "created_at", "updated_at", "client_id", "sales_agent_id", "location_id", "customer_id") FROM stdin;
+4892221f-7cdf-4aeb-a4cb-bd4d9f4cc716	000001	99	0	0	99	99	\N	{"city": "Guna", "state": "MP", "country": "IN", "address1": "Royal heights,telghani", "address2": "Telghani chouraha", "postcode": "473001"}	\N	First order	pending_payment	\N	Unknown	{"isYaBrowser":false,"isAuthoritative":false,"isMobile":false,"isMobileNative":false,"isTablet":false,"isiPad":false,"isiPod":false,"isiPhone":false,"isiPhoneNative":false,"isAndroid":false,"isAndroidNative":false,"isBlackberry":false,"isOpera":false,"isIE":false,"isEdge":false,"isIECompatibilityMode":false,"isSafari":false,"isFirefox":false,"isWebkit":false,"isChrome":false,"isKonqueror":false,"isOmniWeb":false,"isSeaMonkey":false,"isFlock":false,"isAmaya":false,"isPhantomJS":false,"isEpiphany":false,"isDesktop":false,"isWindows":false,"isLinux":false,"isLinux64":false,"isMac":false,"isChromeOS":false,"isBada":false,"isSamsung":false,"isRaspberry":false,"isBot":"postman","isCurl":false,"isAndroidTablet":false,"isWinJs":false,"isKindleFire":false,"isSilk":false,"isCaptive":false,"isSmartTV":false,"isUC":false,"isFacebook":false,"isAlamoFire":false,"isElectron":false,"silkAccelerated":false,"browser":"PostmanRuntime","version":"7.42.0","os":"unknown","platform":"unknown","geoIp":{},"source":"PostmanRuntime/7.42.0","isWechat":false}	2024-11-20 12:22:11.184+00	2024-11-20 12:22:11.184+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	5eecb900-a6e3-453b-9f44-20ef82342901
+\.
+
+
+--
+-- Data for Name: piepos_product_brands; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_product_brands" ("id", "name", "description", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_product_categories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_product_categories" ("id", "name", "parent_id", "description", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_product_suppliers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_product_suppliers" ("id", "name", "company_name", "email", "mobile_number", "address1", "address2", "city", "province", "postcode", "country", "status", "description", "created_at", "updated_at", "client_id") FROM stdin;
+f3bd1366-c04a-4b97-95ba-df1eb11e2a89	pizza Cafe	\N	\N	\N	\N	\N	\N	\N	\N	\N	active	\N	2024-11-20 10:21:11.557+00	2024-11-20 10:21:11.557+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa
+\.
+
+
+--
+-- Data for Name: piepos_tax_rates; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_tax_rates" ("id", "title", "rate", "status", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_products; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_products" ("id", "name", "sku", "barcode", "description", "short_description", "buying_price", "regular_price", "discounted_price", "manage_stock", "low_stock_threshold", "stock_status", "status", "tax_status", "weight", "length", "width", "height", "created_at", "updated_at", "client_id", "tax_rate_id", "brand_id", "supplier_id", "category_id") FROM stdin;
+b2740510-6a22-4b3d-9110-96c8e49c66ac	Veg Noodles	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ed434a5e-ccf9-49f9-bbfc-1614960adc67	Paneer Noodles	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a895ece5-1e58-4884-98e2-c371d6829d3d	Cheese Pizza	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+c2e28e8b-786a-4e44-abde-5ecdb0f4130e	Chilli Garlic Potato Spiral	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b9342389-f774-4cc7-a494-b3f65478a0a4	Spicy Potato Spiral	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+903350f6-bf48-4ec8-8f91-e6035982e53f	Veg Roll	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d15c7db8-4f2c-46e6-9ce1-c4b95e92de5e	Paneer Roll	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+dc4d27c7-9cdc-45de-a8d8-415492d669d0	Tandoori Roll	\N	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e148ea2f-e5ef-4e60-892d-7ed22bfe1d6a	Crispy Paneer Tandoori Roll	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+c090d9c9-d2da-4989-ba28-67767e707ce8	Veg Schezwan Roll	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b433e6de-ccd6-479d-a5d7-9c38798a0747	Red Pasta	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+f1322368-c1e0-4b93-abbe-e9c1f81468be	Makhni Pasta	\N	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b061a181-2d27-419a-bd78-ad522a01d5fd	Premium Crispy Cheese Load Corn	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+de7a0117-c493-4f9c-85d2-2d7833711f4b	Premium Crispy Rich Cream Loaded	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+eba1fcfa-8574-4f94-9380-3c4ef4fa8855	Dark Chocolate Shake	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a6844c6a-050a-4a75-ac7c-12554efae098	Mango Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ae4590f5-1a46-41c6-8ac4-b0730a8d3407	Butterscotch Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bae58dbd-fd1a-4aba-9af3-36dc3d258eb3	Green Apple Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a3332a8c-7c81-4398-8a8e-4562b2683803	Saffron Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b62d3d9c-d98f-43ef-b559-0f045ff4f5a0	Banana Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ef67a87f-586a-4fe9-9a8f-dcc4d254f384	Paneer Streem Momos	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+df5bbad7-48d2-4b56-8112-225c9bba60f2	Veg Fry Momos	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+dfaccde7-0cb8-42b5-9de1-347f4c271d56	Veg Kurkure Momos	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+de727943-f81d-425b-9e3c-2dcffd9f3811	Paneer Kurkure Momos	\N	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9abe178a-201c-452f-b1e4-21490e006133	Malt Food Costa (Non Alcoholic Beeri)	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+c872fa40-2854-4620-a0a9-046d780879b7	Pina Colada	\N	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+df1347c7-f025-444b-97a5-fbe617fa257b	Orange Shake	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+c3f33618-219c-4dab-bd5d-e30aeb515204	Paneer Butter Masala	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e98c2188-2249-4588-876a-248e1d88ccf2	Paneer Bhurji	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9eab2dbb-0634-412e-ba55-9f74bc22afd7	Kadai Paneer	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+99222ed7-3a20-4ae5-8e71-4c86ad4433db	Shahi Paneer	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b19b5b60-dd6a-4bdd-bd13-7e45a4a28d03	Paneer Do Pyaja	\N	\N	\N	\N	\N	199	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e1e33b62-3821-43eb-a519-ad69ae8182c8	Iris Coffee	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a055f2e1-51a0-47cc-963e-b6362b07f371	Exotic Garlic Bread	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d146fce1-552d-4603-8b2f-92546df7eabe	Spicy Garlic Bread	\N	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bafaa848-091f-4fee-9177-6efb5d8d7ca1	Exotic Garlic Bread	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+db612c78-7ac6-473c-a622-142cbb1c1b22	Cheese Blast Garlic Bread	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+8bb85b89-b8d2-4fe6-ae89-1e7884377752	Bregular Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d42f9df6-6a9f-4f8b-841d-891f6131f810	Chocolate Masala Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d2423064-bcdc-4a6b-8934-a462dbc7e668	Cardamon Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e24346ab-e843-401a-a8ba-7e5e1a7042ae	Roasted Hazelnut Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e3052b42-798e-4c98-b5dc-c0b32eef4a67	Tandoori	\N	\N	\N	\N	\N	98	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d7e3e336-3780-4c4e-860e-1999dc698106	Cheese Jalapeno	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d02d4f76-22bc-482c-898a-be80749c9729	Barbecue Nachos	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+f72e5ab5-c517-40e9-89e5-e17346570505	Sada Thali	\N	\N	Dal, 2 Sabji, Raiyta, 5 Roti Tava, Salad, Meetha	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ff33daa5-c285-41b3-bd2f-c3479a9c004a	Super Thali	\N	\N	Dal, 2 Sabji, Raiyta, Mater Paneer Sahi Paneer, 2 Parantha, 5 Roti Tava Salad, Achar, Meetha	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ed2f8ca1-e571-4b95-bc25-8f5c4b67b50e	Kaju Paneer	\N	\N	\N	\N	\N	250	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e505895c-8b0b-4d77-a826-7157c8358aeb	Kaju Malai	\N	\N	\N	\N	\N	170	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bd6693a7-104c-4f77-ae6b-5be3b83b97d2	Dhai Rahyeta	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+cbe97de9-a595-4b8f-88c5-789c0d1cf75c	Tandoori Veggies Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ebd1b97b-2312-43f2-82ac-62b5035eea70	Punjabi Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ab3ad319-369b-4b7f-b6ed-662e4336812d	Veggi Paneer Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d4e5442d-6dcf-4d53-9c7b-03baed9aff69	Onion Tomato Capsicum Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d6d2edf6-f845-46cc-a4e8-ea25e585c4c3	Achari Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+96dfe798-597f-44aa-97b9-575a65bb0090	Full Loaded Pizza	\N	\N	\N	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bb2f6640-fe05-48fe-a932-a09cba72f0f7	Hazelnut Cold Coffee	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+c60d1d7b-3643-4e1f-8255-8812151170e3	Veg Burger	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b09b5c9f-538c-45d9-a1c1-53085686c445	Paneer Burger	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+99770250-fc3d-476d-8a27-e89c151a9ca3	Spicy Burger	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+951589cc-c917-4eda-a12a-188cabbde170	Mexican Spicy Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b472d053-db6a-4138-9106-2f01fa39145b	Veg Crunchy Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ecedf200-f765-4eb4-ae99-d85c6aed5004	Veg Crunchy Cheese Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e146410d-3497-444f-9498-2dc44bd1b7e4	Veg Crunchy Paneer Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+92a66c72-f7ff-4370-828d-b3534b436886	Masala Sandwich	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bcf617eb-3c5e-4c30-a5fe-ce8f385a6238	Veg Club Sandwich	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e099ed33-c3d1-4270-b616-62cd7daf24c0	Club Chocolate Sandwich	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bde17ad1-b366-4ee5-8f5a-af46f729bae1	Saffron Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bb9b8787-e998-4ed4-bedc-2e05dc233627	Strawberry Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d983e3f8-8d96-4e37-9d41-43e06ae616e1	Mango Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a94e7e8a-54d0-4992-a4a7-a378ac4e951a	Paneer Masala Sandwich	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+dc201194-f5a0-4fba-94fe-f9cbb6606142	Chili Garlic Cheese Sandwich	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+bf07eb93-6c52-44e2-9a7b-56bcebfa94d2	Mexican Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9617ff54-6e06-4715-80c3-95fbefeb012d	Cocktail Pasta	\N	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9c388232-e0e7-43b4-bea0-8d1d3be3afcc	Regular Maggi	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b40cfbec-0831-4fea-be4b-6a29555faabb	Sev Tomato Maggi	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ff63e80c-fa0c-4eee-8b02-6717e8e49a02	Spicy Green Garlic Maggi	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+f206cabb-0afd-40f6-a1ae-0e77ed959f73	Hot Spicy Maggi	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a2a05f13-e3c3-421d-9aca-30f1a18bbc5f	Cheese Veggie Maggi	\N	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+c746ffcc-7f3e-4b8f-8abe-4674e78673f4	Paneer Mix Maggi	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e59aa83e-a852-4932-b634-5463b375fc85	Hot Spicy Corn	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ba743992-56cf-4528-a734-d69456ff1ceb	Expresso Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+e93691f2-f626-48f2-a4ce-af888d4b8a76	Orange Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a2d9fd08-46c2-4ae6-a692-0d34c0c82b83	Classic Fries	\N	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+f2e29629-9636-409c-922c-9581bd32c842	Peri Peri Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+8d78d2a4-f005-4f5c-a1bd-66050d5199fa	Lemon Chilli Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b154bd87-a95a-41e2-bbef-7c049b3f6df3	Chilli Garlic Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d8fc29f8-3608-4af3-ad42-d165dd666f07	Tandoori Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+896148a7-b302-4979-9832-45d4e36707f1	Classic Mojito	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ccf9b7f1-c4d1-4516-afb2-08e315de9ffb	Black Cobra (Cumin) Mojito	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+cfbe3a7f-fa07-42c3-8d05-751bd8c34106	Green Apple Mojito	\N	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+f9076269-b1e1-4acc-b6de-2730d4f0ebce	Redwine Mojito	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+d07ed0f5-c84f-4bcd-9f2d-26c884f4fe2d	Chhola Panner	\N	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9b85cabe-eef6-4822-aff7-6db598cdb7f4	Paneer Masala	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+b35791dc-a555-4b71-906e-cb5b626a6a8e	Sheho Masala	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9b25d93a-31a6-4254-b732-50a9dea97ff5	Daal Tadaka	\N	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+9420926a-6647-4bc8-aa01-f76465269284	Daal Panchmail	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+fdf2fd2e-713c-4b89-9c61-c891a10672ec	Butter Roti	\N	\N	\N	\N	\N	8	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+a4936011-e944-47d3-867b-f0c045dd8ff2	Sada Roti	\N	\N	\N	\N	\N	6	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+ebc09648-cf91-4fd1-98fc-48105370356c	Plan Paranta	\N	\N	\N	\N	\N	40	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+\.
+
+
+--
+-- Data for Name: piepos_inventory; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_inventory" ("id", "quantity", "description", "status", "batchid", "created_at", "updated_at", "client_id", "product_id", "created_by", "location_id", "order_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_media; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_media" ("id", "original_name", "path", "mime_data", "entity_id", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_order_items; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_order_items" ("id", "item_name", "item_sku", "product_id", "price", "quantity", "subtotal", "tax", "tax_label", "tax_rate_id", "discount", "total", "item_type", "created_at", "updated_at", "client_id", "location_id", "order_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_payments; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_payments" ("id", "amount", "payment_ref_number", "billing", "payment_date", "payment_mode", "transaction_data", "browser_agent", "status", "created_at", "updated_at", "client_id", "created_by", "order_id") FROM stdin;
+94ed4f76-6ab3-4867-8ff3-0da8971e6d2e	180		\N	\N	cash	\N	\N	paid	2024-11-20 12:22:11.88+00	2024-11-20 12:22:11.88+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	fded8bf8-c10f-44c1-8c94-afeed3608a80	4892221f-7cdf-4aeb-a4cb-bd4d9f4cc716
+\.
+
+
+--
+-- Data for Name: piepos_security_tokens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_security_tokens" ("id", "user_id", "token", "type", "valid_till", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_task_categories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_task_categories" ("id", "title", "description", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: piepos_tasks; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."piepos_tasks" ("id", "title", "description", "parent_id", "duration", "priority", "type", "repeat_interval", "repeat_start_from", "created_at", "updated_at", "client_id", "category_id") FROM stdin;
+\.
+
+
+--
 -- Data for Name: sessions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 

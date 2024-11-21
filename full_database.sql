@@ -2578,6 +2578,384 @@ CREATE TABLE IF NOT EXISTS "public"."notifications" (
 ALTER TABLE "public"."notifications" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."piepos_clients" (
+    "id" "uuid" NOT NULL,
+    "store_id" integer,
+    "name" "text",
+    "email" character varying(255) NOT NULL,
+    "phone_number1" character varying(255),
+    "phone_number2" character varying(255),
+    "status" character varying(255),
+    "address1" "text",
+    "address2" "text",
+    "city" character varying(255),
+    "province" character varying(255),
+    "postcode" character varying(255),
+    "country" character varying(2),
+    "website" "text",
+    "latitude" double precision,
+    "longitude" double precision,
+    "gst" character varying(255),
+    "enable_receipt_print" boolean DEFAULT false,
+    "enable_discount" boolean DEFAULT false,
+    "enable_tax" boolean DEFAULT false,
+    "tax_cal_method" character varying(255),
+    "currency" character varying(255) DEFAULT 'INR'::character varying,
+    "payment_methods" "jsonb",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."piepos_clients" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_customers" (
+    "id" "uuid" NOT NULL,
+    "first_name" character varying(255),
+    "last_name" character varying(255),
+    "email" character varying(255),
+    "mobile_number" character varying(255),
+    "company_name" character varying(255),
+    "status" character varying(255),
+    "address1" character varying(255),
+    "address2" character varying(255),
+    "city" character varying(255),
+    "province" character varying(255),
+    "country" character varying(255),
+    "postcode" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_customers" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_expense_categories" (
+    "id" "uuid" NOT NULL,
+    "name" character varying(255),
+    "parent_id" "uuid",
+    "description" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_expense_categories" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_expenses" (
+    "id" "uuid" NOT NULL,
+    "title" character varying(255),
+    "expense_date" "date",
+    "reference_number" character varying(255),
+    "amount" double precision,
+    "created_by" "uuid",
+    "description" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid",
+    "category_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_expenses" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_inventory" (
+    "id" "uuid" NOT NULL,
+    "quantity" integer,
+    "description" "text",
+    "status" character varying(255),
+    "batchid" "uuid",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid" NOT NULL,
+    "product_id" "uuid",
+    "created_by" "uuid",
+    "location_id" "uuid",
+    "order_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_inventory" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_locations" (
+    "id" "uuid" NOT NULL,
+    "name" character varying(255),
+    "type" character varying(255),
+    "status" character varying(255),
+    "address" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_locations" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_media" (
+    "id" "uuid" NOT NULL,
+    "original_name" character varying(255),
+    "path" character varying(255),
+    "mime_data" character varying(255),
+    "entity_id" "uuid",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_media" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_order_items" (
+    "id" "uuid" NOT NULL,
+    "item_name" character varying(255),
+    "item_sku" character varying(255),
+    "product_id" "uuid",
+    "price" double precision,
+    "quantity" integer,
+    "subtotal" double precision,
+    "tax" double precision,
+    "tax_label" character varying(255),
+    "tax_rate_id" "uuid",
+    "discount" double precision,
+    "total" double precision,
+    "item_type" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid",
+    "location_id" "uuid",
+    "order_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."piepos_order_items" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_orders" (
+    "id" "uuid" NOT NULL,
+    "order_number" character varying(255),
+    "subtotal" double precision,
+    "discount_total" double precision,
+    "tax_total" double precision,
+    "total" double precision,
+    "total_roundoff" double precision,
+    "payment_term" character varying(255),
+    "billing" "jsonb",
+    "shipping" "jsonb",
+    "order_note" "text",
+    "status" character varying(255),
+    "payment_status" character varying(255),
+    "created_via" character varying(255),
+    "browser_agent" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid",
+    "sales_agent_id" "uuid",
+    "location_id" "uuid",
+    "customer_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_orders" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_payments" (
+    "id" "uuid" NOT NULL,
+    "amount" double precision,
+    "payment_ref_number" character varying(255),
+    "billing" "jsonb",
+    "payment_date" "date",
+    "payment_mode" character varying(255),
+    "transaction_data" "jsonb",
+    "browser_agent" "text",
+    "status" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid" NOT NULL,
+    "created_by" "uuid",
+    "order_id" "uuid" NOT NULL
+);
+
+
+ALTER TABLE "public"."piepos_payments" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_product_brands" (
+    "id" "uuid" NOT NULL,
+    "name" character varying(255),
+    "description" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_product_brands" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_product_categories" (
+    "id" "uuid" NOT NULL,
+    "name" character varying(255),
+    "parent_id" "uuid",
+    "description" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_product_categories" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_product_suppliers" (
+    "id" "uuid" NOT NULL,
+    "name" character varying(255),
+    "company_name" character varying(255),
+    "email" character varying(255),
+    "mobile_number" character varying(255),
+    "address1" character varying(255),
+    "address2" character varying(255),
+    "city" character varying(255),
+    "province" character varying(255),
+    "postcode" character varying(255),
+    "country" character varying(255),
+    "status" character varying(255),
+    "description" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_product_suppliers" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_products" (
+    "id" "uuid" NOT NULL,
+    "name" "text",
+    "sku" character varying(255),
+    "barcode" "text",
+    "description" "text",
+    "short_description" "text",
+    "buying_price" double precision,
+    "regular_price" double precision,
+    "discounted_price" double precision,
+    "manage_stock" boolean,
+    "low_stock_threshold" integer,
+    "stock_status" character varying(255),
+    "status" character varying(255),
+    "tax_status" boolean,
+    "weight" double precision,
+    "length" double precision,
+    "width" double precision,
+    "height" double precision,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid",
+    "tax_rate_id" "uuid",
+    "brand_id" "uuid",
+    "supplier_id" "uuid",
+    "category_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_products" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_security_tokens" (
+    "id" "uuid" NOT NULL,
+    "user_id" "uuid" NOT NULL,
+    "token" character varying(255) NOT NULL,
+    "type" character varying(255) NOT NULL,
+    "valid_till" timestamp with time zone NOT NULL,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."piepos_security_tokens" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_task_categories" (
+    "id" "uuid" NOT NULL,
+    "title" character varying(255),
+    "description" "text",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_task_categories" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_tasks" (
+    "id" "uuid" NOT NULL,
+    "title" character varying(255),
+    "description" "text",
+    "parent_id" "uuid",
+    "duration" double precision,
+    "priority" character varying(255),
+    "type" character varying(255),
+    "repeat_interval" character varying(255),
+    "repeat_start_from" "date",
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid",
+    "category_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_tasks" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_tax_rates" (
+    "id" "uuid" NOT NULL,
+    "title" character varying(255),
+    "rate" double precision,
+    "status" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_tax_rates" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."piepos_users" (
+    "id" "uuid" NOT NULL,
+    "username" character varying(255),
+    "first_name" character varying(255),
+    "last_name" character varying(255),
+    "email" character varying(255) NOT NULL,
+    "mobile_number" character varying(255) NOT NULL,
+    "status" character varying(255),
+    "password" character varying(255) NOT NULL,
+    "role" character varying(255),
+    "address1" "text",
+    "address2" "text",
+    "city" character varying(255),
+    "province" character varying(255),
+    "postcode" character varying(255),
+    "country" character varying(255),
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "client_id" "uuid"
+);
+
+
+ALTER TABLE "public"."piepos_users" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."sessions" (
     "id" "uuid" NOT NULL,
     "device_id" character varying(255),
@@ -5442,6 +5820,126 @@ ALTER TABLE ONLY "public"."notifications"
 
 
 
+ALTER TABLE ONLY "public"."piepos_clients"
+    ADD CONSTRAINT "piepos_clients_email_key" UNIQUE ("email");
+
+
+
+ALTER TABLE ONLY "public"."piepos_clients"
+    ADD CONSTRAINT "piepos_clients_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_customers"
+    ADD CONSTRAINT "piepos_customers_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_expense_categories"
+    ADD CONSTRAINT "piepos_expense_categories_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_expenses"
+    ADD CONSTRAINT "piepos_expenses_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_inventory"
+    ADD CONSTRAINT "piepos_inventory_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_locations"
+    ADD CONSTRAINT "piepos_locations_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_media"
+    ADD CONSTRAINT "piepos_media_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_order_items"
+    ADD CONSTRAINT "piepos_order_items_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_orders"
+    ADD CONSTRAINT "piepos_orders_order_number_key" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."piepos_orders"
+    ADD CONSTRAINT "piepos_orders_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_payments"
+    ADD CONSTRAINT "piepos_payments_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_product_brands"
+    ADD CONSTRAINT "piepos_product_brands_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_product_categories"
+    ADD CONSTRAINT "piepos_product_categories_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_product_suppliers"
+    ADD CONSTRAINT "piepos_product_suppliers_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_barcode_key" UNIQUE ("barcode");
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_sku_key" UNIQUE ("sku");
+
+
+
+ALTER TABLE ONLY "public"."piepos_security_tokens"
+    ADD CONSTRAINT "piepos_security_tokens_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_task_categories"
+    ADD CONSTRAINT "piepos_task_categories_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_tasks"
+    ADD CONSTRAINT "piepos_tasks_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_tax_rates"
+    ADD CONSTRAINT "piepos_tax_rates_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_users"
+    ADD CONSTRAINT "piepos_users_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."piepos_users"
+    ADD CONSTRAINT "piepos_users_username_key" UNIQUE ("username");
+
+
+
 ALTER TABLE ONLY "public"."sessions"
     ADD CONSTRAINT "sessions_pkey" PRIMARY KEY ("id");
 
@@ -5459,6 +5957,54 @@ ALTER TABLE ONLY "public"."users"
 
 ALTER TABLE ONLY "public"."users"
     ADD CONSTRAINT "users_username_key" UNIQUE ("username");
+
+
+
+CREATE UNIQUE INDEX "piepos_customers_client_id_mobile_number" ON "public"."piepos_customers" USING "btree" ("client_id", "mobile_number");
+
+
+
+CREATE UNIQUE INDEX "piepos_expense_categories_client_id_name" ON "public"."piepos_expense_categories" USING "btree" ("client_id", "name");
+
+
+
+CREATE UNIQUE INDEX "piepos_locations_client_id_name" ON "public"."piepos_locations" USING "btree" ("client_id", "name");
+
+
+
+CREATE UNIQUE INDEX "piepos_orders_client_id_order_number" ON "public"."piepos_orders" USING "btree" ("client_id", "order_number");
+
+
+
+CREATE UNIQUE INDEX "piepos_product_brands_client_id_name" ON "public"."piepos_product_brands" USING "btree" ("client_id", "name");
+
+
+
+CREATE UNIQUE INDEX "piepos_product_categories_client_id_name" ON "public"."piepos_product_categories" USING "btree" ("client_id", "name");
+
+
+
+CREATE UNIQUE INDEX "piepos_product_suppliers_client_id_name" ON "public"."piepos_product_suppliers" USING "btree" ("client_id", "name");
+
+
+
+CREATE UNIQUE INDEX "piepos_products_client_id_barcode" ON "public"."piepos_products" USING "btree" ("client_id", "barcode");
+
+
+
+CREATE UNIQUE INDEX "piepos_products_client_id_sku" ON "public"."piepos_products" USING "btree" ("client_id", "sku");
+
+
+
+CREATE UNIQUE INDEX "piepos_task_categories_client_id_title" ON "public"."piepos_task_categories" USING "btree" ("client_id", "title");
+
+
+
+CREATE UNIQUE INDEX "piepos_tasks_client_id_title" ON "public"."piepos_tasks" USING "btree" ("client_id", "title");
+
+
+
+CREATE UNIQUE INDEX "piepos_tax_rates_client_id_title" ON "public"."piepos_tax_rates" USING "btree" ("client_id", "title");
 
 
 
@@ -6424,6 +6970,181 @@ ALTER TABLE ONLY "public"."nda_sessions"
 
 ALTER TABLE ONLY "public"."notifications"
     ADD CONSTRAINT "notifications_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_customers"
+    ADD CONSTRAINT "piepos_customers_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_expense_categories"
+    ADD CONSTRAINT "piepos_expense_categories_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_expenses"
+    ADD CONSTRAINT "piepos_expenses_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."piepos_expense_categories"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_expenses"
+    ADD CONSTRAINT "piepos_expenses_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_inventory"
+    ADD CONSTRAINT "piepos_inventory_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."piepos_inventory"
+    ADD CONSTRAINT "piepos_inventory_created_by_fkey" FOREIGN KEY ("created_by") REFERENCES "public"."piepos_users"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_inventory"
+    ADD CONSTRAINT "piepos_inventory_location_id_fkey" FOREIGN KEY ("location_id") REFERENCES "public"."piepos_locations"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_inventory"
+    ADD CONSTRAINT "piepos_inventory_order_id_fkey" FOREIGN KEY ("order_id") REFERENCES "public"."piepos_orders"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_inventory"
+    ADD CONSTRAINT "piepos_inventory_product_id_fkey" FOREIGN KEY ("product_id") REFERENCES "public"."piepos_products"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_locations"
+    ADD CONSTRAINT "piepos_locations_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_media"
+    ADD CONSTRAINT "piepos_media_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_order_items"
+    ADD CONSTRAINT "piepos_order_items_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_order_items"
+    ADD CONSTRAINT "piepos_order_items_location_id_fkey" FOREIGN KEY ("location_id") REFERENCES "public"."piepos_locations"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_order_items"
+    ADD CONSTRAINT "piepos_order_items_order_id_fkey" FOREIGN KEY ("order_id") REFERENCES "public"."piepos_orders"("id") ON UPDATE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."piepos_order_items"
+    ADD CONSTRAINT "piepos_order_items_product_id_fkey" FOREIGN KEY ("product_id") REFERENCES "public"."piepos_products"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."piepos_orders"
+    ADD CONSTRAINT "piepos_orders_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_orders"
+    ADD CONSTRAINT "piepos_orders_customer_id_fkey" FOREIGN KEY ("customer_id") REFERENCES "public"."piepos_customers"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_orders"
+    ADD CONSTRAINT "piepos_orders_location_id_fkey" FOREIGN KEY ("location_id") REFERENCES "public"."piepos_locations"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_orders"
+    ADD CONSTRAINT "piepos_orders_sales_agent_id_fkey" FOREIGN KEY ("sales_agent_id") REFERENCES "public"."piepos_users"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_payments"
+    ADD CONSTRAINT "piepos_payments_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."piepos_payments"
+    ADD CONSTRAINT "piepos_payments_created_by_fkey" FOREIGN KEY ("created_by") REFERENCES "public"."piepos_users"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_payments"
+    ADD CONSTRAINT "piepos_payments_order_id_fkey" FOREIGN KEY ("order_id") REFERENCES "public"."piepos_orders"("id") ON UPDATE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."piepos_product_brands"
+    ADD CONSTRAINT "piepos_product_brands_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_product_categories"
+    ADD CONSTRAINT "piepos_product_categories_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_product_suppliers"
+    ADD CONSTRAINT "piepos_product_suppliers_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_brand_id_fkey" FOREIGN KEY ("brand_id") REFERENCES "public"."piepos_product_brands"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."piepos_product_categories"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_supplier_id_fkey" FOREIGN KEY ("supplier_id") REFERENCES "public"."piepos_product_suppliers"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_products"
+    ADD CONSTRAINT "piepos_products_tax_rate_id_fkey" FOREIGN KEY ("tax_rate_id") REFERENCES "public"."piepos_tax_rates"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_task_categories"
+    ADD CONSTRAINT "piepos_task_categories_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_tasks"
+    ADD CONSTRAINT "piepos_tasks_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."piepos_task_categories"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_tasks"
+    ADD CONSTRAINT "piepos_tasks_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_tax_rates"
+    ADD CONSTRAINT "piepos_tax_rates_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."piepos_users"
+    ADD CONSTRAINT "piepos_users_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."piepos_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
 
 
 
@@ -7566,6 +8287,120 @@ GRANT ALL ON TABLE "public"."nda_users" TO "service_role";
 GRANT ALL ON TABLE "public"."notifications" TO "anon";
 GRANT ALL ON TABLE "public"."notifications" TO "authenticated";
 GRANT ALL ON TABLE "public"."notifications" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_clients" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_clients" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_clients" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_customers" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_customers" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_customers" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_expense_categories" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_expense_categories" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_expense_categories" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_expenses" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_expenses" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_expenses" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_inventory" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_inventory" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_inventory" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_locations" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_locations" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_locations" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_media" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_media" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_media" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_order_items" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_order_items" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_order_items" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_orders" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_orders" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_orders" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_payments" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_payments" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_payments" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_product_brands" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_product_brands" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_product_brands" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_product_categories" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_product_categories" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_product_categories" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_product_suppliers" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_product_suppliers" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_product_suppliers" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_products" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_products" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_products" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_security_tokens" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_security_tokens" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_security_tokens" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_task_categories" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_task_categories" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_task_categories" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_tasks" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_tasks" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_tasks" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_tax_rates" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_tax_rates" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_tax_rates" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."piepos_users" TO "anon";
+GRANT ALL ON TABLE "public"."piepos_users" TO "authenticated";
+GRANT ALL ON TABLE "public"."piepos_users" TO "service_role";
 
 
 
