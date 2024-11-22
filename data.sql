@@ -4005,6 +4005,205 @@ COPY "public"."piepos_product_brands" ("id", "name", "description", "created_at"
 --
 
 COPY "public"."piepos_product_categories" ("id", "name", "parent_id", "description", "created_at", "updated_at", "client_id") FROM stdin;
+b2c34920-c77a-49ba-a16c-d3282d964bff	Noodles	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d85b645d-207e-40fe-95c3-c7433ac16b31	Noodles	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8cbaa474-a6ac-4034-8285-d88fc649cab3	Noodles	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ec6f43da-ecae-4dd0-bc35-0ccef85f0375	Noodles	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d5c9eb26-fbcf-469f-8bcf-8f74c3354b32	Noodles	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d11e5cd1-b33a-4ee2-a210-867ce816e678	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+73eea8cf-e9f3-4cc0-9b0d-7b3af7386bb9	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+49759480-6901-4b5f-888b-b9e07b157790	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+16c14511-e2e0-4920-977f-c8e87faa62ce	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+cb358311-d895-4d3f-9ada-cd5a0c2a04e1	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+3544e1a5-c612-4789-9563-7455132da208	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d59cfa07-60fc-4871-b032-3a3d143d0cd1	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c84837ba-9a12-4f50-b536-3bb64f21ab9f	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ad60618a-9976-42e4-8e46-e63a6762bf90	Pizza	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f0bd041c-6f8c-4c37-9bb1-659bb3080545	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+80bedd18-edec-49c6-9eed-09fea9c313fc	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+07a500a5-9577-4893-92c7-c69b64edf2de	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+27147f22-aded-4822-a622-ea2392d67a2e	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c57f3536-7f96-4f0c-a012-8f1b00e3d53d	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+949dee56-7f04-4705-91d4-929bac376148	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+3d209175-4c0a-4610-aed6-599aa40ea1df	Momos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+87a216f6-f833-4049-875d-95b83e91d07b	Cold Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+484e4827-493f-4d97-b864-fbe44c75a9f9	Cold Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9794e5ac-e20b-416d-8e85-1336dc1a497d	Cold Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+56e5ca37-2865-4400-8825-8c2c5fc9bbdf	Cold Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+2e21d190-db22-4822-a64b-cca98b484660	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+66bed650-900b-49f9-8c94-7a6420137db1	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b011fc28-01a7-4983-8d0f-cb91b6a904b7	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+66992cf1-cf8b-409b-8f9e-27c419ccdcf2	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+de7a10fe-7685-4105-9211-a93ff2105be1	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c8b62977-2b17-4a57-baae-4540641185ea	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8182cb7a-d701-44e2-948b-2886070aa7d9	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+4cecf18c-121e-473a-bcf1-1e804c831e04	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9b44029a-136e-4a65-aefe-43b1b8b36d07	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+12aa81aa-a127-43e3-bafd-def3a9e1830b	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+138818a8-2923-4557-a8c7-1db10364cc61	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+94e7eb1d-353f-4e34-951e-d58d226aa288	Burger	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+81f6bf93-0ee1-4415-86c0-6b6af7d26eae	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+19ac0fe8-8b2c-4533-a1c7-147ec26ce7f0	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+3a268bb5-49dd-45d5-9d69-0dfc1d75e5ac	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8a37c6fa-5ab5-487b-b689-d1c088de5f13	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+030ac381-bf13-4d8b-9231-813e89c47a0d	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d65d3e88-6f4f-4381-a938-6c45446bec35	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8e21d2cf-b2a1-4d33-a977-871138f1d21b	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+7b0ffc53-0370-4ad6-b655-2d93bdb070d2	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+47e7ebff-e6a7-4164-8eae-ed0aea667268	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9ebeebe2-451f-4078-ba4d-3c1cc23367fd	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a3106fba-e093-4f3e-a88d-90d471b83bde	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+81ca0cfc-ea08-4eab-8d1d-a19b3c47bbe4	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+99ecf72b-82d1-4c83-b112-77f9e9b5ffe5	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6466ebad-43c6-455e-8ffe-1fecd2eb7728	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+0cd729c8-2868-4964-a94d-b20026d07d71	Sandwich	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+24111fb2-2e47-49c9-8ff5-4a87af50f658	Potato Spirals	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+00812a58-063c-464f-b4d8-952ca9c0c4a9	Potato Spirals	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+37e8565c-bc86-41c4-bb01-4016e1320a91	Potato Spirals	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+32557025-5297-47bf-9371-871b8494e1ee	Potato Spirals	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+7638306c-8bfb-40fa-ba43-7bf233b4750c	Potato Spirals	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f62cb3a1-d5ef-4e14-929d-603f0ba3f25e	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+5bb2151c-2aab-4e18-8bf9-42f84fd05dc7	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a762dca8-d8f4-4d67-a412-a2402fc24ac3	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+3efe4854-2d3a-438c-a6df-a5e29f0d65ad	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+40a75098-9887-45f6-b85e-05f53591e62a	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+7fc5dc2a-8270-46f8-a7c8-31262ac3b081	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+469ce018-b364-4eec-8b19-6ee5349dc104	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6432ff60-979b-40d2-84d8-2d920a57ec0d	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+cfc303a7-f0ee-4add-9365-b9aa4813b0d5	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+bbf6c4bd-3ac1-4127-bd51-2181aea5e3db	Rolls & Wraps	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6631e592-0417-4f49-a8fc-002df848bd00	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f4d9dce7-c22e-4334-b5f6-52af11f26ebc	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f294a562-5ef0-48ec-9462-4475170282e8	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ace02f68-c7e9-4f9b-bbe0-0b7a00cbae68	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+82d489b7-6286-4d95-9185-e44e65b177a0	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8ceb4a49-056e-410a-9c75-5c90479bfa1f	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+2a1c5fda-eeee-458c-b4ff-3bd6d0583011	Pasta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+99926787-b990-46a2-8407-8d2eea2afaa5	Pav Bhaji	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+fc759a85-4105-4a2c-bdb1-2eb18ea38f07	Manchurian	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+e541a27d-506a-44bc-8fb8-91823607973b	Manchurian	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8db1d717-3aae-4026-9c21-dc363a29c36e	Hot Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a42a2a6b-ce05-4d78-953a-73e9aa334be1	Hot Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c8f41794-0531-49e6-9c41-755ec1c37630	Hot Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c03ee467-fb9a-43f8-ac47-4e24f220391a	Hot Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+dafa7b36-e5ab-4093-908f-89bcf69027ad	Hot Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+1a0d8474-53a7-49f0-a213-0a83adcac6e4	Hot Coffee	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a0745d87-0cc3-4300-ac26-94b72d4e5a8e	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+433c71a1-8baa-4648-b0a8-1055142464e4	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+1e230f1b-a413-4455-a077-4fd39e0e0aeb	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8c415644-db60-4c00-af43-2f0c2839f4fe	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+77cedc01-2ea5-4496-9edc-c714864fd262	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+970f5238-b523-47ff-a3a2-7d12b333e5c8	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+43d28f96-1693-414b-a147-7568dffabff6	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+262b0832-9dc8-40d8-8087-6f078de63be2	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+43f8597e-00b4-437c-bff2-bb086c7493cb	Breads	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+352f3ae7-8acc-485f-9181-e0478024c25f	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f38d2745-d0aa-47a7-80e6-7f963595c57c	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ae892cfc-db27-4f32-87f5-6812ca2f2674	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+3b9cb565-d748-49f9-a41c-938be2e9bdc5	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+7af04108-9362-496b-9a65-9c8c438c539d	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+69dce97f-cf0b-4982-83e0-18ef164ba9ae	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+36d3aaae-1d11-4d78-8b6b-73cae6caa2fb	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+84f1c19f-40e0-4772-b3df-8441e348261d	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a0db7d0f-88d2-44c3-916f-84f1722abdec	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+e039e938-ba94-40ba-9f08-61230cfe78bc	Maggi	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+309e863a-cbb2-4cdb-a589-6283775d2c3a	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f70ff864-b905-4e59-9721-7a8897968950	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9f2d177f-d9a9-4a0e-8e28-71da2b901380	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c23d21d8-aa01-4ea4-8cf0-627e8d71a8eb	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+5ec45573-6f5e-45cd-8368-eab781717d2b	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+33df7dd5-7808-4099-8c9b-b40a2e8b764e	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+4accf871-8836-4d79-8b9d-7882bd539402	Sweet Corn	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+56e1c7ce-a99f-4e96-b8d2-fbd894b4c671	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b66be1f0-7e4c-477c-ba92-4fa8d05031e1	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ac31ed43-78c5-468c-a764-a0e26aa2df8b	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9e1ee7e8-2d75-4cea-939e-07bfaf44b5bd	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+fa6cf2fb-7b49-4e11-9a71-598eeae5c065	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b08effc9-9b5a-44f9-9bcd-daebf75d295e	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8b006d49-69b7-45dc-a333-fba9c8ca9147	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+afa5e12e-7f80-444f-9d84-4b545fd6b3a8	Hot Tea	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+e6c84b4b-6da3-467f-bd7c-432ef95b6df4	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9067dc79-4437-4b52-9f9f-bc6d3ddc6177	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+58250f09-70ab-4130-9821-3f017f69dcb6	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+aec20442-9e56-452f-a98e-ab05d9600b2b	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+643861de-f33f-4a21-a9bf-06bf113a318f	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+17db876b-5c0b-46d6-adf7-02fafabca17b	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+e1b09b55-2b63-4b56-a012-39512cf796d9	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+45802b24-950d-41a6-b212-e7625a77cc8a	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6b4530ba-c13d-4c66-959d-48cf3078e03a	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+05870fdb-1161-4a92-8e42-b49cd7d128b2	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9536ea3e-02dc-4431-b01b-aaf872ece474	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a7bcccaa-29ce-4aba-a800-957659736591	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6e12385b-f8e4-4deb-b092-9404ef24271c	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8c4efc23-5191-4f83-b611-75972ac8b267	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+de3c2f3d-eb41-4caa-80f6-da09795b4b3b	Shakes	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a48de8c6-03ea-44b9-80a1-444b0cd02780	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+1f29e5ae-58e8-43e7-a5b0-9ed0a315ba4d	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+29aef559-7eb1-4ccb-ae41-91b46a38c31a	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+5de67cea-1ae9-4bc2-badf-f41664d3c4bd	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d5e5e454-4411-40b3-a1ba-816a19ec20cc	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c981b76e-d9e4-4590-b878-475f7a67f884	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+bab003cb-8251-4546-94fe-541ab3e3f7a7	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+70860aa5-ffdd-4519-b863-13fb1c58a305	Nachos	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+409da47a-c47a-4a65-baab-90555ef35d86	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+cad4c42a-ddbb-4b96-8088-428212cf9912	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+293e8e49-7bd3-44f3-b696-4619b432cc2b	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c2f5c837-d61b-4ae8-aaa4-d6b45d0def1d	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f1bdf1d2-fcd5-4e1d-a6ff-0bf43ff3ee6d	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+88ea209a-8cf1-4d81-b8e9-e868745e33a3	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a7c2f89a-5be7-4c8e-a3af-0432c760bf76	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+59ea10d3-9c6b-419b-9d33-af2038975246	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f23be17b-9812-4e5c-8b0d-d3fdb5c93824	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+33846c8a-60e1-419a-ba09-2c8109d9a6e0	French Fries	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+13d596c0-b7cc-45d1-bfa3-41d5022f6d9f	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6bbc7a2f-f33f-46e9-8f18-d02a01889005	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ccaf37c6-619c-44e0-a02c-a46132ab6a1b	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b0e597cc-9d0b-445b-a057-634be6350d06	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a308aa28-bc2f-4460-a817-298ee772d6e0	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ba128420-a00b-4c81-9fd8-e22b4c5e1d6d	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6acbd886-8595-407e-9454-ea594f31d30a	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+4cdcacb2-a31c-4718-9205-77a3f3fd5d6c	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a7cba17e-d634-47b0-b291-6f45500e668f	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+cd44e331-e29f-4ef1-a8ea-d216f3ad8936	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+6df8f90b-aedf-4684-8125-9f2b886f8a1c	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+da37b875-59dd-4a91-8498-a87f51564173	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ce51be44-ad73-4d19-8148-b93672b203ea	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9de3c246-3d37-4b02-bf7d-5a435862490f	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+4f3e6ea7-356d-455c-901e-640301f52518	Mojito	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a7176436-bf2b-4223-b4c2-e5d0b882de99	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+93b69308-f30c-4a9a-be2d-addb9de0e44b	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+2c936815-4355-4738-ada0-c962eaa62416	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8946c33a-524f-4113-8ce8-f4e785a2fa5d	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ad06a46d-d48a-48da-9c88-6b44fff49e39	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+4a549e46-65c3-4e26-abba-e6254af56a8e	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+5e7fe9a2-0ad3-4cc8-a9c1-94297cfd6794	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b62b5437-9f15-4d20-a51e-da8b6c3ad94a	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+20e51661-50a3-43fc-8ebd-93749f961222	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+ed7b4398-5f46-43ca-b72f-32f9276289fa	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+8846f387-659b-4a52-88f8-9b85da7d6608	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f9186cd0-5d74-4171-9f0b-0318d290ad70	Paneer	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+f8ec9c8d-3d97-4542-8346-c7036e7eb52d	Sheho Bhaji	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+51f26a13-87ae-45fd-93d8-59f060beff91	Sheho Bhaji	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+c5e64b13-96d2-4d69-ade2-ced1babaab98	Sheho Bhaji	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b05c4868-eb0e-4759-aa05-9a40b86033f5	Thali	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+b50c2dd8-15d3-48f0-bd32-d5b6666492c6	Thali	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+e1a1c357-190f-4d4a-8fea-6b84b6d8c3a3	Thali	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+3a870191-870c-457f-8407-45370b7dfa2e	Daal	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+eb6fddcd-04a0-4908-b6d7-676c1889389f	Daal	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+7190e569-a05d-470e-b452-687d19dbe56c	Daal	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+fbddfc7e-2ab4-43ce-9fa3-6de3773094e9	Daal	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+4487050f-ad2c-4cf2-a334-59201a6cb92e	Kaju Super	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d68feabd-bebb-4f79-a627-844ef0f55120	Kaju Super	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+5651c240-abc9-4e48-9dce-c6653ae59c46	Kaju Super	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+86ef6a5a-5fa5-45a2-8f74-3383a07a9008	Kaju Super	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+a80bfd78-e646-4073-947e-f4a185d20005	Taba Roti	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+9e4acc4c-44f0-4ccc-9e06-7f6d176dbc4b	Taba Roti	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+09bd1fe0-e615-46ce-8bf7-64d2049fd81a	Taba Roti	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+853674d7-f461-4abd-bb87-6032ca8becdd	Taba Roti	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+fb3ce980-d1a0-4723-8da6-392cdf212a88	Taba Roti	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+07734f40-c707-4892-8922-0a06f6d58e1d	Rahyeta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+43d4a975-14a4-4c6c-9f5e-b0c3ae229f48	Rahyeta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
+d5bd735b-e3ee-42dc-a7cd-0507d282b02e	Rahyeta	\N	\N	2024-11-21 15:38:12.109+00	2024-11-21 15:38:12.109+00	\N
 \.
 
 
@@ -4030,105 +4229,205 @@ COPY "public"."piepos_tax_rates" ("id", "title", "rate", "status", "created_at",
 --
 
 COPY "public"."piepos_products" ("id", "name", "sku", "barcode", "description", "short_description", "buying_price", "regular_price", "discounted_price", "manage_stock", "low_stock_threshold", "stock_status", "status", "tax_status", "weight", "length", "width", "height", "created_at", "updated_at", "client_id", "tax_rate_id", "brand_id", "supplier_id", "category_id") FROM stdin;
-b2740510-6a22-4b3d-9110-96c8e49c66ac	Veg Noodles	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ed434a5e-ccf9-49f9-bbfc-1614960adc67	Paneer Noodles	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a895ece5-1e58-4884-98e2-c371d6829d3d	Cheese Pizza	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-c2e28e8b-786a-4e44-abde-5ecdb0f4130e	Chilli Garlic Potato Spiral	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b9342389-f774-4cc7-a494-b3f65478a0a4	Spicy Potato Spiral	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-903350f6-bf48-4ec8-8f91-e6035982e53f	Veg Roll	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d15c7db8-4f2c-46e6-9ce1-c4b95e92de5e	Paneer Roll	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-dc4d27c7-9cdc-45de-a8d8-415492d669d0	Tandoori Roll	\N	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e148ea2f-e5ef-4e60-892d-7ed22bfe1d6a	Crispy Paneer Tandoori Roll	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-c090d9c9-d2da-4989-ba28-67767e707ce8	Veg Schezwan Roll	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b433e6de-ccd6-479d-a5d7-9c38798a0747	Red Pasta	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-f1322368-c1e0-4b93-abbe-e9c1f81468be	Makhni Pasta	\N	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b061a181-2d27-419a-bd78-ad522a01d5fd	Premium Crispy Cheese Load Corn	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-de7a0117-c493-4f9c-85d2-2d7833711f4b	Premium Crispy Rich Cream Loaded	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-eba1fcfa-8574-4f94-9380-3c4ef4fa8855	Dark Chocolate Shake	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a6844c6a-050a-4a75-ac7c-12554efae098	Mango Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ae4590f5-1a46-41c6-8ac4-b0730a8d3407	Butterscotch Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bae58dbd-fd1a-4aba-9af3-36dc3d258eb3	Green Apple Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a3332a8c-7c81-4398-8a8e-4562b2683803	Saffron Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b62d3d9c-d98f-43ef-b559-0f045ff4f5a0	Banana Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ef67a87f-586a-4fe9-9a8f-dcc4d254f384	Paneer Streem Momos	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-df5bbad7-48d2-4b56-8112-225c9bba60f2	Veg Fry Momos	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-dfaccde7-0cb8-42b5-9de1-347f4c271d56	Veg Kurkure Momos	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-de727943-f81d-425b-9e3c-2dcffd9f3811	Paneer Kurkure Momos	\N	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9abe178a-201c-452f-b1e4-21490e006133	Malt Food Costa (Non Alcoholic Beeri)	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-c872fa40-2854-4620-a0a9-046d780879b7	Pina Colada	\N	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-df1347c7-f025-444b-97a5-fbe617fa257b	Orange Shake	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-c3f33618-219c-4dab-bd5d-e30aeb515204	Paneer Butter Masala	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e98c2188-2249-4588-876a-248e1d88ccf2	Paneer Bhurji	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9eab2dbb-0634-412e-ba55-9f74bc22afd7	Kadai Paneer	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-99222ed7-3a20-4ae5-8e71-4c86ad4433db	Shahi Paneer	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b19b5b60-dd6a-4bdd-bd13-7e45a4a28d03	Paneer Do Pyaja	\N	\N	\N	\N	\N	199	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e1e33b62-3821-43eb-a519-ad69ae8182c8	Iris Coffee	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a055f2e1-51a0-47cc-963e-b6362b07f371	Exotic Garlic Bread	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d146fce1-552d-4603-8b2f-92546df7eabe	Spicy Garlic Bread	\N	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bafaa848-091f-4fee-9177-6efb5d8d7ca1	Exotic Garlic Bread	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-db612c78-7ac6-473c-a622-142cbb1c1b22	Cheese Blast Garlic Bread	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-8bb85b89-b8d2-4fe6-ae89-1e7884377752	Bregular Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d42f9df6-6a9f-4f8b-841d-891f6131f810	Chocolate Masala Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d2423064-bcdc-4a6b-8934-a462dbc7e668	Cardamon Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e24346ab-e843-401a-a8ba-7e5e1a7042ae	Roasted Hazelnut Tea	\N	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e3052b42-798e-4c98-b5dc-c0b32eef4a67	Tandoori	\N	\N	\N	\N	\N	98	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d7e3e336-3780-4c4e-860e-1999dc698106	Cheese Jalapeno	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d02d4f76-22bc-482c-898a-be80749c9729	Barbecue Nachos	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-f72e5ab5-c517-40e9-89e5-e17346570505	Sada Thali	\N	\N	Dal, 2 Sabji, Raiyta, 5 Roti Tava, Salad, Meetha	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ff33daa5-c285-41b3-bd2f-c3479a9c004a	Super Thali	\N	\N	Dal, 2 Sabji, Raiyta, Mater Paneer Sahi Paneer, 2 Parantha, 5 Roti Tava Salad, Achar, Meetha	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ed2f8ca1-e571-4b95-bc25-8f5c4b67b50e	Kaju Paneer	\N	\N	\N	\N	\N	250	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e505895c-8b0b-4d77-a826-7157c8358aeb	Kaju Malai	\N	\N	\N	\N	\N	170	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bd6693a7-104c-4f77-ae6b-5be3b83b97d2	Dhai Rahyeta	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-cbe97de9-a595-4b8f-88c5-789c0d1cf75c	Tandoori Veggies Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ebd1b97b-2312-43f2-82ac-62b5035eea70	Punjabi Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ab3ad319-369b-4b7f-b6ed-662e4336812d	Veggi Paneer Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d4e5442d-6dcf-4d53-9c7b-03baed9aff69	Onion Tomato Capsicum Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d6d2edf6-f845-46cc-a4e8-ea25e585c4c3	Achari Pizza	\N	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-96dfe798-597f-44aa-97b9-575a65bb0090	Full Loaded Pizza	\N	\N	\N	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bb2f6640-fe05-48fe-a932-a09cba72f0f7	Hazelnut Cold Coffee	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-c60d1d7b-3643-4e1f-8255-8812151170e3	Veg Burger	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b09b5c9f-538c-45d9-a1c1-53085686c445	Paneer Burger	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-99770250-fc3d-476d-8a27-e89c151a9ca3	Spicy Burger	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-951589cc-c917-4eda-a12a-188cabbde170	Mexican Spicy Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b472d053-db6a-4138-9106-2f01fa39145b	Veg Crunchy Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ecedf200-f765-4eb4-ae99-d85c6aed5004	Veg Crunchy Cheese Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e146410d-3497-444f-9498-2dc44bd1b7e4	Veg Crunchy Paneer Burger	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-92a66c72-f7ff-4370-828d-b3534b436886	Masala Sandwich	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bcf617eb-3c5e-4c30-a5fe-ce8f385a6238	Veg Club Sandwich	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e099ed33-c3d1-4270-b616-62cd7daf24c0	Club Chocolate Sandwich	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bde17ad1-b366-4ee5-8f5a-af46f729bae1	Saffron Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bb9b8787-e998-4ed4-bedc-2e05dc233627	Strawberry Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d983e3f8-8d96-4e37-9d41-43e06ae616e1	Mango Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a94e7e8a-54d0-4992-a4a7-a378ac4e951a	Paneer Masala Sandwich	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-dc201194-f5a0-4fba-94fe-f9cbb6606142	Chili Garlic Cheese Sandwich	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-bf07eb93-6c52-44e2-9a7b-56bcebfa94d2	Mexican Sandwich	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9617ff54-6e06-4715-80c3-95fbefeb012d	Cocktail Pasta	\N	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9c388232-e0e7-43b4-bea0-8d1d3be3afcc	Regular Maggi	\N	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b40cfbec-0831-4fea-be4b-6a29555faabb	Sev Tomato Maggi	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ff63e80c-fa0c-4eee-8b02-6717e8e49a02	Spicy Green Garlic Maggi	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-f206cabb-0afd-40f6-a1ae-0e77ed959f73	Hot Spicy Maggi	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a2a05f13-e3c3-421d-9aca-30f1a18bbc5f	Cheese Veggie Maggi	\N	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-c746ffcc-7f3e-4b8f-8abe-4674e78673f4	Paneer Mix Maggi	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e59aa83e-a852-4932-b634-5463b375fc85	Hot Spicy Corn	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ba743992-56cf-4528-a734-d69456ff1ceb	Expresso Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-e93691f2-f626-48f2-a4ce-af888d4b8a76	Orange Shake	\N	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a2d9fd08-46c2-4ae6-a692-0d34c0c82b83	Classic Fries	\N	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-f2e29629-9636-409c-922c-9581bd32c842	Peri Peri Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-8d78d2a4-f005-4f5c-a1bd-66050d5199fa	Lemon Chilli Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b154bd87-a95a-41e2-bbef-7c049b3f6df3	Chilli Garlic Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d8fc29f8-3608-4af3-ad42-d165dd666f07	Tandoori Fries	\N	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-896148a7-b302-4979-9832-45d4e36707f1	Classic Mojito	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ccf9b7f1-c4d1-4516-afb2-08e315de9ffb	Black Cobra (Cumin) Mojito	\N	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-cfbe3a7f-fa07-42c3-8d05-751bd8c34106	Green Apple Mojito	\N	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-f9076269-b1e1-4acc-b6de-2730d4f0ebce	Redwine Mojito	\N	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-d07ed0f5-c84f-4bcd-9f2d-26c884f4fe2d	Chhola Panner	\N	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9b85cabe-eef6-4822-aff7-6db598cdb7f4	Paneer Masala	\N	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-b35791dc-a555-4b71-906e-cb5b626a6a8e	Sheho Masala	\N	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9b25d93a-31a6-4254-b732-50a9dea97ff5	Daal Tadaka	\N	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-9420926a-6647-4bc8-aa01-f76465269284	Daal Panchmail	\N	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-fdf2fd2e-713c-4b89-9c61-c891a10672ec	Butter Roti	\N	\N	\N	\N	\N	8	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-a4936011-e944-47d3-867b-f0c045dd8ff2	Sada Roti	\N	\N	\N	\N	\N	6	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
-ebc09648-cf91-4fd1-98fc-48105370356c	Plan Paranta	\N	\N	\N	\N	\N	40	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-20 14:44:03.77+00	2024-11-20 14:44:03.77+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	\N
+248b6bbf-54a6-4324-828a-91621bc33d0c	Veg Noodles	000001	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b2c34920-c77a-49ba-a16c-d3282d964bff
+2d0b0af6-0c1f-4e9c-970d-3d9f3e35ff0f	Hakka Noodles	000002	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b2c34920-c77a-49ba-a16c-d3282d964bff
+a5dc4b92-015c-4cf6-80ca-dd68f8584a2e	Paneer Noodles	000003	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b2c34920-c77a-49ba-a16c-d3282d964bff
+3963ad94-513e-4541-b2e3-f2a11916b540	Sezwan Noodles	000004	\N	\N	\N	\N	110	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b2c34920-c77a-49ba-a16c-d3282d964bff
+99a131f3-97ba-4e13-9406-cd5f79abead8	Chilli Garlic Noodles	000005	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b2c34920-c77a-49ba-a16c-d3282d964bff
+c9d75631-24a4-4d1b-ad7a-4147d223cae0	Cheese Pizza	000006	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+7580fd48-9327-49aa-8e61-b0928ccf6caa	Chilli Garlic Cheese Pizza	000007	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+90298ea5-78e9-4eb8-b43e-1eed32f70274	Tandoori Veggies Pizza	000008	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+2d5a3713-ca80-45ec-81ef-4f9705e964f9	Mexican Pizza	000009	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+17b2a940-f272-43e3-82ee-7d9683b790e0	Punjabi Pizza	000010	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+e169f5ac-f2f7-4d98-bc86-bc2d6763553e	Veggi Paneer Pizza	000011	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+98c219a7-1fe7-441b-8663-8538efadb53b	Onion Tomato Capsicum Pizza	000012	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+8634ae93-51e7-4b09-a12e-a1651f3bb605	Achari Pizza	000013	\N	\N	\N	\N	139	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+a6249758-4413-4cbd-be4b-cba51169bbcf	Full Loaded Pizza	000014	\N	\N	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	d11e5cd1-b33a-4ee2-a210-867ce816e678
+ee2992e3-2969-43be-a7be-0ad15e2881ae	Veg Momos	000015	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+f78d815c-6b5c-400f-9c90-61282654db04	Paneer Streem Momos	000016	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+b5bd6e63-6ed5-4e5e-a505-38254163ebab	Veg Fry Momos	000017	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+fb56c38c-33bb-4e73-99dc-babe8329b040	Veg Streem Momos	000018	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+8020b91d-9a64-41c7-ba18-8c38309328ec	Veg Paneer Fry Momos	000019	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+ef3eca9e-d00e-4733-9614-7f012611882b	Veg Kurkure Momos	000020	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+ed9e1ae7-71b7-4a19-91d4-e0c1de9a5b2b	Paneer Kurkure Momos	000021	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f0bd041c-6f8c-4c37-9bb1-659bb3080545
+b4d015da-1ef1-42e9-aa8e-031a76a80840	Cold Coffee	000022	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	87a216f6-f833-4049-875d-95b83e91d07b
+f6472401-a6d0-4513-b325-5b34c9e80059	Creamy Coffee	000023	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	87a216f6-f833-4049-875d-95b83e91d07b
+944784a8-0215-459f-84dc-95942ed2e943	Chocolate Cold Coffee	000024	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	87a216f6-f833-4049-875d-95b83e91d07b
+ff47f26a-cbda-4017-9d84-15dc20728e24	Hazelnut Cold Coffee	000025	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	87a216f6-f833-4049-875d-95b83e91d07b
+41d2efd4-0a14-419e-b757-98b69fe3938e	Regular Burger	000026	\N	\N	\N	\N	39	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+cc4c4b89-03e6-47c3-bed6-5429bdc32aec	Veg Burger	000027	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+b2b9bad3-b875-47a7-95ca-21c10be58d47	Veg Cheese Burger	000028	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+e1483143-c617-4f4b-9168-bd51dce2ece6	Paneer Burger	000029	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+3b8f2b88-55d2-4c72-a279-a534d7b313e3	Corn Cheese Burger	000030	\N	\N	\N	\N	85	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+9296457b-9b18-4913-b444-66d444af78a9	Spicy Burger	000031	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+8be0ea50-77e3-4580-aa35-6c84e29a665e	Mexican Spicy Burger	000032	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+4bf646c4-6f89-44f1-94e5-7b492c0d4a1d	Achari Burger	000033	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+cea6e6b1-f4e6-4a55-8360-8ca97b5d71b9	Tandoori Burger	000034	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+2f11f337-d6a0-4f6b-8216-7d455f9b60db	Veg Crunchy Burger	000035	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+83e48321-1e2a-4ec3-8cce-dc226a763061	Veg Crunchy Cheese Burger	000036	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+db5a3867-0975-4e65-992a-859755b0803f	Veg Crunchy Paneer Burger	000037	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	2e21d190-db22-4822-a64b-cca98b484660
+bf16fae0-096d-48b7-a68d-31e7cf17861a	Masala Sandwich	000038	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+43331faf-69f3-4a58-b2ed-ab391c0d9087	Veg Club Sandwich	000039	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+16b39446-aaa5-4540-8abf-561690187a7b	Veg Club Paneer Sandwich Club Chocolate	000040	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+b29435e3-a3b1-446a-87d2-938ca19a38b3	Club Chocolate Sandwich	000041	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+d7143f5f-16ae-44fe-aa3e-ffde5e49f8f9	Achari Sandwich	000042	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+d872b210-128c-4ed3-89e3-068659c8a8e6	Achari Cheese Sandwich	000043	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+2029db06-af7f-43b2-80b2-d78189c54ecf	Saffron Sandwich	000044	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+aaa69c9f-99d1-495a-bba2-c25fcb490ccb	Strawberry Sandwich	000045	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+4471747a-08cd-4d8e-9635-04d3b69d1db7	Mango Sandwich	000046	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+f6dfc1e2-8534-464b-8eff-94cb65132676	Veggies Cheese Sandwich	000047	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+21bec3b1-4a5a-4fbb-9c1d-74e93a851265	Tandoori Sandwich	000048	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+0d720443-3c08-435b-94e3-34fd88be4215	Paneer Masala Sandwich	000049	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+6366e613-f6bd-4eec-b3a7-8eb037ed5ce1	Chili Garlic Cheese Sandwich	000050	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+fcdff6fd-45b3-407c-9e55-bc9d1482e26b	Mexican Sandwich	000051	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+595c9373-258f-4a8f-ab98-047d36c05e5e	Cheese Crunchy Sandwich	000052	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	81f6bf93-0ee1-4415-86c0-6b6af7d26eae
+e9bbedb1-55cc-4fb9-ace3-65dd7abe0001	Tandoori Potato Spiral	000053	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	24111fb2-2e47-49c9-8ff5-4a87af50f658
+243cce79-7fd8-47dc-b059-a51e93b49711	Achari Potato Spiral	000054	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	24111fb2-2e47-49c9-8ff5-4a87af50f658
+e47ff7ff-0a50-488d-bc41-75324a1ffb2e	Chilli Garlic Potato Spiral	000055	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	24111fb2-2e47-49c9-8ff5-4a87af50f658
+e9370187-8dc6-43d2-bef1-62c251bb35e0	Spicy Potato Spiral	000056	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	24111fb2-2e47-49c9-8ff5-4a87af50f658
+435948d0-20a9-4a4f-8f57-0363deab72c2	Full Cheese Loaded Spiral	000057	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	24111fb2-2e47-49c9-8ff5-4a87af50f658
+8c964596-7549-4c04-89cb-f77073e06d36	Veg Roll	000058	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+c3ef0722-4975-4cb2-ad60-f23ef672be26	Crispy Roll	000059	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+c8cd84e4-c457-4c6a-a048-09589390150a	Cheese Roll	000060	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+4723e2e2-ac52-4fe8-8a3c-e3cb22972df2	Crispy Cheese Veg Roll	000061	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+e2402ab4-2757-4693-a3e4-1def647f8c22	Paneer Roll	000062	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+8d40abae-eff7-4f16-8f1d-c0e465e48a73	Crispy Paneer Roll	000063	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+8099f040-9d22-439c-a982-608e9e204eac	Tandoori Roll	000064	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+6582f988-5816-4a1e-8c79-4bcc66fd2d54	Crispy Paneer Tandoori Roll	000065	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+5ab7cd14-a24a-4566-8c65-d7b400ebca8d	Veg Achari Roll	000066	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+69d62af9-7177-4ff2-8401-a82282700ccf	Veg Schezwan Roll	000067	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f62cb3a1-d5ef-4e14-929d-603f0ba3f25e
+2f65fe98-07ac-46c3-a620-ea6108f49e25	White Pasta	000068	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+f47fb2ff-95e3-49f4-acd1-bb9b05907258	Red Pasta	000069	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+2de5c3eb-7665-40ae-afd6-13aa8b24a460	Makhni Pasta	000070	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+68e65fae-1796-4446-bd91-0d663c0a02cf	Pink Pasta	000071	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+0cc0f2fb-1750-4f62-9b87-a9465848871b	Chocolate Pasta	000072	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+1e64d718-a642-4ec3-90b7-58878f80c5e9	Achari Pasta	000073	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+d7896bb3-ac42-42ff-96a4-f8d48bb371a3	Cocktail Pasta	000074	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	6631e592-0417-4f49-a8fc-002df848bd00
+33ed180a-c648-4beb-9e26-84e6876cdfe7	Pav Bhaji	000075	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	99926787-b990-46a2-8407-8d2eea2afaa5
+3adf2056-952b-4c78-a023-4e4ce81613bd	Gravy Manchurian	000076	\N	\N	\N	\N	160	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	fc759a85-4105-4a2c-bdb1-2eb18ea38f07
+d12abe95-4423-49f7-8224-25584d239d1c	Dry Manchurian	000077	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	fc759a85-4105-4a2c-bdb1-2eb18ea38f07
+3016baeb-1a66-4210-8dd2-acbe537721fe	Natural Hot Coffee	000078	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	8db1d717-3aae-4026-9c21-dc363a29c36e
+cc8ff162-11d6-4a8c-9992-4bdd09f7ef67	Dark Coffee	000079	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	8db1d717-3aae-4026-9c21-dc363a29c36e
+a9c90166-1488-4667-95f6-7132b8a502c1	Black Coffee	000080	\N	\N	\N	\N	40	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	8db1d717-3aae-4026-9c21-dc363a29c36e
+d8a9e66b-3f3c-4043-bc56-4197a630631d	Chocolate Coffee	000081	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	8db1d717-3aae-4026-9c21-dc363a29c36e
+5c69a784-9539-49a4-b4c4-b1d83493858d	Roasted Hazelnut Coffee	000082	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	8db1d717-3aae-4026-9c21-dc363a29c36e
+e85879cb-47a1-4624-bf43-f334228870ed	Iris Coffee	000083	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	8db1d717-3aae-4026-9c21-dc363a29c36e
+99220b6f-def3-430f-a944-5f9eb1a02062	Garlic Bread	000084	\N	\N	\N	\N	30	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+de5df544-b173-4d8e-813e-8ca64a569220	Cheese Garlic Bread	000085	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+241ba57e-76b4-4f64-937a-e67eb1a5c341	Chilli Garlic Bread	000086	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+9ba9d7f0-4155-4996-b18a-55c1e23c5179	Spicy Garlic Bread	000087	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+50d8c293-ff59-4832-a9f7-1f7ac17516a9	Exotic Garlic Bread	000088	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+f6729be1-59d3-40dc-8919-ca3a79722d53	Cheese Blast Garlic Bread	000089	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+827c36a0-6206-48df-b191-5ff1daee6949	Spicy Garlic Bread	000090	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+db78a064-32b5-4ad7-a078-a4df85160647	Exotic Garlic Bread	000091	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+a8dae8d4-2643-418c-9859-42f52a442410	Cheese Blast Garlic Bread	000092	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a0745d87-0cc3-4300-ac26-94b72d4e5a8e
+0af61727-036c-4e16-bbd6-c45723a9a0c6	Regular Maggi	000093	\N	\N	\N	\N	49	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+25ef0261-59c1-4ab7-8a69-3082a4e732de	Chatkara Red Maggi	000094	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+58dd2d1b-3f9c-40c2-80ee-9e52f6c3a5e5	Sev Tomato Maggi	000095	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+4424cae1-b3eb-4b23-83a6-4e4c648c01c9	Spicy Green Garlic Maggi	000096	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+debda477-7c0f-432a-b129-07b1cee6a745	Hot Spicy Maggi	000097	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+3d627807-161d-411f-9f0d-4bfe38b24d60	Punjabi Nakhrali Green Maggi	000098	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+c2d15f20-9136-454b-bf39-e4bd891c3516	Veggie Masala Maggi	000099	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+9376850a-4603-4bad-aca3-c6b2609834be	Cheese Butter Maggi	000100	\N	\N	\N	\N	110	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+f690f315-788f-4283-b402-1b522caba23e	Cheese Veggie Maggi	000101	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+e334c295-57db-45fd-83a5-e7255103110c	Paneer Mix Maggi	000102	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	352f3ae7-8acc-485f-9181-e0478024c25f
+ce7b1b06-b359-4021-ab0e-045c75953acc	Butter Corn	000103	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+543fa191-d7e3-4506-bbd8-999f870b11b7	Masala Corn	000104	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+795f579e-264f-4874-a639-d80d3505a700	Hot Spicy Corn	000105	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+97b67cf5-c9d0-4eb1-96a7-f6f4a35fd595	Veg Cricpy Corn	000106	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+bc0a1380-e0b1-4b84-994c-0098f25e9353	Veg Cheese Corn	000107	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+8c8ce85d-b3db-42ac-8dcb-6f4ee7ec0143	Premium Crispy Cheese Load Corn	000108	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+27d9615d-78cd-40ab-b148-d286a31c196f	Premium Crispy Rich Cream Loaded	000109	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	309e863a-cbb2-4cdb-a589-6283775d2c3a
+0c201e66-4f00-4820-8ec0-4fa10cd60583	Bregular Tea	000110	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+ba66976a-9c26-4af2-9097-7d330fd1cf2a	Ginger Tea	000111	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+d243dd48-1674-457f-bafd-b106b4d64ae1	Chocolate Masala Tea	000112	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+d606fa63-a3a6-48de-9396-679eaeb9ebe3	Cardamon Tea	000113	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+2a782d48-e63e-4636-bd54-82759a5b9cef	Pan Tea	000114	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+05f0facd-f8fc-4e33-8140-32a95309f8f5	Saffron Hazelnut Tea	000115	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+493f94b0-ec55-40fd-aa22-40833e37a90d	Roasted Hazelnut Tea	000116	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+0fa504b5-e32c-43c7-99ac-4fad76cfc1d6	Mango Tea	000117	\N	\N	\N	\N	25	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	56e1c7ce-a99f-4e96-b8d2-fbd894b4c671
+243dfa4f-e8e4-47e6-8d4a-18640a4eff07	Dark Chocolate Shake	000118	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+b47d42c5-537a-42a5-b6b7-ff2afd5aaa40	Oreo Shake	000119	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+f5fbfbde-0b5e-40dc-8b54-6b2bd34282ef	Mango Shake	000120	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+fb1e03a2-c5a1-47c7-9a2d-8aabafff72e7	Vanilla Shake	000121	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+e0f8dc4f-f95d-4413-b819-18a36c63aee2	Strawberry Shake	000122	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+0e1a8134-8dcd-465a-ade0-657352dbb10c	Butterscotch Shake	000123	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+d79c8d54-5dc4-425a-937f-cbe811969465	Raspberry Shake	000124	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+3512984b-4a6b-436e-8394-3facdc8937d6	Green Apple Shake	000125	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+e33ecda3-3d8c-4bc7-8c81-d03f45d45790	Water Melon Shake	000126	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+787a5e5b-8a79-407f-8d43-e01c571c4bd2	Kiwi Shake	000127	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+6bfe3a80-bc24-4912-87c4-0e80cff65174	Saffron Shake	000128	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+78c80bbb-155d-4e3f-99a2-b62a8ee36fbc	Banana Shake	000129	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+affe3fc8-e1f4-443b-84d7-1633384df243	Roasted Hazelnut Shake	000130	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+0cc6d2f1-bac0-4296-aae9-67f84aaf33c4	Expresso Shake	000131	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+d27976be-aa0e-4926-b451-47dcf94c03a5	Orange Shake	000132	\N	\N	\N	\N	129	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	e6c84b4b-6da3-467f-bd7c-432ef95b6df4
+39808701-7351-4463-98cc-09467a73f63c	Classic	000133	\N	\N	\N	\N	66	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+2962877d-916f-49da-89a2-e122552331dd	Schezwan Mix	000134	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+fcb543af-2356-425e-9f34-85a6a14023ca	Veffie	000135	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+d86124b3-d90e-4e08-a2fc-1bb370603d56	Cheese Mayo	000136	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+ba2b0d24-a6b1-4bc7-b30c-8230ebea309c	Maxican Salsa	000137	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+9dd1b062-6629-4352-82c1-b2773102f499	Tandoori	000138	\N	\N	\N	\N	98	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+df00b653-7220-4cb1-834c-c74a2bec9fed	Cheese Jalapeno	000139	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+3fadafd8-fead-4868-87bb-7738b97adbc0	Barbecue Nachos	000140	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a48de8c6-03ea-44b9-80a1-444b0cd02780
+5f1f9fc0-5aa5-4fa8-b9f9-e82de7614c16	Classic Fries	000141	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+d88c5e81-0f17-4458-9617-4602458b303f	Spicy Masala Fries	000142	\N	\N	\N	\N	50	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+a1650b11-c6ef-44c9-a4d2-e0e5f0bbcac5	Peri Peri Fries	000143	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+521c04e2-dc62-41a7-89c9-baf2803fde5e	Spicy Honey Fries	000144	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+29ed61aa-d8ef-4291-b224-62ad5fb62de4	Barbecue Fries	000145	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+dd35e364-316a-4cfd-8516-af0c1b222104	Lemon Chilli Fries	000146	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+079d6d30-3482-4973-8643-ae653d99ddd2	Chilli Garlic Fries	000147	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+2c3e6639-365f-42eb-a136-fb452e9bdd5c	Lemon Pepper Fries	000148	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+ccc3675d-f91d-45e1-ae88-aff61c16e715	Tandoori Fries	000149	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+2ddcad8d-b296-4aae-933a-2d89c3f4a99d	Mexican Fries	000150	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	409da47a-c47a-4a65-baab-90555ef35d86
+70037802-cd04-4799-aff9-a3c9b7522b79	Classic Mojito	000151	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+c574fa88-76ba-4ba4-996b-e1c24d28a448	Paan Mojito	000152	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+5a1a0232-1f52-414e-b784-68909480edd8	Raspberry Mojito	000153	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+ab9ac715-d622-4f6e-8c62-a7850353c9c0	Black Cobra (Cumin) Mojito	000154	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+b7d4a0f7-3d4d-4a3f-8340-5e934750d807	Green Apple Mojito	000155	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+674ba5a9-5884-4ccc-8e4c-0c55f6989760	Water Melon Mojito	000156	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+8cf63769-d05a-42ed-8db7-10f5a110359b	Kiwi Mojito	000157	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+1ebc038d-b9d6-4aad-bddf-000686183579	Ginger Mojito	000158	\N	\N	\N	\N	60	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+ea7b96bd-a90f-4837-999a-7377d90d05cf	Lychee Mojito	000159	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+6c60c856-14e9-479d-b4b8-6fea865de436	Redwine Mojito	000160	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+de63c7b4-6c29-47aa-a09a-57e2fcfce5a1	Malt Food Costa (Non Alcoholic Beeri)	000161	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+c22a3138-8442-4845-bade-093bf55e4133	Blue Curacao	000162	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+ef535d4f-953a-4197-8663-caf1ca6c65cd	Pina Colada	000163	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+5670a0fb-6b0f-4f30-9373-58a285c7391f	Chilli Guava	000164	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+03f97dc3-af70-42b1-839f-120739a33200	Orange Shake	000165	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	13d596c0-b7cc-45d1-bfa3-41d5022f6d9f
+ee3ea41c-34f4-4245-81ad-a7ac311777a3	Masala Paneer	000166	\N	\N	\N	\N	160	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+3bb7d304-4e58-4dea-b336-77878d7cb007	Paneer Butter Masala	000167	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+aad4be19-67a0-4e32-b5cb-397c63572780	Paneer Bhurji	000168	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+e755ace0-5d0d-4f7a-9e44-1c7a56dc9355	Kadai Paneer	000169	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+58d53d8b-a85f-4535-ad46-c338c8e1336b	Shahi Paneer	000170	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+73a1586d-550e-4688-8760-1bcdf9b49418	Palak Paneer	000171	\N	\N	\N	\N	170	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+49bd093e-1b31-4897-a207-ecef8b4ea781	Paneer Do Pyaja	000172	\N	\N	\N	\N	199	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+ba5ede0b-7dc8-44d7-8884-8cc34c60197e	Chhola Panner	000173	\N	\N	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+23926b05-9d98-4840-84fa-669ed40a6962	Paneer Tikka	000174	\N	\N	\N	\N	170	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+5d9ff73b-d3f8-4479-8ef8-cddd7cea53b6	Paneer Chilli	000175	\N	\N	\N	\N	199	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+d34c4441-8ba6-4e24-b6da-7c5badff07d2	Paneer Masala	000176	\N	\N	\N	\N	180	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+e040c482-b87a-47f7-a5bd-a06f2960724c	Paneer Chilli Masala	000177	\N	\N	\N	\N	199	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a7176436-bf2b-4223-b4c2-e5d0b882de99
+eb1d4949-ecf5-4f81-a75b-df10f19f8958	Sheho Bhaji	000178	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f8ec9c8d-3d97-4542-8346-c7036e7eb52d
+17d6443f-0d60-4556-af43-b8f103d7af05	Sheho Tamater	000179	\N	\N	\N	\N	110	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f8ec9c8d-3d97-4542-8346-c7036e7eb52d
+a9df649e-6ea0-4228-a8ee-e92377e3c86a	Sheho Masala	000180	\N	\N	\N	\N	99	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	f8ec9c8d-3d97-4542-8346-c7036e7eb52d
+9b96bb4c-04a3-409c-93e0-7f6a80f5f2c4	Sada Thali	000181	\N	Dal, 2 Sabji, Raiyta, 5 Roti Tava, Salad, Meetha	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b05c4868-eb0e-4759-aa05-9a40b86033f5
+46b699f5-8095-48ab-9898-02a2a4f93b14	Special Thali	000182	\N	Dal, 2 Sabji, Raiyta, Mater Paneer Salad, 5 Roti Tava, Meetha	\N	\N	150	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b05c4868-eb0e-4759-aa05-9a40b86033f5
+40c2523e-269d-48b6-af0c-d1119372b307	Super Thali	000183	\N	Dal, 2 Sabji, Raiyta, Mater Paneer Sahi Paneer, 2 Parantha, 5 Roti Tava Salad, Achar, Meetha	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	b05c4868-eb0e-4759-aa05-9a40b86033f5
+1b91efa3-604e-4095-92c9-15f46e6534a9	Daal Fry	000184	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	3a870191-870c-457f-8407-45370b7dfa2e
+fcf9c686-22d5-40f4-a365-46c371893559	Daal Tadaka	000185	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	3a870191-870c-457f-8407-45370b7dfa2e
+57cf0775-d9e0-4e70-9637-4e832b7bfad8	Daal Punjabi	000186	\N	\N	\N	\N	100	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	3a870191-870c-457f-8407-45370b7dfa2e
+78a140df-dae9-4b43-a12d-a94d9a3b8559	Daal Panchmail	000187	\N	\N	\N	\N	120	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	3a870191-870c-457f-8407-45370b7dfa2e
+6ecae70c-6f00-4378-9c18-858e9106c2e9	Kaju Paneer	000188	\N	\N	\N	\N	250	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	4487050f-ad2c-4cf2-a334-59201a6cb92e
+a24d5b1a-a63c-4212-8add-7b9c5f696598	Kaju Kari	000189	\N	\N	\N	\N	200	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	4487050f-ad2c-4cf2-a334-59201a6cb92e
+6ee39910-9453-492d-a288-0999df8cf4e6	Kaju Masala	000190	\N	\N	\N	\N	190	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	4487050f-ad2c-4cf2-a334-59201a6cb92e
+1fe8e1c2-4dd6-42cc-b094-671d6c23a0a5	Kaju Malai	000191	\N	\N	\N	\N	170	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	4487050f-ad2c-4cf2-a334-59201a6cb92e
+098f89c6-2753-4d31-a7ee-1a18dc478cd9	Butter Roti	000192	\N	\N	\N	\N	8	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a80bfd78-e646-4073-947e-f4a185d20005
+7783557e-7db8-4019-a697-e77325fc2a86	Sada Roti	000193	\N	\N	\N	\N	6	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a80bfd78-e646-4073-947e-f4a185d20005
+bef0f6c9-ffdf-41a5-bdfc-2b24bf4216cc	Plan Paranta	000194	\N	\N	\N	\N	40	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a80bfd78-e646-4073-947e-f4a185d20005
+87dad2c6-9fe6-4e96-bb26-401f26864784	Aloo Paranta	000195	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a80bfd78-e646-4073-947e-f4a185d20005
+3813cb2d-eefe-44c3-8bef-34104b9c1210	Paneer Paranta	000196	\N	\N	\N	\N	80	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	a80bfd78-e646-4073-947e-f4a185d20005
+4bf9765b-f2d3-42f8-97cb-145374af4f1a	Fruit Rahyeta	000197	\N	\N	\N	\N	130	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	07734f40-c707-4892-8922-0a06f6d58e1d
+d10a9211-080c-4871-adfa-44e03828ff02	Bundi Rahyeta	000198	\N	\N	\N	\N	70	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	07734f40-c707-4892-8922-0a06f6d58e1d
+aadbc55c-7d9d-42df-a827-4ca9c0ce963d	Dhai Rahyeta	000199	\N	\N	\N	\N	90	\N	f	\N	instock	published	f	\N	\N	\N	\N	2024-11-21 15:38:13.042+00	2024-11-21 15:38:13.042+00	b88ccc0e-fe2f-4d8a-a85d-ddff4fddc2fa	\N	\N	\N	07734f40-c707-4892-8922-0a06f6d58e1d
 \.
 
 
