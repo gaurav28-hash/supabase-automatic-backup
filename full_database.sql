@@ -5866,11 +5866,6 @@ ALTER TABLE ONLY "public"."piepos_order_items"
 
 
 ALTER TABLE ONLY "public"."piepos_orders"
-    ADD CONSTRAINT "piepos_orders_order_number_key" UNIQUE ("order_number");
-
-
-
-ALTER TABLE ONLY "public"."piepos_orders"
     ADD CONSTRAINT "piepos_orders_pkey" PRIMARY KEY ("id");
 
 
@@ -5896,17 +5891,7 @@ ALTER TABLE ONLY "public"."piepos_product_suppliers"
 
 
 ALTER TABLE ONLY "public"."piepos_products"
-    ADD CONSTRAINT "piepos_products_barcode_key" UNIQUE ("barcode");
-
-
-
-ALTER TABLE ONLY "public"."piepos_products"
     ADD CONSTRAINT "piepos_products_pkey" PRIMARY KEY ("id");
-
-
-
-ALTER TABLE ONLY "public"."piepos_products"
-    ADD CONSTRAINT "piepos_products_sku_key" UNIQUE ("sku");
 
 
 
