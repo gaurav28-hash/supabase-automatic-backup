@@ -3695,6 +3695,7 @@ COPY "public"."jahanvi_users" ("id", "name", "phone_number", "email", "status", 
 08156565-e933-4426-9caf-a10ce3a09497	Mahesh lodha	8770743945	mahesh@piecodes.in	active	admin	male	2024-08-24	22:34:00	Guna	df301340acd7de51b1761a208ebe9235	\N	\N	2024-10-17 05:54:28.066+00	2024-10-17 05:54:28.066+00
 d7e082d8-4cfd-446b-b664-843f64d192d7	Gk	7894567898	gk@mailinator.com	active	manager	male	1998-07-06	11:00:00	Raghogarh	\N	\N	\N	2024-10-30 12:50:55.941+00	2024-10-30 12:50:55.941+00
 35feda92-ecc5-4d06-9b44-3c1f4d83baa1	Golu Khan	8670000103	golu@piecodes.in	pending	customer	male	2024-08-24	22:34:00	mumbai	9029b25a7391f54af95c08d9eb8571b7	\N	\N	2024-11-09 06:41:44.882+00	2024-11-09 06:41:44.882+00
+de6419cb-3baa-4ea0-8cae-61c095576f95	Sateesh Raghuwnashi	8103311255	GB@mailinator.com	active	admin	male	2024-08-24	22:34:00	Panoua @ Askn	$2b$10$Cx08VGY64x0M10pK/20pZOQlzmTv4a98CuJXkEEa.OZzGyjbFRZQq	\N	\N	2024-11-26 09:14:12.717+00	2024-11-26 10:35:24.132+00
 \.
 
 
@@ -3851,10 +3852,11 @@ COPY "public"."jahanvi_quotes" ("id", "name", "description", "created_at", "upda
 -- Data for Name: jahanvi_security_tokens; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "updated_at", "user_id") FROM stdin;
-31106704-187a-41d4-8eca-c8c2849304c4	235269	account_verification	2024-10-17 05:48:32.866+00	2024-10-17 05:48:32.866+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
-68518f50-8e23-4514-aaab-2b5625c3711d	292609	account_verification	2024-10-17 05:54:29.517+00	2024-10-17 05:54:29.517+00	08156565-e933-4426-9caf-a10ce3a09497
-2fcf9f20-3fbc-4c83-9944-45d5a522ecc5	130310	account_verification	2024-11-09 06:41:46.558+00	2024-11-09 06:41:46.558+00	35feda92-ecc5-4d06-9b44-3c1f4d83baa1
+COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "updated_at", "user_id", "valid_till") FROM stdin;
+31106704-187a-41d4-8eca-c8c2849304c4	235269	account_verification	2024-10-17 05:48:32.866+00	2024-10-17 05:48:32.866+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	\N
+68518f50-8e23-4514-aaab-2b5625c3711d	292609	account_verification	2024-10-17 05:54:29.517+00	2024-10-17 05:54:29.517+00	08156565-e933-4426-9caf-a10ce3a09497	\N
+2fcf9f20-3fbc-4c83-9944-45d5a522ecc5	130310	account_verification	2024-11-09 06:41:46.558+00	2024-11-09 06:41:46.558+00	35feda92-ecc5-4d06-9b44-3c1f4d83baa1	\N
+51f26344-2199-4e8d-9a9e-97257a314862	948196	reset_password	2024-11-26 09:58:24.783+00	2024-11-26 09:58:24.783+00	de6419cb-3baa-4ea0-8cae-61c095576f95	2024-11-26 10:13:24+00
 \.
 
 
@@ -3862,9 +3864,10 @@ COPY "public"."jahanvi_security_tokens" ("id", "token", "type", "created_at", "u
 -- Data for Name: jahanvi_sessions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id") FROM stdin;
-b5768d37-fe81-46d2-baea-39315af38d84	37a746d2-3ba7-4116-9d84-8339884074f3	2024-11-16 10:47:22.559+00	2024-11-16 10:47:22.559+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
-448424fb-98df-4b39-a89e-d8d1830eb705	66a2b23a-7a3c-4a62-ac85-6feb39af19f5	2024-11-16 11:26:01.015+00	2024-11-16 11:26:01.015+00	08156565-e933-4426-9caf-a10ce3a09497
+COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id", "refresh_token") FROM stdin;
+b5768d37-fe81-46d2-baea-39315af38d84	37a746d2-3ba7-4116-9d84-8339884074f3	2024-11-16 10:47:22.559+00	2024-11-16 10:47:22.559+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	\N
+448424fb-98df-4b39-a89e-d8d1830eb705	66a2b23a-7a3c-4a62-ac85-6feb39af19f5	2024-11-16 11:26:01.015+00	2024-11-16 11:26:01.015+00	08156565-e933-4426-9caf-a10ce3a09497	\N
+9943a169-3ee6-4739-b472-bfe067a235b6	7f9c19fd-60c7-44cd-a681-8506b67cd343	2024-11-26 10:35:55.336+00	2024-11-26 10:35:55.336+00	de6419cb-3baa-4ea0-8cae-61c095576f95	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkZTY0MTljYi0zYmFhLTRlYTAtOGNhZS02MWMwOTU1NzZmOTUiLCJlbWFpbCI6IkdCQG1haWxpbmF0b3IuY29tIiwiaWF0IjoxNzMyNjE3MzU1LCJleHAiOjE3NjQxNTMzNTV9.bOITdtOLUjZWugkc-Y0AFCJhNDCE_7vf1b1EdVp1TDQ
 \.
 
 
