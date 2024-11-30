@@ -2446,7 +2446,11 @@ CREATE TABLE IF NOT EXISTS "public"."jahanvi_users" (
     "otp" integer,
     "token" "uuid",
     "created_at" timestamp with time zone NOT NULL,
-    "updated_at" timestamp with time zone NOT NULL
+    "updated_at" timestamp with time zone NOT NULL,
+    "lon" double precision,
+    "lat" double precision,
+    "tzone" character varying(255),
+    "horoscope_chart_image" "jsonb"
 );
 
 
@@ -5153,12 +5157,132 @@ ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
 
 
 ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key100" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key101" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key102" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key103" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key104" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key105" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key106" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key107" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key108" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key109" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
     ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key11" UNIQUE ("enquiry_number");
 
 
 
 ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key110" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key111" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key112" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key113" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key114" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key115" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key116" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key117" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key118" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key119" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
     ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key12" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key120" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key121" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key122" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key123" UNIQUE ("enquiry_number");
 
 
 
@@ -5573,7 +5697,67 @@ ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
 
 
 ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key88" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key89" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
     ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key9" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key90" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key91" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key92" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key93" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key94" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key95" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key96" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key97" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key98" UNIQUE ("enquiry_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_gem_enquiries"
+    ADD CONSTRAINT "jahanvi_gem_enquiries_enquiry_number_key99" UNIQUE ("enquiry_number");
 
 
 
@@ -5843,7 +6027,97 @@ ALTER TABLE ONLY "public"."jahanvi_orders"
 
 
 ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key142" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key143" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key144" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key145" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key146" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key147" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key148" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key149" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
     ADD CONSTRAINT "jahanvi_orders_order_number_key15" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key150" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key151" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key152" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key153" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key154" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key155" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key156" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key157" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key158" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key159" UNIQUE ("order_number");
 
 
 
@@ -5853,12 +6127,162 @@ ALTER TABLE ONLY "public"."jahanvi_orders"
 
 
 ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key160" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key161" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key162" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key163" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key164" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key165" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key166" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key167" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key168" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key169" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
     ADD CONSTRAINT "jahanvi_orders_order_number_key17" UNIQUE ("order_number");
 
 
 
 ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key170" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key171" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key172" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key173" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key174" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key175" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key176" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key177" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key178" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key179" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
     ADD CONSTRAINT "jahanvi_orders_order_number_key18" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key180" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key181" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key182" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key183" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key184" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key185" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key186" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key187" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key188" UNIQUE ("order_number");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_orders"
+    ADD CONSTRAINT "jahanvi_orders_order_number_key189" UNIQUE ("order_number");
 
 
 
@@ -6348,7 +6772,107 @@ ALTER TABLE ONLY "public"."jahanvi_sessions"
 
 
 ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key100" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key101" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key102" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key103" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key104" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key105" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key106" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key107" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key108" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key109" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
     ADD CONSTRAINT "jahanvi_sessions_refresh_token_key11" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key110" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key111" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key112" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key113" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key114" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key115" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key116" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key117" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key118" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key119" UNIQUE ("refresh_token");
 
 
 
@@ -6358,7 +6882,107 @@ ALTER TABLE ONLY "public"."jahanvi_sessions"
 
 
 ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key120" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key121" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key122" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key123" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key124" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key125" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key126" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key127" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key128" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key129" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
     ADD CONSTRAINT "jahanvi_sessions_refresh_token_key13" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key130" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key131" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key132" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key133" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key134" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key135" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key136" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key137" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key138" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key139" UNIQUE ("refresh_token");
 
 
 
@@ -6733,7 +7357,102 @@ ALTER TABLE ONLY "public"."jahanvi_sessions"
 
 
 ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key81" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key82" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key83" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key84" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key85" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key86" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key87" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key88" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key89" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
     ADD CONSTRAINT "jahanvi_sessions_refresh_token_key9" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key90" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key91" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key92" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key93" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key94" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key95" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key96" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key97" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key98" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."jahanvi_sessions"
+    ADD CONSTRAINT "jahanvi_sessions_refresh_token_key99" UNIQUE ("refresh_token");
 
 
 
