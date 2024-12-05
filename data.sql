@@ -3692,11 +3692,13 @@ c8235b75-ef32-4bdd-a2dd-04acaa383595	Guruma	Personalized Astrology Consultations
 
 COPY "public"."jahanvi_users" ("id", "name", "phone_number", "email", "status", "role", "gender", "dob", "tob", "birth_place", "password", "otp", "token", "created_at", "updated_at", "lon", "lat", "tzone", "horoscope_chart_image") FROM stdin;
 05a5da7f-7ef9-4a82-b730-63fbef1de956	Gk	7894567898	gkk@mailinator.com	active	manager	male	1998-07-06	11:00:00	Raghogarh	\N	\N	\N	2024-11-30 10:33:27.219+00	2024-11-30 10:33:27.219+00	\N	\N	\N	\N
-1b6a5619-ce5c-4ee2-9957-9868b4a37c34	Gaurav Bhargava	8878398665	gaurav@piecodes.in	active	customer	male	2024-08-24	22:34:00	Guna	ad370dd5aaef6454201036813f8ea5a3	\N	\N	2024-10-17 05:48:31.401+00	2024-10-17 05:48:31.401+00	\N	\N	\N	\N
 08156565-e933-4426-9caf-a10ce3a09497	Mahesh lodha	8770743945	mahesh@piecodes.in	active	admin	male	2024-08-24	22:34:00	Guna	df301340acd7de51b1761a208ebe9235	\N	\N	2024-10-17 05:54:28.066+00	2024-10-17 05:54:28.066+00	\N	\N	\N	\N
 d7e082d8-4cfd-446b-b664-843f64d192d7	Gk	7894567898	gk@mailinator.com	active	manager	male	1998-07-06	11:00:00	Raghogarh	\N	\N	\N	2024-10-30 12:50:55.941+00	2024-10-30 12:50:55.941+00	\N	\N	\N	\N
 de6419cb-3baa-4ea0-8cae-61c095576f95	Sateesh Raghuwnashi	8103311255	GB@mailinator.com	active	admin	male	2024-08-24	22:34:00	Panoua @ Askn	$2b$10$Cx08VGY64x0M10pK/20pZOQlzmTv4a98CuJXkEEa.OZzGyjbFRZQq	\N	\N	2024-11-26 09:14:12.717+00	2024-11-26 10:35:24.132+00	\N	\N	\N	\N
 fe7ae107-86a9-476d-a54f-2d7cea2e3b32	Krishna singh	+917777880708	satendra@piecodes.in	pending	customer	male	2024-08-24	22:34:00	mumbai	$2b$10$ONGTufuUsPFQMQK0kviAAOTG2li2Nik6kkENK/ce9omTFrohX5FAi	\N	\N	2024-12-02 10:52:02.089+00	2024-12-02 10:52:02.089+00	72.087	13.865	5.5	\N
+9addd08f-ec03-4268-b84e-a8d2adb25df1	Golou khan	+917777880708	golu@piecodes.in	active	customer	male	2024-08-24	22:34:00	mumbai	$2b$10$V2mkUKjhLcYq1SJj93GLyeElLPR6IEM/waR6.lnVJuDS3RMxypGRe	\N	\N	2024-12-04 10:32:55.313+00	2024-12-04 10:34:03.842+00	72.087	13.865	5.5	\N
+1b6a5619-ce5c-4ee2-9957-9868b4a37c34	Gaurav Bhargava	8878398665	gaurav@piecodes.in	active	customer	male	2024-08-24	22:34:00	Guna	ad370dd5aaef6454201036813f8ea5a3	178929	\N	2024-10-17 05:48:31.401+00	2024-12-04 13:40:01.972+00	\N	\N	\N	\N
+a54c46bf-41bf-49fc-8711-ada97a5185a6	Golu khan	7777880708	\N	active	customer	male	2024-08-24	22:34:00	mumbai	\N	629524	\N	2024-12-04 13:38:43.543+00	2024-12-04 14:06:51.055+00	72.087	13.865	5.5	\N
 \.
 
 
@@ -3714,9 +3716,10 @@ a2b263a3-509e-4a0e-99f2-7995b7a68217	750	1	2024-10-30 12:27:27.529+00	2024-10-30
 -- Data for Name: jahanvi_orders; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."jahanvi_orders" ("id", "total_price", "order_note", "order_number", "full_name", "email", "phone_number", "status", "type", "belongs_to", "payment_status", "created_at", "updated_at", "user_id", "fees_id", "assign_id") FROM stdin;
-f6400715-7d27-4114-80aa-687cb43f79d8	750	Vijaywada	46087	John carter	gaurav@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-10-30 12:28:31.659+00	2024-10-30 12:51:50.652+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	d7e082d8-4cfd-446b-b664-843f64d192d7
-2369c915-2cf2-4314-a83c-ca7d7b1eec3c	750	Vijaywada	60690	Golu khan	golu@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-11-09 06:48:44.902+00	2024-11-09 06:48:44.902+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	\N
+COPY "public"."jahanvi_orders" ("id", "total_price", "order_note", "order_number", "full_name", "email", "phone_number", "status", "type", "belongs_to", "payment_status", "created_at", "updated_at", "user_id", "fees_id", "assign_id", "gender", "dob", "tob", "birth_place", "horoscope_chart_image", "lon", "lat", "tzone") FROM stdin;
+f6400715-7d27-4114-80aa-687cb43f79d8	750	Vijaywada	46087	John carter	gaurav@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-10-30 12:28:31.659+00	2024-10-30 12:51:50.652+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	d7e082d8-4cfd-446b-b664-843f64d192d7	\N	\N	\N	\N	\N	\N	\N	\N
+2369c915-2cf2-4314-a83c-ca7d7b1eec3c	750	Vijaywada	60690	Golu khan	golu@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-11-09 06:48:44.902+00	2024-11-09 06:48:44.902+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	\N	\N	\N	\N	\N	\N	\N	\N	\N
+b7895126-c4fe-4c7b-837c-1ac80ddd1d9d	750	Vijaywada	51958	Golu khan	golu@piecodes.in	9000000067	upcoming	1	other	unpaid	2024-12-04 13:19:20.98+00	2024-12-04 13:19:20.98+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	a2b263a3-509e-4a0e-99f2-7995b7a68217	\N	male	2024-08-24	22:34:00	mumbai	\N	72.087	13.865	5.5
 \.
 
 
@@ -3727,6 +3730,7 @@ f6400715-7d27-4114-80aa-687cb43f79d8	750	Vijaywada	46087	John carter	gaurav@piec
 COPY "public"."jahanvi_chats" ("id", "status", "created_at", "updated_at", "user_id", "order_id") FROM stdin;
 27b7bdbd-96bc-4b9f-9f5f-a0557e50f80b	active	2024-10-30 12:28:31.927+00	2024-10-30 12:28:31.927+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	f6400715-7d27-4114-80aa-687cb43f79d8
 104907e3-fcad-4d3e-9449-99d615fe7c64	active	2024-11-09 06:48:45.193+00	2024-11-09 06:48:45.193+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	2369c915-2cf2-4314-a83c-ca7d7b1eec3c
+8f9e2b20-873a-4c08-9ce8-4c1dc37c7892	active	2024-12-04 13:19:21.259+00	2024-12-04 13:19:21.259+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	b7895126-c4fe-4c7b-837c-1ac80ddd1d9d
 \.
 
 
@@ -3830,6 +3834,10 @@ dd918445-3959-4923-9615-af305ccf0dfb	Thank you for your enquiry. Your gem enquir
 69af1527-304d-4b38-90fc-7adf127785c9	Admin sent you a message	{"action":"message","chat_id":"104907e3-fcad-4d3e-9449-99d615fe7c64","order_number":"60690"}	Chat message	unread	2024-11-16 11:04:32.527+00	2024-11-16 11:04:32.527+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 dd74311d-139f-4a60-86b8-0bb12d8be93d	Admin sent you a message	{"action":"message","chat_id":"104907e3-fcad-4d3e-9449-99d615fe7c64","order_number":"60690"}	Chat message	unread	2024-11-16 11:14:00.24+00	2024-11-16 11:14:00.24+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 494dcb82-22ad-4a15-9bda-84907d1a89c4	Admin sent you a message	{"action":"message","chat_id":"104907e3-fcad-4d3e-9449-99d615fe7c64","order_number":"60690"}	Chat message	unread	2024-11-16 11:15:02.068+00	2024-11-16 11:15:02.068+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+0b6fc201-61d4-4415-9264-6309ec8f0575	Your booking with ID-25986 has been successfully created.	{"action":"booking_create","order_id":"396d646f-5b03-4bf3-a20c-4c99426c735c"}	Thank You for Your Booking!	unread	2024-12-04 12:34:15.085+00	2024-12-04 12:34:15.085+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+8ed40be9-ef3c-4069-8413-edfa60c5d146	Your booking with ID-22084 has been successfully created.	{"action":"booking_create","order_id":"bc5ae8a1-476f-4ea9-b7c9-329e16d13eb1"}	Thank You for Your Booking!	unread	2024-12-04 13:01:10.655+00	2024-12-04 13:01:10.655+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+4239aaa6-5566-4a56-8bb8-f3b563eaed09	Your booking with ID-3267 has been successfully created.	{"action":"booking_create","order_id":"86eba0f0-c984-4c64-b64f-669a64fe3553"}	Thank You for Your Booking!	unread	2024-12-04 13:18:06.153+00	2024-12-04 13:18:06.153+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
+72b0089a-cc07-4bae-9e08-7e173506e59d	Your booking with ID-51958 has been successfully created.	{"action":"booking_create","order_id":"b7895126-c4fe-4c7b-837c-1ac80ddd1d9d"}	Thank You for Your Booking!	unread	2024-12-04 13:19:21.91+00	2024-12-04 13:19:21.91+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34
 \.
 
 
@@ -3866,9 +3874,11 @@ b999dd7b-2716-4c25-8638-f0a14a5e4491	161856	account_verification	2024-12-02 10:5
 --
 
 COPY "public"."jahanvi_sessions" ("id", "access_token", "created_at", "updated_at", "user_id", "refresh_token") FROM stdin;
-b5768d37-fe81-46d2-baea-39315af38d84	37a746d2-3ba7-4116-9d84-8339884074f3	2024-11-16 10:47:22.559+00	2024-11-16 10:47:22.559+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	\N
+88c083f6-b658-4c39-9327-cfaa3acd8219	099dadb7-9057-4b42-8f5f-37d35ebced24	2024-12-04 13:41:49.856+00	2024-12-04 13:41:49.856+00	a54c46bf-41bf-49fc-8711-ada97a5185a6	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhNTRjNDZiZi00MWJmLTQ5ZmMtODcxMS1hZGE5N2E1MTg1YTYiLCJlbWFpbCI6bnVsbCwiaWF0IjoxNzMzMzE5NzA5LCJleHAiOjE3NjQ4NTU3MDl9.JWO3iWJn2sao0TmDgnxyFnSyFUegwuL_Y4J6i04YLAA
 448424fb-98df-4b39-a89e-d8d1830eb705	66a2b23a-7a3c-4a62-ac85-6feb39af19f5	2024-11-16 11:26:01.015+00	2024-11-16 11:26:01.015+00	08156565-e933-4426-9caf-a10ce3a09497	\N
 1e02a7e1-9cc6-4b31-8558-f813ba90fbf2	4644377b-6a75-4a92-97d6-95e967951b0b	2024-11-30 10:32:14.877+00	2024-11-30 10:32:14.877+00	de6419cb-3baa-4ea0-8cae-61c095576f95	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkZTY0MTljYi0zYmFhLTRlYTAtOGNhZS02MWMwOTU1NzZmOTUiLCJlbWFpbCI6IkdCQG1haWxpbmF0b3IuY29tIiwiaWF0IjoxNzMyOTYyNzM0LCJleHAiOjE3NjQ0OTg3MzR9.lGWrWaKBHY7CE7p4cE_z2zyexd6W30jQHM-thSEwGxw
+f5fb7526-10db-484d-884a-7d8e0c237d30	078fab2c-0e79-4488-98b6-120fd71fa815	2024-12-04 10:34:11.288+00	2024-12-04 10:34:11.288+00	9addd08f-ec03-4268-b84e-a8d2adb25df1	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5YWRkZDA4Zi1lYzAzLTQyNjgtYjg0ZS1hOGQyYWRiMjVkZjEiLCJlbWFpbCI6ImdvbHVAcGllY29kZXMuaW4iLCJpYXQiOjE3MzMzMDg0NTEsImV4cCI6MTc2NDg0NDQ1MX0.S2_B-MxF9TUWcA4-0hrJ1-qhmj3JVJZRazoh1H-mSHw
+9d8f85ab-bc28-4c2f-af77-eeaa9b74527c	b0d5de0c-f1b0-4e4f-9e5f-8af8256a76ed	2024-12-04 12:28:48.263+00	2024-12-04 12:28:48.263+00	1b6a5619-ce5c-4ee2-9957-9868b4a37c34	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYjZhNTYxOS1jZTVjLTRlZTItOTk1Ny05ODY4YjRhMzdjMzQiLCJlbWFpbCI6ImdhdXJhdkBwaWVjb2Rlcy5pbiIsImlhdCI6MTczMzMxNTMyOCwiZXhwIjoxNzY0ODUxMzI4fQ.DewHow6Igne_7lk6hYX6DggbTdhEtkpA9U4yVmSq0Bg
 \.
 
 
