@@ -3885,6 +3885,81 @@ f5fb7526-10db-484d-884a-7d8e0c237d30	078fab2c-0e79-4488-98b6-120fd71fa815	2024-1
 
 
 --
+-- Data for Name: lead_clients; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_clients" ("id", "name", "email", "phone_number1", "phone_number2", "status", "address1", "address2", "city", "province", "postcode", "country", "website", "latitude", "longitude", "gst", "created_at", "updated_at") FROM stdin;
+b199fb67-2314-4e98-a2a7-5f3c0760aec3	Allen career institute	testing@mailinator.com	9787897877	\N	active	Dada badi , kota	\N	Kota	Rajasthan	76568	IN	\N	\N	\N	\N	2024-12-10 10:37:38+00	2024-12-10 10:37:41+00
+22b7801f-e0e7-4724-b7e0-219c8b2174e0	Aakash career institute	gk@mailinator.com	9179453590	9179453590	active	Indore	Soni colony	Indore	\N	\N	\N	https://pos.sample.in	908	908	x524524dsfg54df	2024-12-10 13:21:41.138+00	2024-12-10 13:21:41.138+00
+\.
+
+
+--
+-- Data for Name: lead_institutes; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_institutes" ("id", "title", "description", "email", "phone_number", "city", "state", "created_at", "updated_at", "client_id") FROM stdin;
+3148d902-e1f2-4a89-b33e-0ee646cda90e	Sakaar Kota		testing@gmail.com	8789797876	Kota	Madhya pradesh	2024-12-10 10:05:30+00	2024-12-10 10:05:33+00	\N
+a501bbec-9146-498a-af00-1b99c515cef5	Sabal	A premier institute for IIT entrance.	info@git.edu	9876543210	Bhopal	Madhya Pradesh	2024-12-10 11:20:45.652+00	2024-12-10 11:20:45.652+00	b199fb67-2314-4e98-a2a7-5f3c0760aec3
+\.
+
+
+--
+-- Data for Name: lead_leads; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_leads" ("id", "first_name", "last_name", "email", "gender", "phone_number", "address1", "address2", "city", "state", "postcode", "status", "created_at", "updated_at", "institute_id", "browser_agent") FROM stdin;
+b199fb67-2314-4e98-a2a7-5f3c0760aec3	Gaurav	Bhargava	gaurav@piecodes.in	male	8988998763	78 scheme,Vijay nagar	Near atal khel parishar	Indore	Madhya pradesh	473663	pending	2024-12-10 10:07:31.222+00	2024-12-10 10:07:31.222+00	3148d902-e1f2-4a89-b33e-0ee646cda90e	\N
+f6a6b175-8342-4b00-9ba2-7bceefbeaa13	Gaurav	Kumar	gaurav@piecodes.in	male	8988998763	78 scheme,Vijay nagar	Near atal khel parishar	Indore	Madhya pradesh	473663	pending	2024-12-10 12:08:00.335+00	2024-12-10 12:08:00.335+00	a501bbec-9146-498a-af00-1b99c515cef5	{"isYaBrowser":false,"isAuthoritative":false,"isMobile":false,"isMobileNative":false,"isTablet":false,"isiPad":false,"isiPod":false,"isiPhone":false,"isiPhoneNative":false,"isAndroid":false,"isAndroidNative":false,"isBlackberry":false,"isOpera":false,"isIE":false,"isEdge":false,"isIECompatibilityMode":false,"isSafari":false,"isFirefox":false,"isWebkit":false,"isChrome":false,"isKonqueror":false,"isOmniWeb":false,"isSeaMonkey":false,"isFlock":false,"isAmaya":false,"isPhantomJS":false,"isEpiphany":false,"isDesktop":false,"isWindows":false,"isLinux":false,"isLinux64":false,"isMac":false,"isChromeOS":false,"isBada":false,"isSamsung":false,"isRaspberry":false,"isBot":"postman","isCurl":false,"isAndroidTablet":false,"isWinJs":false,"isKindleFire":false,"isSilk":false,"isCaptive":false,"isSmartTV":false,"isUC":false,"isFacebook":false,"isAlamoFire":false,"isElectron":false,"silkAccelerated":false,"browser":"PostmanRuntime","version":"7.43.0","os":"unknown","platform":"unknown","geoIp":{},"source":"PostmanRuntime/7.43.0","isWechat":false}
+\.
+
+
+--
+-- Data for Name: lead_media; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_media" ("id", "original_name", "path", "mime_data", "entity_id", "entity_type", "key", "created_by", "created_at", "updated_at", "client_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: lead_notifications; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_notifications" ("id", "title", "description", "start_date", "end_date", "created_by", "created_at", "updated_at", "lead_id") FROM stdin;
+\.
+
+
+--
+-- Data for Name: lead_security_tokens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_security_tokens" ("id", "user_id", "token", "type", "valid_till", "created_at", "updated_at") FROM stdin;
+d98dad8e-1412-4061-ace7-25d0c3a61499	b149fb67-2314-4e98-a2a7-5f3c0760aec7	b12c34f3-020f-457e-b243-a36f72820b98	reset_password	2024-12-10 13:16:05+00	2024-12-10 13:01:05.008+00	2024-12-10 13:01:05.008+00
+3831edc4-cd8f-4523-bcef-d61940eff232	b149fb67-2314-4e98-a2a7-5f3c0760aec7	09fa4641-7bd5-4b5f-988c-9acd0b5497ce	reset_password	2024-12-10 13:16:28+00	2024-12-10 13:01:28.911+00	2024-12-10 13:01:28.911+00
+9fd9c419-78c8-4932-b6ae-1b71f571aece	b149fb67-2314-4e98-a2a7-5f3c0760aec7	80de92b5-1b02-47d8-965d-1ab725754ac4	reset_password	2024-12-10 13:25:09+00	2024-12-10 13:10:09.431+00	2024-12-10 13:10:09.431+00
+\.
+
+
+--
+-- Data for Name: lead_sessions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_sessions" ("id", "user_id", "access_token", "refresh_token", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: lead_users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."lead_users" ("id", "first_name", "last_name", "phone_number1", "phone_number2", "email", "status", "role", "gender", "password", "address1", "address2", "landmark", "city", "state", "postcode", "country", "created_at", "updated_at", "client_id") FROM stdin;
+b149fb67-2314-4e98-a2a7-5f3c0760aec7	Gaurav	Bhargava	8878398665		gaurav@piecodes.in	active	super_admin	male	$2b$10$Cx08VGY64x0M10pK/20pZOQlzmTv4a98CuJXkEEa.OZzGyjbFRZQq	Bhargava colony,Guna	\N	Near mata mandir	Guna	Madhya pradesh	473001	IN	2024-12-10 10:51:43+00	2024-12-10 10:51:47+00	b199fb67-2314-4e98-a2a7-5f3c0760aec3
+de9611ab-181e-4011-860e-9b9ea2e50a81	Demo	Singh	\N	\N	golu@piecodes.in	active	admin	\N	$2b$10$4L7IwBZU5JPgm6VeD1WyOOzqsJCkzvDjLLkLEhUMaocSbAhaA4kwK	\N	\N	\N	\N	\N	\N	IN	2024-12-10 13:21:41.472+00	2024-12-10 13:21:41.472+00	22b7801f-e0e7-4724-b7e0-219c8b2174e0
+\.
+
+
+--
 -- Data for Name: media; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
