@@ -2523,7 +2523,13 @@ CREATE TABLE IF NOT EXISTS "public"."lead_leads" (
     "created_at" timestamp with time zone NOT NULL,
     "updated_at" timestamp with time zone NOT NULL,
     "institute_id" "uuid" NOT NULL,
-    "browser_agent" "text"
+    "browser_agent" "text",
+    "company_name" character varying(255),
+    "company_size" character varying(255),
+    "country" character varying(255) DEFAULT 'IN'::character varying,
+    "industry" character varying(255),
+    "designation" character varying(255),
+    "lead_type" character varying(255)
 );
 
 
@@ -8793,7 +8799,107 @@ ALTER TABLE ONLY "public"."lead_sessions"
 
 
 ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key100" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key101" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key102" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key103" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key104" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key105" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key106" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key107" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key108" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key109" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
     ADD CONSTRAINT "lead_sessions_refresh_token_key11" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key110" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key111" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key112" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key113" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key114" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key115" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key116" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key117" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key118" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key119" UNIQUE ("refresh_token");
 
 
 
@@ -8803,12 +8909,157 @@ ALTER TABLE ONLY "public"."lead_sessions"
 
 
 ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key120" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key121" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key122" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key123" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key124" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key125" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key126" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key127" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key128" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key129" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
     ADD CONSTRAINT "lead_sessions_refresh_token_key13" UNIQUE ("refresh_token");
 
 
 
 ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key130" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key131" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key132" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key133" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key134" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key135" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key136" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key137" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key138" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key139" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
     ADD CONSTRAINT "lead_sessions_refresh_token_key14" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key140" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key141" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key142" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key143" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key144" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key145" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key146" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key147" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key148" UNIQUE ("refresh_token");
 
 
 
@@ -9098,7 +9349,72 @@ ALTER TABLE ONLY "public"."lead_sessions"
 
 
 ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key67" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key68" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key69" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
     ADD CONSTRAINT "lead_sessions_refresh_token_key7" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key70" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key71" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key72" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key73" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key74" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key75" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key76" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key77" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key78" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key79" UNIQUE ("refresh_token");
 
 
 
@@ -9108,7 +9424,107 @@ ALTER TABLE ONLY "public"."lead_sessions"
 
 
 ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key80" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key81" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key82" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key83" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key84" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key85" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key86" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key87" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key88" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key89" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
     ADD CONSTRAINT "lead_sessions_refresh_token_key9" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key90" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key91" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key92" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key93" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key94" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key95" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key96" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key97" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key98" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key99" UNIQUE ("refresh_token");
 
 
 
