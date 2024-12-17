@@ -2475,15 +2475,14 @@ CREATE TABLE IF NOT EXISTS "public"."lead_clients" (
     "address1" "text",
     "address2" "text",
     "city" character varying(255),
-    "province" character varying(255),
     "postcode" character varying(255),
     "country" character varying(2),
     "website" "text",
     "latitude" double precision,
     "longitude" double precision,
-    "gst" character varying(255),
     "created_at" timestamp with time zone NOT NULL,
-    "updated_at" timestamp with time zone NOT NULL
+    "updated_at" timestamp with time zone NOT NULL,
+    "state" character varying(255)
 );
 
 
@@ -2512,15 +2511,20 @@ ALTER TABLE "public"."lead_follow_ups" OWNER TO "postgres";
 
 CREATE TABLE IF NOT EXISTS "public"."lead_institutes" (
     "id" "uuid" NOT NULL,
-    "title" character varying(255),
     "description" character varying(255),
     "email" character varying(255),
-    "phone_number" character varying(255),
     "city" character varying(255),
     "state" character varying(255),
     "created_at" timestamp with time zone NOT NULL,
     "updated_at" timestamp with time zone NOT NULL,
-    "client_id" "uuid"
+    "client_id" "uuid",
+    "name" character varying(255),
+    "phone_number1" character varying(255),
+    "phone_number2" character varying(255),
+    "address1" "text",
+    "address2" "text",
+    "postcode" character varying(255),
+    "country" character varying(2)
 );
 
 
@@ -2657,7 +2661,6 @@ CREATE TABLE IF NOT EXISTS "public"."lead_users" (
     "password" character varying(255) NOT NULL,
     "address1" "text",
     "address2" "text",
-    "landmark" "text",
     "city" character varying(255),
     "state" character varying(255),
     "postcode" character varying(255),
@@ -9831,6 +9834,11 @@ ALTER TABLE ONLY "public"."lead_sessions"
 
 
 ALTER TABLE ONLY "public"."lead_sessions"
+    ADD CONSTRAINT "lead_sessions_refresh_token_key277" UNIQUE ("refresh_token");
+
+
+
+ALTER TABLE ONLY "public"."lead_sessions"
     ADD CONSTRAINT "lead_sessions_refresh_token_key28" UNIQUE ("refresh_token");
 
 
@@ -11419,7 +11427,7 @@ ALTER TABLE ONLY "public"."lead_leads"
 
 
 ALTER TABLE ONLY "public"."lead_leads"
-    ADD CONSTRAINT "lead_leads_institute_id_fkey" FOREIGN KEY ("institute_id") REFERENCES "public"."lead_institutes"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT "lead_leads_institute_id_fkey" FOREIGN KEY ("institute_id") REFERENCES "public"."lead_institutes"("id") ON UPDATE CASCADE ON DELETE SET NULL;
 
 
 
@@ -11430,6 +11438,11 @@ ALTER TABLE ONLY "public"."lead_media"
 
 ALTER TABLE ONLY "public"."lead_notifications"
     ADD CONSTRAINT "lead_notifications_lead_id_fkey" FOREIGN KEY ("lead_id") REFERENCES "public"."lead_leads"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."lead_security_tokens"
+    ADD CONSTRAINT "lead_security_tokens_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."lead_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
