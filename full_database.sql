@@ -2489,6 +2489,27 @@ CREATE TABLE IF NOT EXISTS "public"."lead_clients" (
 ALTER TABLE "public"."lead_clients" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."lead_customers" (
+    "id" "uuid" NOT NULL,
+    "first_name" character varying(255),
+    "last_name" character varying(255),
+    "email" character varying(255) NOT NULL,
+    "gender" character varying(255),
+    "address1" "text",
+    "address2" "text",
+    "city" character varying(255),
+    "state" character varying(255),
+    "postcode" character varying(255),
+    "country" character varying(255) DEFAULT 'IN'::character varying,
+    "created_at" timestamp with time zone NOT NULL,
+    "updated_at" timestamp with time zone NOT NULL,
+    "phone_number" character varying(255)
+);
+
+
+ALTER TABLE "public"."lead_customers" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."lead_follow_ups" (
     "id" "uuid" NOT NULL,
     "description" character varying(255),
@@ -2502,7 +2523,8 @@ CREATE TABLE IF NOT EXISTS "public"."lead_follow_ups" (
     "updated_at" timestamp with time zone NOT NULL,
     "lead_id" "uuid",
     "user_id" "uuid" NOT NULL,
-    "client_id" "uuid"
+    "client_id" "uuid",
+    "followup_number" character varying(255)
 );
 
 
@@ -2580,7 +2602,9 @@ CREATE TABLE IF NOT EXISTS "public"."lead_leads" (
     "linkedin" character varying(255),
     "twitter" character varying(255),
     "instagram" character varying(255),
-    "client_id" "uuid"
+    "client_id" "uuid",
+    "lead_number" character varying(255),
+    "customer_id" "uuid"
 );
 
 
@@ -8803,6 +8827,11 @@ ALTER TABLE ONLY "public"."lead_clients"
 
 
 
+ALTER TABLE ONLY "public"."lead_customers"
+    ADD CONSTRAINT "lead_customers_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "public"."lead_follow_ups"
     ADD CONSTRAINT "lead_follow_ups_pkey" PRIMARY KEY ("id");
 
@@ -11427,6 +11456,11 @@ ALTER TABLE ONLY "public"."lead_leads"
 
 
 ALTER TABLE ONLY "public"."lead_leads"
+    ADD CONSTRAINT "lead_leads_customer_id_fkey" FOREIGN KEY ("customer_id") REFERENCES "public"."lead_customers"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."lead_leads"
     ADD CONSTRAINT "lead_leads_institute_id_fkey" FOREIGN KEY ("institute_id") REFERENCES "public"."lead_institutes"("id") ON UPDATE CASCADE ON DELETE SET NULL;
 
 
@@ -12763,6 +12797,12 @@ GRANT ALL ON TABLE "public"."jahanvi_users" TO "service_role";
 GRANT ALL ON TABLE "public"."lead_clients" TO "anon";
 GRANT ALL ON TABLE "public"."lead_clients" TO "authenticated";
 GRANT ALL ON TABLE "public"."lead_clients" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."lead_customers" TO "anon";
+GRANT ALL ON TABLE "public"."lead_customers" TO "authenticated";
+GRANT ALL ON TABLE "public"."lead_customers" TO "service_role";
 
 
 
