@@ -2587,7 +2587,7 @@ CREATE TABLE IF NOT EXISTS "public"."lead_leads" (
     "status" character varying(255) DEFAULT 'new'::character varying NOT NULL,
     "created_at" timestamp with time zone NOT NULL,
     "updated_at" timestamp with time zone NOT NULL,
-    "institute_id" "uuid" NOT NULL,
+    "institute_id" "uuid",
     "browser_agent" "text",
     "company_name" character varying(255),
     "company_size" character varying(255),
