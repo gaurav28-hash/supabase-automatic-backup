@@ -2494,7 +2494,7 @@ CREATE TABLE IF NOT EXISTS "public"."lead_companies" (
     "first_name" character varying(255),
     "last_name" character varying(255),
     "phone_number" character varying(255),
-    "email" character varying(255) NOT NULL,
+    "email" character varying(255),
     "gender" character varying(255),
     "address1" "text",
     "address2" "text",
@@ -2503,7 +2503,20 @@ CREATE TABLE IF NOT EXISTS "public"."lead_companies" (
     "postcode" character varying(255),
     "country" character varying(255) DEFAULT 'IN'::character varying,
     "created_at" timestamp with time zone NOT NULL,
-    "updated_at" timestamp with time zone NOT NULL
+    "updated_at" timestamp with time zone NOT NULL,
+    "secondary_email" character varying(255),
+    "status" character varying(255) DEFAULT 'new'::character varying NOT NULL,
+    "lead_source" character varying(255),
+    "company_name" character varying(255),
+    "company_size" character varying(255),
+    "industry" character varying(255),
+    "designation" character varying(255),
+    "skype" character varying(255),
+    "facebook" character varying(255),
+    "linkedin" character varying(255),
+    "twitter" character varying(255),
+    "instagram" character varying(255),
+    "website" "text"
 );
 
 
@@ -2576,7 +2589,7 @@ CREATE TABLE IF NOT EXISTS "public"."lead_leads" (
     "id" "uuid" NOT NULL,
     "first_name" character varying(255),
     "last_name" character varying(255),
-    "email" character varying(255) NOT NULL,
+    "email" character varying(255),
     "gender" character varying(255),
     "phone_number" character varying(255),
     "address1" "text",
@@ -2604,7 +2617,9 @@ CREATE TABLE IF NOT EXISTS "public"."lead_leads" (
     "instagram" character varying(255),
     "client_id" "uuid",
     "lead_number" character varying(255),
-    "company_id" "uuid"
+    "company_id" "uuid",
+    "lead_source_url" "text",
+    "description" "text"
 );
 
 
@@ -11447,6 +11462,11 @@ ALTER TABLE ONLY "public"."lead_lead_follow_ups"
 
 ALTER TABLE ONLY "public"."lead_lead_follow_ups"
     ADD CONSTRAINT "lead_lead_follow_ups_lead_id_fkey" FOREIGN KEY ("lead_id") REFERENCES "public"."lead_leads"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."lead_leads"
+    ADD CONSTRAINT "lead_leads_client_id_fkey" FOREIGN KEY ("client_id") REFERENCES "public"."lead_clients"("id") ON UPDATE CASCADE ON DELETE SET NULL;
 
 
 
