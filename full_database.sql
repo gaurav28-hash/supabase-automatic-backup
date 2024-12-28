@@ -2525,7 +2525,7 @@ ALTER TABLE "public"."lead_companies" OWNER TO "postgres";
 
 CREATE TABLE IF NOT EXISTS "public"."lead_follow_ups" (
     "id" "uuid" NOT NULL,
-    "description" character varying(255),
+    "description" "text",
     "type" character varying(255),
     "meeting_type" character varying(255),
     "meeting_channel" character varying(255),
@@ -2535,7 +2535,7 @@ CREATE TABLE IF NOT EXISTS "public"."lead_follow_ups" (
     "created_at" timestamp with time zone NOT NULL,
     "updated_at" timestamp with time zone NOT NULL,
     "lead_id" "uuid",
-    "user_id" "uuid" NOT NULL,
+    "user_id" "uuid",
     "client_id" "uuid",
     "followup_number" character varying(255)
 );
@@ -11446,7 +11446,7 @@ ALTER TABLE ONLY "public"."lead_follow_ups"
 
 
 ALTER TABLE ONLY "public"."lead_follow_ups"
-    ADD CONSTRAINT "lead_follow_ups_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."lead_users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT "lead_follow_ups_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."lead_users"("id") ON UPDATE CASCADE ON DELETE SET NULL;
 
 
 
